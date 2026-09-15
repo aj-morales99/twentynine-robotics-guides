@@ -17,6 +17,8 @@ description: A record of changes to the Twentynine Robotics online guides.
 - Corrected the modes control visual to match the board reference's vertically arranged blue rectangular switches instead of generic tactile switches.
 - Added sanitized installer warning and interrupted-run references plus a clearly labeled reconstructed success screen based on the current batch file.
 - Removed the unnecessary STM32CubeProgrammer file screenshot placeholder and expanded the private `MH-SETUP-01` shot plan into three hardware photos.
+- Expanded line-sensor calibration into a complete white/black test procedure with board potentiometer and OLED adjustment visuals.
+- Added code-checked AUTO button instructions and simplified arena diagrams for default Modes 1–6, including the current attack-speed behavior.
 
 ## 0.2.0 navigation and dark theme draft 2026 09 15
 

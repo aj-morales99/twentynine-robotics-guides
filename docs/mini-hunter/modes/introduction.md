@@ -43,10 +43,35 @@ In the shared build, `NUM_RCRMT` is `2`, so SW1 normally cycles through Bluetoot
   <figcaption><strong>MH-MODES-02.</strong> AUTO sequence reconstructed from the current sketch: select a mode, set its delay, watch the countdown, and enter the running state. The shown three-second value is an example; the code allows 0–5 seconds.</figcaption>
 </figure>
 
-1. Use **SW1** to move from `AUTO` to the numbered autonomous mode you want.
-2. Press **SW2** to confirm it. The `Set Seconds` screen appears.
-3. Use **SW1** to choose a delay from 0 through 5 seconds, then press **SW2** to confirm.
-4. The OLED counts down and then shows the selected mode as running.
+1. Set the latching **MODE** switch to the position that shows `AUTO` on the OLED. MODE 1 is a program choice on the screen; it is not a separate physical button.
+2. Press **SW1** repeatedly to cycle through the available numbered modes. Stop when the mode you want is displayed.
+3. Press **SW2** once to select that mode. The OLED changes to `Set Seconds`.
+4. Press **SW1** repeatedly to choose a start delay from 0 through 5 seconds.
+5. Press **SW2** again to confirm the delay. Keep your hands clear while the OLED counts down; the selected mode starts when the countdown finishes.
+
+If you pass the value you want, keep pressing **SW1** until the choices cycle back around. Read the OLED after every press instead of pressing both momentary switches together.
+
+## Default autonomous modes
+
+The paths below are simplified top-down examples. The blue box is Mini Hunter, the white triangle is its front, and the red circle is the opponent. Cyan dashed arrows show the search movement; red arrows show the attack after the front sensors find the opponent.
+
+<figure class="guide-figure">
+  <img src="../../assets/images/mini-hunter/modes/mh-modes-03-default-paths.png" alt="Six black sumo arenas illustrating the default search and attack paths for Mini Hunter Modes 1 through 6" loading="lazy">
+  <figcaption><strong>MH-MODES-03.</strong> Simplified default paths for Modes 1–6. Boundary detection and enemy-sensor reactions can interrupt the illustrated search path.</figcaption>
+</figure>
+
+| Mode | What it does while no opponent is detected | When the front sensors detect an opponent |
+| --- | --- | --- |
+| **1 — Slow straight search** | Drives straight at 20% search power. | Approaches at 60% when the target is farther away, then uses the configured `attackSpeed` at close range. |
+| **2 — Left rotation search** | Rotates left at 35% search power. | Approaches at 60%, then uses `attackSpeed - 15` at close range. |
+| **3 — Right rotation search** | Rotates right at 35% search power. | Approaches at 60%, then uses `attackSpeed - 15` at close range. |
+| **4 — Fast straight search** | Drives straight at 30% search power. | Approaches at 60%, then uses `attackSpeed - 15` at close range. |
+| **5 — Left swerve** | Starts with a short left rotation and curved approach, then changes to Mode 1 search. | The normal front-sensor attack response takes priority whenever an opponent is detected. |
+| **6 — Right swerve** | Mirrors Mode 5 to the right, then changes to Mode 1 search. | The normal front-sensor attack response takes priority whenever an opponent is detected. |
+
+For the supplied 1 kg values, `attackSpeed` is 100, so `attackSpeed - 15` is 85. The middle-distance 60% approach applies to every mode before the close-range attack.
+
+> **Firmware accuracy note:** The current shared code does not make Modes 2 and 3 attack at the full configured speed, and Mode 4 is not capped below 80%; Modes 2–6 all use `attackSpeed - 15` for the close-range front attack. The guide describes the code as it works now. Those descriptions should be changed only after the firmware behavior is deliberately updated and tested.
 
 ## Systems versus modes
 
