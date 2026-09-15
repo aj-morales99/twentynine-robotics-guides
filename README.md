@@ -30,4 +30,4 @@ docs/
   assets/
 ```
 
-The Mini Hunter guide is usable without images. Numbered placeholders correspond to `docs/mini-hunter/photo-checklist.md`. Add reviewed web images gradually in `docs/assets/images/mini-hunter/`.
+The Mini Hunter guide is usable without images. Numbered image placeholders are public, but the photographer's checklist is intentionally stored outside this public repository in `../private-maintainer-notes/`. Add reviewed web images gradually in `docs/assets/images/mini-hunter/`.

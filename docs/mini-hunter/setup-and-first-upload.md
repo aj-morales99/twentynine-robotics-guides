@@ -29,7 +29,7 @@ You do not need to understand all the code before starting. Complete one section
 
 All download links are collected on the [downloads page](downloads.html).
 
-Visible boxes marked **Image to add later** are publishing placeholders. Each box has a reference number that matches the [photo checklist](photo-checklist.html). You can follow the procedure without those images.
+Visible boxes marked **Supporting image coming later** are publishing placeholders. The reference numbers help the documentation team add the correct image later. You can follow the procedure without them.
 
 ## 1 Understand the tools
 
@@ -74,8 +74,8 @@ Arduino lists its supported operating systems in the [official IDE installation 
 - A USB Type-C **data** cable for the documented controller. A cable that only supplies power cannot carry programming data.
 - Access to the buttons labeled BT0 and RST.
 
-> **Image to add later — MH-SETUP-01**  
-> Equipment overview: Mini Hunter, FullVision controller, USB Type-C data cable, and Windows computer. See the [photo checklist](photo-checklist.html#mh-setup-01-equipment-overview).
+> **Supporting image coming later — MH-SETUP-01**
+> Equipment overview: Mini Hunter, FullVision controller, USB Type-C data cable, and Windows computer.
 
 For the documented board, the USB programming connection is already provided. A separate USB-to-serial adapter is not part of this main procedure. If your board requires loose programming wires, use its verified pinout and voltage instructions instead of guessing from this guide.
 
@@ -99,8 +99,8 @@ Uploading replaces the program on the board. Having the original source files ma
 3. Download **install-windows.bat**. A [direct installer download](https://github.com/aj-morales99/FullVision-STM32V1.5/releases/download/v1.5.0/install-windows.bat) is also available.
 4. Locate the downloaded file in your Downloads folder.
 
-> **Image to add later — MH-SETUP-02**  
-> GitHub release page with **Assets** expanded and `install-windows.bat` identified. See the [photo checklist](photo-checklist.html#mh-setup-02-fullvision-release-download).
+> **Supporting image coming later — MH-SETUP-02**
+> GitHub release page with **Assets** expanded and `install-windows.bat` identified.
 
 The `.bat` ending means this file runs a sequence of Windows commands. The automatically generated **Source code** ZIP on GitHub is not the installer and is not your Mini Hunter sketch.
 
@@ -115,8 +115,8 @@ Use the release linked here for this guide. If you choose a newer release from t
 5. Let the installer finish downloading the required tools and board package.
 6. If it requests STM32CubeProgrammer, complete section 4, then return to this window.
 
-> **Image to add later — MH-SETUP-03**  
-> FullVision installer command window showing its numbered progress stages. See the [photo checklist](photo-checklist.html#mh-setup-03-fullvision-installer-window).
+> **Supporting image coming later — MH-SETUP-03**
+> FullVision installer command window showing its numbered progress stages.
 
 Approve an administrator prompt only when you recognize the installation you started. If Windows or security software blocks a download, verify its source and follow your computer administrator's policy. Do not disable security protection to continue.
 
@@ -166,8 +166,8 @@ The CubeProgrammer version does not need to match the FullVision package number.
 5. Complete installation of the main application and its command-line tool. The optional Trusted Package Creator is not needed for this upload workflow.
 6. Return to the waiting FullVision installer and continue when prompted. If that window has closed, run `install-windows.bat` again with Arduino IDE closed.
 
-> **Image to add later — MH-SETUP-04**  
-> Extracted STM32CubeProgrammer folder and the correct setup application. See the [photo checklist](photo-checklist.html#mh-setup-04-cubeprogrammer-setup-file).
+> **Supporting image coming later — MH-SETUP-04**
+> Extracted STM32CubeProgrammer folder and the correct setup application.
 
 ST documents ZIP extraction, the Windows setup application, and the optional component in its [installation instructions](https://dev.st.com/stm32cube-docs/prog/2.23.0/en/docs/markup/CubeProg_How_To_Start/CubeProg_Installation.html).
 
@@ -192,8 +192,8 @@ The [downloads page](downloads.html#supplied-drive-archive) also preserves the s
 3. Select **FullVision-STM32 V1.5 (STM32duino 2.12.0)**.
 4. If the board is not listed, close Arduino IDE, check that the installer completed successfully, and reopen Arduino IDE.
 
-> **Image to add later — MH-SETUP-05**  
-> Arduino IDE board selector with the FullVision board selected. See the [photo checklist](photo-checklist.html#mh-setup-05-arduino-board-selection).
+> **Supporting image coming later — MH-SETUP-05**
+> Arduino IDE board selector with the FullVision board selected.
 
 You can select the board and compile a sketch while the robot is disconnected. A COM port is needed later for uploading.
 
@@ -224,8 +224,8 @@ The supplied Mini Hunter code uses two Adafruit display libraries. The FullVisio
 4. Search for **Adafruit SSD1306**, also by Adafruit, and install it with its dependencies.
 5. If **Adafruit BusIO** is required, install that dependency too.
 
-> **Image to add later — MH-SETUP-06**  
-> Arduino Library Manager showing the correct Adafruit GFX and SSD1306 entries. See the [photo checklist](photo-checklist.html#mh-setup-06-library-manager).
+> **Supporting image coming later — MH-SETUP-06**
+> Arduino Library Manager showing the correct Adafruit GFX and SSD1306 entries.
 
 Use any library versions specified by the robot firmware release. If no versions were supplied, record the versions you install and complete the compilation check in section 6. A newly available library version is not automatically a tested Mini Hunter version.
 
@@ -262,8 +262,8 @@ This shows the existing filenames, not a new naming standard. Do not rename the 
 4. Confirm that the companion `.h` and `.cpp` files are present. They normally appear as tabs.
 5. If Arduino offers to move the `.ino` into a matching folder, ensure the companion files also end up in that folder. Do not continue with only the `.ino`.
 
-> **Image to add later — MH-SETUP-07**  
-> File Explorer and Arduino tabs showing the three sketch files together. See the [photo checklist](photo-checklist.html#mh-setup-07-complete-sketch-folder).
+> **Supporting image coming later — MH-SETUP-07**
+> File Explorer and Arduino tabs showing the three sketch files together.
 
 ### Check the configuration before uploading
 
@@ -311,8 +311,8 @@ Find the labels **BT0** and **RST** on your board:
 
 The supplied hardware instructions place these buttons below the Bluetooth module. If the module blocks access, do not pull it out while powered or force its connector. Obtain the removal procedure for that assembly before proceeding. Software installation and compilation do not require removing it.
 
-> **Image to add later — MH-SETUP-08**  
-> Straight-on controller close-up with USB Type-C, BT0, and RST clearly labeled. See the [photo checklist](photo-checklist.html#mh-setup-08-controller-controls).
+> **Supporting image coming later — MH-SETUP-08**
+> Straight-on controller close-up with USB Type-C, BT0, and RST clearly labeled.
 
 If your board has different labels, switches instead of buttons, or an external programming adapter, stop here and use its revision-specific instructions.
 
@@ -326,8 +326,8 @@ If your board has different labels, switches instead of buttons, or an external 
 6. Look for the newly appearing serial entry. The documented board uses a CH340-style connection, which may appear as `USB-SERIAL CH340 (COM7)`.
 7. Write down your own COM number. COM7 is only an example.
 
-> **Image to add later — MH-SETUP-09**  
-> Windows Device Manager showing the controller's CH340 COM-port entry. See the [photo checklist](photo-checklist.html#mh-setup-09-device-manager-com-port).
+> **Supporting image coming later — MH-SETUP-09**
+> Windows Device Manager showing the controller's CH340 COM-port entry.
 
 The BT0-while-connecting sequence comes from the supplied Mini Hunter upload instructions. It assumes the controller was not already powered by another source.
 
@@ -350,8 +350,8 @@ If no serial entry appears, follow the no-COM-port checks in section 9 before co
 7. Wait through compilation and the transfer. Do not disconnect USB, press reset, or change the wiring while the tool is writing or verifying the program.
 8. Read the final output. Continue only after the upload reports success without a programming error.
 
-> **Image to add later — MH-SETUP-10**  
-> Arduino IDE showing the selected board and port plus a successful upload result. See the [photo checklist](photo-checklist.html#mh-setup-10-successful-upload).
+> **Supporting image coming later — MH-SETUP-10**
+> Arduino IDE showing the selected board and port plus a successful upload result.
 
 The normal **Verify** button compiles on the computer. A programming tool's later verification checks data written to the controller. These are different checks.
 
@@ -363,8 +363,8 @@ The normal **Verify** button compiles on the computer. A programming tool's late
 4. Check for the startup behavior expected from the exact sketch you uploaded. The supplied Mini Hunter program normally uses the OLED for its menu, but an upload-success message does not guarantee that the display or every sensor is working.
 5. If the program does not start as expected, use section 9 before enabling drive power.
 
-> **Image to add later — MH-SETUP-11**  
-> Mini Hunter OLED showing the expected menu after reset. See the [photo checklist](photo-checklist.html#mh-setup-11-normal-startup-screen).
+> **Supporting image coming later — MH-SETUP-11**
+> Mini Hunter OLED showing the expected menu after reset.
 
 **Checkpoint:** Arduino reports a successful upload and the controller starts the intended program. Motor testing, sensor calibration, and competition operation are separate procedures; do not start a match mode merely to check whether uploading worked.
 
@@ -451,4 +451,4 @@ Observed startup behavior:
 
 This makes it easier to repeat a working installation and explain what changed after an update. A successful first upload is the end of this setup procedure, not a complete test of the robot.
 
-[Back to all guides](../) · [Downloads and installation links](downloads.html) · [Photo checklist](photo-checklist.html)
+[Back to all guides](../) · [Downloads and installation links](downloads.html)
