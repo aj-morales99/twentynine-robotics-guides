@@ -10,6 +10,8 @@ description: A record of changes to the Twentynine Robotics online guides.
 
 - Reorganized Mini Hunter documentation around setup, controllers, calibration, attachments, upgrades, modes, code, and troubleshooting.
 - Added dark mode by default with a light/dark preference button.
+- Replaced the crowded top navigation with a Mini Hunter chapter sidebar, current-page indicator, breadcrumbs, and Previous/Next guide controls.
+- Added a mobile Guide menu drawer while keeping the full chapter list visible on larger screens.
 - Added beginner-friendly Bluetooth, calibration, modes, code-library, and troubleshooting drafts.
 - Kept unfinished hardware procedures clearly marked for verification.
 - Removed the private photography checklist from the public repository and all public navigation.
