@@ -10,6 +10,9 @@ description: A record of changes to the Twentynine Robotics online guides.
 
 - Added the supplied release-page and Arduino board-selection screenshots to the setup guide.
 - Added installed-library references for Adafruit GFX, SSD1306, and BusIO, plus the supplied three-file sketch-folder reference.
+- Reused the existing BT0/RST and Device Manager references, added the supplied Arduino tabs screenshot, and replaced the startup placeholder with a code-checked OLED reconstruction.
+- Added a modes control visual showing the latching MODE switch and momentary SW1/SW2 switches, with the OLED pins oriented to the right.
+- Added a code-derived AUTO menu flow and documented that `NUM_RCRMT = 2` leaves the existing `JS MODE` display case outside the normal selector.
 - Added sanitized installer warning and interrupted-run references plus a clearly labeled reconstructed success screen based on the current batch file.
 - Removed the unnecessary STM32CubeProgrammer file screenshot placeholder and expanded the private `MH-SETUP-01` shot plan into three hardware photos.
 

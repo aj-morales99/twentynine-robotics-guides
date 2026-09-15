@@ -295,10 +295,16 @@ This shows the existing filenames, not a new naming standard. Do not rename the 
 4. Confirm that the companion `.h` and `.cpp` files are present. They normally appear as tabs.
 5. If Arduino offers to move the `.ino` into a matching folder, ensure the companion files also end up in that folder. Do not continue with only the `.ino`.
 
-<figure class="guide-figure guide-figure--compact">
-  <img src="../assets/images/mini-hunter/setup/mh-setup-07-sketch-files.png" alt="File Explorer showing a Mini Hunter INO sketch, FullVision-STM32.cpp, and FullVision-STM32.h together" loading="lazy">
-  <figcaption><strong>MH-SETUP-07.</strong> Keep the main <code>.ino</code> sketch, <code>FullVision-STM32.cpp</code>, and <code>FullVision-STM32.h</code> together in one sketch folder.</figcaption>
-</figure>
+<div class="image-stack">
+  <figure class="guide-figure guide-figure--compact">
+    <img src="../assets/images/mini-hunter/setup/mh-setup-07a-sketch-files.png" alt="File Explorer showing a Mini Hunter INO sketch, FullVision-STM32.cpp, and FullVision-STM32.h together" loading="lazy">
+    <figcaption><strong>MH-SETUP-07A.</strong> The sketch folder contains the main <code>.ino</code> file and both FullVision companion files.</figcaption>
+  </figure>
+  <figure class="guide-figure">
+    <img src="../assets/images/mini-hunter/setup/mh-setup-07b-arduino-tabs.png" alt="Arduino IDE tabs for the Mini Hunter INO sketch, FullVision-STM32.cpp, and FullVision-STM32.h" loading="lazy">
+    <figcaption><strong>MH-SETUP-07B.</strong> When the folder is opened correctly, all three files appear as tabs in Arduino IDE.</figcaption>
+  </figure>
+</div>
 
 ### Check the configuration before uploading
 
@@ -346,8 +352,10 @@ Find the labels **BT0** and **RST** on your board:
 
 The supplied hardware instructions place these buttons below the Bluetooth module. If the module blocks access, do not pull it out while powered or force its connector. Obtain the removal procedure for that assembly before proceeding. Software installation and compilation do not require removing it.
 
-> **Supporting image coming later — MH-SETUP-08**
-> Straight-on controller close-up with USB Type-C, BT0, and RST clearly labeled.
+<figure class="guide-figure guide-figure--compact">
+  <img src="../assets/images/mini-hunter/setup/mh-setup-08-bt0-rst-controls.jpg" alt="FullVision controller close-up showing USB Type-C, BT0, and RST, with BT0 highlighted" loading="lazy">
+  <figcaption><strong>MH-SETUP-08.</strong> Existing controller reference. Hold <strong>BT0</strong>, the highlighted button beside RST, while connecting USB to the computer.</figcaption>
+</figure>
 
 If your board has different labels, switches instead of buttons, or an external programming adapter, stop here and use its revision-specific instructions.
 
@@ -361,8 +369,10 @@ If your board has different labels, switches instead of buttons, or an external 
 6. Look for the newly appearing serial entry. The documented board uses a CH340-style connection, which may appear as `USB-SERIAL CH340 (COM7)`.
 7. Write down your own COM number. COM7 is only an example.
 
-> **Supporting image coming later — MH-SETUP-09**
-> Windows Device Manager showing the controller's CH340 COM-port entry.
+<figure class="guide-figure">
+  <img src="../assets/images/mini-hunter/setup/mh-setup-09-device-manager-com-port.png" alt="Windows Device Manager with Ports expanded and USB-SERIAL CH340 COM21 highlighted" loading="lazy">
+  <figcaption><strong>MH-SETUP-09.</strong> Existing Device Manager reference. This example uses <strong>COM21</strong>; use the COM number shown on your own computer.</figcaption>
+</figure>
 
 The BT0-while-connecting sequence comes from the supplied Mini Hunter upload instructions. It assumes the controller was not already powered by another source.
 
@@ -398,8 +408,10 @@ The normal **Verify** button compiles on the computer. A programming tool's late
 4. Check for the startup behavior expected from the exact sketch you uploaded. The supplied Mini Hunter program normally uses the OLED for its menu, but an upload-success message does not guarantee that the display or every sensor is working.
 5. If the program does not start as expected, use section 9 before enabling drive power.
 
-> **Supporting image coming later — MH-SETUP-11**
-> Mini Hunter OLED showing the expected menu after reset.
+<figure class="guide-figure">
+  <img src="../assets/images/mini-hunter/setup/mh-setup-11-oled-startup-menus.png" alt="Illustrated narrow OLED showing the AUTO and RC/RMT startup menus with its soldered pins on the right" loading="lazy">
+  <figcaption><strong>MH-SETUP-11.</strong> Visual reconstruction from the supplied 128 × 32 OLED reference and firmware. After reset, either <strong>AUTO</strong> or <strong>RC/RMT</strong> is valid, depending on the latching MODE switch. The installed display has its soldered pins on the right; the firmware rotates the text upright.</figcaption>
+</figure>
 
 **Checkpoint:** Arduino reports a successful upload and the controller starts the intended program. Motor testing, sensor calibration, and competition operation are separate procedures; do not start a match mode merely to check whether uploading worked.
 
