@@ -74,8 +74,8 @@ Arduino lists its supported operating systems in the [official IDE installation 
 - A USB Type-C **data** cable for the documented controller. A cable that only supplies power cannot carry programming data.
 - Access to the buttons labeled BT0 and RST.
 
-> **Supporting image coming later — MH-SETUP-01**
-> Equipment overview: Mini Hunter, FullVision controller, USB Type-C data cable, and Windows computer.
+> **Three supporting photos coming later — MH-SETUP-01A–C**
+> These photos will identify the supplied hardware used in this procedure. The written checklist above remains complete without them.
 
 For the documented board, the USB programming connection is already provided. A separate USB-to-serial adapter is not part of this main procedure. If your board requires loose programming wires, use its verified pinout and voltage instructions instead of guessing from this guide.
 
@@ -99,8 +99,16 @@ Uploading replaces the program on the board. Having the original source files ma
 3. Download **install-windows.bat**. A [direct installer download](https://github.com/aj-morales99/FullVision-STM32V1.5/releases/download/v1.5.0/install-windows.bat) is also available.
 4. Locate the downloaded file in your Downloads folder.
 
-> **Supporting image coming later — MH-SETUP-02**
-> GitHub release page with **Assets** expanded and `install-windows.bat` identified.
+<div class="image-grid image-grid--two">
+  <figure class="guide-figure">
+    <img src="../assets/images/mini-hunter/setup/mh-setup-02a-release-overview.png" alt="FullVision STM32 V1.5.0 release page on GitHub" loading="lazy">
+    <figcaption><strong>MH-SETUP-02A.</strong> Confirm that the release is <strong>FullVision STM32 V1.5.0</strong>.</figcaption>
+  </figure>
+  <figure class="guide-figure">
+    <img src="../assets/images/mini-hunter/setup/mh-setup-02b-release-assets.png" alt="Expanded GitHub release Assets list with install-windows.bat visible" loading="lazy">
+    <figcaption><strong>MH-SETUP-02B.</strong> Expand <strong>Assets</strong> and choose <code>install-windows.bat</code>, not either Source code archive.</figcaption>
+  </figure>
+</div>
 
 The `.bat` ending means this file runs a sequence of Windows commands. The automatically generated **Source code** ZIP on GitHub is not the installer and is not your Mini Hunter sketch.
 
@@ -115,8 +123,20 @@ Use the release linked here for this guide. If you choose a newer release from t
 5. Let the installer finish downloading the required tools and board package.
 6. If it requests STM32CubeProgrammer, complete section 4, then return to this window.
 
-> **Supporting image coming later — MH-SETUP-03**
-> FullVision installer command window showing its numbered progress stages.
+<div class="image-stack">
+  <figure class="guide-figure guide-figure--compact">
+    <img src="../assets/images/mini-hunter/setup/mh-setup-03a-security-warning-sanitized.png" alt="Windows Open File Security Warning for install-windows.bat with Run and Cancel buttons" loading="lazy">
+    <figcaption><strong>MH-SETUP-03A.</strong> A sanitized reconstruction of the Windows warning. Choose <strong>Run</strong> only after confirming that the file came from the FullVision release linked above.</figcaption>
+  </figure>
+  <figure class="guide-figure">
+    <img src="../assets/images/mini-hunter/setup/mh-setup-03b-interrupted-run-sanitized.png" alt="FullVision installer stopped during the Arduino CLI check with a batch-label error" loading="lazy">
+    <figcaption><strong>MH-SETUP-03B.</strong> An interrupted run from the supplied screenshot. This is <strong>not</strong> a successful installation. If this error appears, close the window, download the current installer again, and restart it with Arduino IDE closed.</figcaption>
+  </figure>
+  <figure class="guide-figure">
+    <img src="../assets/images/mini-hunter/setup/mh-setup-03c-installer-complete-reconstruction.png" alt="Reconstructed FullVision installer terminal showing all five checks and the SUCCESS message" loading="lazy">
+    <figcaption><strong>MH-SETUP-03C.</strong> Reconstructed completion screen based on the current batch file. Continue only when the terminal shows <code>SUCCESS: FullVision:stm32@1.5.0 is installed.</code></figcaption>
+  </figure>
+</div>
 
 Approve an administrator prompt only when you recognize the installation you started. If Windows or security software blocks a download, verify its source and follow your computer administrator's policy. Do not disable security protection to continue.
 
@@ -166,9 +186,6 @@ The CubeProgrammer version does not need to match the FullVision package number.
 5. Complete installation of the main application and its command-line tool. The optional Trusted Package Creator is not needed for this upload workflow.
 6. Return to the waiting FullVision installer and continue when prompted. If that window has closed, run `install-windows.bat` again with Arduino IDE closed.
 
-> **Supporting image coming later — MH-SETUP-04**
-> Extracted STM32CubeProgrammer folder and the correct setup application.
-
 ST documents ZIP extraction, the Windows setup application, and the optional component in its [installation instructions](https://dev.st.com/stm32cube-docs/prog/2.23.0/en/docs/markup/CubeProg_How_To_Start/CubeProg_Installation.html).
 
 The usual command-line tool location is:
@@ -192,8 +209,10 @@ The [downloads page](downloads.html#supplied-drive-archive) also preserves the s
 3. Select **FullVision-STM32 V1.5 (STM32duino 2.12.0)**.
 4. If the board is not listed, close Arduino IDE, check that the installer completed successfully, and reopen Arduino IDE.
 
-> **Supporting image coming later — MH-SETUP-05**
-> Arduino IDE board selector with the FullVision board selected.
+<figure class="guide-figure">
+  <img src="../assets/images/mini-hunter/setup/mh-setup-05-board-selection.png" alt="Arduino IDE Tools menu open to Board, FullVision STM32 V1.5, and FullVision-STM32 V1.5 STM32duino 2.12.0" loading="lazy">
+  <figcaption><strong>MH-SETUP-05.</strong> In Arduino IDE, follow <strong>Tools → Board → FullVision STM32 V1.5 → FullVision-STM32 V1.5 (STM32duino 2.12.0)</strong>, then click the final item.</figcaption>
+</figure>
 
 You can select the board and compile a sketch while the robot is disconnected. A COM port is needed later for uploading.
 

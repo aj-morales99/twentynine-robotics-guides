@@ -112,6 +112,14 @@ blockquote strong { color: var(--brand-strong); }
 code { background: var(--surface-raised); border: 1px solid var(--line); border-radius: 5px; padding: 0.12em 0.35em; font-size: 0.9em; }
 pre { overflow-x: auto; background: var(--code); color: #f8fafc; padding: 1rem 1.2rem; border: 1px solid var(--line); border-radius: 10px; }
 pre code { background: transparent; color: inherit; padding: 0; border: 0; }
+.image-grid { display: grid; gap: 1rem; margin: 1.5rem 0; }
+.image-grid--two { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+.image-stack { display: grid; gap: 1.35rem; margin: 1.5rem 0; }
+.guide-figure { margin: 0; overflow: hidden; background: var(--surface-raised); border: 1px solid var(--line); border-radius: 12px; }
+.guide-figure img { width: 100%; height: auto; display: block; background: #090d14; }
+.guide-figure--compact { max-width: 620px; }
+.guide-figure figcaption { padding: 0.8rem 0.95rem; color: var(--muted); font-size: 0.82rem; line-height: 1.55; }
+.guide-figure figcaption strong { color: var(--ink); }
 
 .card-grid, .section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 1rem; margin: 1.5rem 0 2rem; }
 .guide-card { display: flex; flex-direction: column; gap: 0.55rem; min-height: 190px; padding: 1.25rem; color: var(--ink); text-decoration: none; background: linear-gradient(145deg, var(--surface-raised), var(--surface)); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); transition: transform 160ms ease, border-color 160ms ease; }
@@ -226,6 +234,7 @@ pre code { background: transparent; color: inherit; padding: 0; border: 0; }
   .sequence-link.next { text-align: left; align-items: flex-start; }
   .home-page .page-shell { padding: 3rem 1rem 1.5rem; }
   .guide-directory { grid-template-columns: 1fr; gap: 2rem; }
+  .image-grid--two { grid-template-columns: 1fr; }
   .product-card { min-height: 230px; grid-template-columns: 48px 1fr; padding: 1.25rem; }
   .product-card__mark { width: 44px; height: 44px; border-radius: 11px; }
 }
