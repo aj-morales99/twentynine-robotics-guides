@@ -114,6 +114,7 @@ pre { overflow-x: auto; background: var(--code); color: #f8fafc; padding: 1rem 1
 pre code { background: transparent; color: inherit; padding: 0; border: 0; }
 .image-grid { display: grid; gap: 1rem; margin: 1.5rem 0; }
 .image-grid--two { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+.image-grid--library { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); align-items: start; }
 .image-stack { display: grid; gap: 1.35rem; margin: 1.5rem 0; }
 .guide-figure { margin: 0; overflow: hidden; background: var(--surface-raised); border: 1px solid var(--line); border-radius: 12px; }
 .guide-figure img { width: 100%; height: auto; display: block; background: #090d14; }

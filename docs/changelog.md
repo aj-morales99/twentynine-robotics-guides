@@ -9,6 +9,7 @@ description: A record of changes to the Twentynine Robotics online guides.
 ## 0.3.0 setup visuals draft 2026 09 16
 
 - Added the supplied release-page and Arduino board-selection screenshots to the setup guide.
+- Added installed-library references for Adafruit GFX, SSD1306, and BusIO, plus the supplied three-file sketch-folder reference.
 - Added sanitized installer warning and interrupted-run references plus a clearly labeled reconstructed success screen based on the current batch file.
 - Removed the unnecessary STM32CubeProgrammer file screenshot placeholder and expanded the private `MH-SETUP-01` shot plan into three hardware photos.
 

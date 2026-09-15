@@ -243,8 +243,22 @@ The supplied Mini Hunter code uses two Adafruit display libraries. The FullVisio
 4. Search for **Adafruit SSD1306**, also by Adafruit, and install it with its dependencies.
 5. If **Adafruit BusIO** is required, install that dependency too.
 
-> **Supporting image coming later — MH-SETUP-06**
-> Arduino Library Manager showing the correct Adafruit GFX and SSD1306 entries.
+<div class="image-grid image-grid--library">
+  <figure class="guide-figure">
+    <img src="../assets/images/mini-hunter/setup/mh-setup-06a-adafruit-gfx-installed.png" alt="Arduino Library Manager showing Adafruit GFX Library by Adafruit installed" loading="lazy">
+    <figcaption><strong>MH-SETUP-06A.</strong> Adafruit GFX Library is installed.</figcaption>
+  </figure>
+  <figure class="guide-figure">
+    <img src="../assets/images/mini-hunter/setup/mh-setup-06b-adafruit-ssd1306-installed.png" alt="Arduino Library Manager showing Adafruit SSD1306 by Adafruit installed" loading="lazy">
+    <figcaption><strong>MH-SETUP-06B.</strong> Adafruit SSD1306 is installed.</figcaption>
+  </figure>
+  <figure class="guide-figure">
+    <img src="../assets/images/mini-hunter/setup/mh-setup-06c-adafruit-busio-installed.png" alt="Arduino Library Manager showing Adafruit BusIO by Adafruit installed" loading="lazy">
+    <figcaption><strong>MH-SETUP-06C.</strong> Adafruit BusIO, a required dependency, is installed.</figcaption>
+  </figure>
+</div>
+
+The version numbers in these screenshots are examples from one working installation. If your robot firmware release specifies exact library versions, use those versions instead.
 
 Use any library versions specified by the robot firmware release. If no versions were supplied, record the versions you install and complete the compilation check in section 6. A newly available library version is not automatically a tested Mini Hunter version.
 
@@ -281,8 +295,10 @@ This shows the existing filenames, not a new naming standard. Do not rename the 
 4. Confirm that the companion `.h` and `.cpp` files are present. They normally appear as tabs.
 5. If Arduino offers to move the `.ino` into a matching folder, ensure the companion files also end up in that folder. Do not continue with only the `.ino`.
 
-> **Supporting image coming later — MH-SETUP-07**
-> File Explorer and Arduino tabs showing the three sketch files together.
+<figure class="guide-figure guide-figure--compact">
+  <img src="../assets/images/mini-hunter/setup/mh-setup-07-sketch-files.png" alt="File Explorer showing a Mini Hunter INO sketch, FullVision-STM32.cpp, and FullVision-STM32.h together" loading="lazy">
+  <figcaption><strong>MH-SETUP-07.</strong> Keep the main <code>.ino</code> sketch, <code>FullVision-STM32.cpp</code>, and <code>FullVision-STM32.h</code> together in one sketch folder.</figcaption>
+</figure>
 
 ### Check the configuration before uploading
 
