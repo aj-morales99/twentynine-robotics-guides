@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111827">
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <title>{{ page.title | default: site.title }} | Twentynine Robotics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Twentynine Robotics Guides home">
+          <img src="{{ '/assets/images/twentynine-robotics-logo.svg' | relative_url }}" alt="" width="54" height="54">
+          <span><strong>Twentynine Robotics</strong><small>Guides and support</small></span>
+        </a>
+        <nav aria-label="Main navigation">
+          <a href="{{ '/mini-hunter/' | relative_url }}">Mini Hunter</a>
+          <a href="{{ '/hammerhead/' | relative_url }}">Hammerhead</a>
+          <a href="{{ '/changelog.html' | relative_url }}">History</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="page-shell">
+      <article class="guide-content">
+        {{ content }}
+      </article>
+    </main>
+    <footer class="site-footer">
+      <p>Twentynine Robotics documentation</p>
+      <p><a href="{{ '/' | relative_url }}">All guides</a> · <a href="https://github.com/aj-morales99/FullVision-STM32V1.5">FullVision STM32 project</a></p>
+    </footer>
+  </body>
+</html>

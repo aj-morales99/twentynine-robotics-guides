@@ -1,0 +1,11 @@
+title: Twentynine Robotics Guides
+description: Setup, programming, and maintenance documentation for Twentynine Robotics products.
+url: https://aj-morales99.github.io
+baseurl: /twentynine-robotics-guides
+lang: en
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+exclude:
+  - README.md
