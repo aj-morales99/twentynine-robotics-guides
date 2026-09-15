@@ -11,8 +11,8 @@ A **control mode** decides where movement commands come from. An **autonomous mo
 ## Know the three menu controls
 
 <figure class="guide-figure">
-  <img src="../../assets/images/mini-hunter/modes/mh-modes-01-controls-and-auto-menu.png" alt="Illustrated Mini Hunter controls with a latching MODE switch, momentary SW1 and SW2 switches, and an AUTO OLED menu" loading="lazy">
-  <figcaption><strong>MH-MODES-01.</strong> Menu-control reference based on the supplied firmware and OLED hardware. The OLED is installed with its soldered pins on the right.</figcaption>
+  <img src="../../assets/images/mini-hunter/modes/mh-modes-01-controls-and-auto-menu.png" alt="Illustrated Mini Hunter controls with three vertically arranged blue rectangular switches and an AUTO OLED menu" loading="lazy">
+  <figcaption><strong>MH-MODES-01.</strong> Menu-control reference based on the supplied firmware and board artwork. The three blue rectangular switches are arranged vertically at the board's lower-left; they are not generic tactile switches. The OLED is installed with its soldered pins on the right.</figcaption>
 </figure>
 
 | Control | Switch behavior | What it does in the menu |
