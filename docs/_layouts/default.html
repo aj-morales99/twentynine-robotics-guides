@@ -22,17 +22,16 @@
     <header class="site-header">
       <div class="site-header__inner">
         <div class="header-start">
-          <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="docs-sidebar"><span aria-hidden="true">☰</span><span>Guide menu</span></button>
           <a class="brand" href="{{ '/' | relative_url }}" aria-label="Twentynine Robotics Guides home">
             <img src="{{ '/assets/images/twentynine-robotics-logo.svg' | relative_url }}" alt="" width="44" height="44">
-            <span><strong>Twentynine Robotics</strong><small>Documentation</small></span>
+            <span><strong>Twentynine Robotics</strong><small>Guides</small></span>
           </a>
         </div>
-        <nav class="global-nav" aria-label="Global navigation">
-          <a href="{{ '/' | relative_url }}">All robots</a>
-          <a href="{{ '/changelog.html' | relative_url }}">History</a>
-          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode"><span aria-hidden="true">☀</span><span>Light</span></button>
-        </nav>
+        <div class="header-actions">
+          <nav class="global-nav" aria-label="Global navigation"><a href="{{ '/' | relative_url }}">Home</a><a href="{{ '/changelog.html' | relative_url }}">History</a></nav>
+          <button id="theme-toggle" class="theme-toggle icon-button" type="button" aria-label="Switch to light mode"><span aria-hidden="true">☀</span><span class="button-label">Light</span></button>
+          <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="docs-sidebar"><span>Contents</span><span aria-hidden="true">☰</span></button>
+        </div>
       </div>
     </header>
 
@@ -41,29 +40,28 @@
       <aside id="docs-sidebar" class="docs-sidebar" aria-label="Mini Hunter guide" hidden>
         <div class="sidebar-product">
           <span class="product-mark" aria-hidden="true">MH</span>
-          <span><small>ROBOT GUIDE</small><strong>Mini Hunter</strong></span>
+          <span><small>PRODUCT GUIDE</small><strong>Mini Hunter</strong></span>
         </div>
         <nav class="chapter-nav" aria-label="Mini Hunter chapters">
-          <p>Start here</p>
-          <a data-guide-path="/mini-hunter/" href="{{ '/mini-hunter/' | relative_url }}"><span>01</span>Guide overview</a>
-          <a data-guide-path="/mini-hunter/setup-and-first-upload.html" href="{{ '/mini-hunter/setup-and-first-upload.html' | relative_url }}"><span>02</span>Arduino IDE & board</a>
-          <a data-guide-path="/mini-hunter/downloads.html" href="{{ '/mini-hunter/downloads.html' | relative_url }}"><span>03</span>Downloads</a>
+          <a class="nav-top-level" data-guide-path="/mini-hunter/" href="{{ '/mini-hunter/' | relative_url }}">Overview</a>
+          <p>Getting started</p>
+          <a data-guide-path="/mini-hunter/setup-and-first-upload.html" href="{{ '/mini-hunter/setup-and-first-upload.html' | relative_url }}">Arduino IDE & board setup</a>
+          <a data-guide-path="/mini-hunter/downloads.html" href="{{ '/mini-hunter/downloads.html' | relative_url }}">Downloads</a>
           <p>Controllers</p>
-          <a data-guide-path="/mini-hunter/bluetooth-application-setup.html" href="{{ '/mini-hunter/bluetooth-application-setup.html' | relative_url }}"><span>04</span>Bluetooth application</a>
-          <a data-guide-path="/mini-hunter/rc-controller-setup.html" href="{{ '/mini-hunter/rc-controller-setup.html' | relative_url }}"><span>05</span>RC controller</a>
-          <p>Sensors</p>
-          <a data-guide-path="/mini-hunter/calibration/" href="{{ '/mini-hunter/calibration/' | relative_url }}"><span>06</span>Calibration overview</a>
-          <a data-guide-path="/mini-hunter/calibration/line-sensors.html" href="{{ '/mini-hunter/calibration/line-sensors.html' | relative_url }}"><span>07</span>Line sensors</a>
-          <a data-guide-path="/mini-hunter/calibration/enemy-detection.html" href="{{ '/mini-hunter/calibration/enemy-detection.html' | relative_url }}"><span>08</span>Enemy detection</a>
+          <a data-guide-path="/mini-hunter/bluetooth-application-setup.html" href="{{ '/mini-hunter/bluetooth-application-setup.html' | relative_url }}">Bluetooth application</a>
+          <a data-guide-path="/mini-hunter/rc-controller-setup.html" href="{{ '/mini-hunter/rc-controller-setup.html' | relative_url }}">RC controller</a>
+          <p>Calibration</p>
+          <a data-guide-path="/mini-hunter/calibration/" href="{{ '/mini-hunter/calibration/' | relative_url }}">Calibration overview</a>
+          <a data-guide-path="/mini-hunter/calibration/line-sensors.html" href="{{ '/mini-hunter/calibration/line-sensors.html' | relative_url }}">Line sensors</a>
+          <a data-guide-path="/mini-hunter/calibration/enemy-detection.html" href="{{ '/mini-hunter/calibration/enemy-detection.html' | relative_url }}">Enemy detection</a>
           <p>Hardware</p>
-          <a data-guide-path="/mini-hunter/attachments/" href="{{ '/mini-hunter/attachments/' | relative_url }}"><span>09</span>Attachments</a>
-          <a data-guide-path="/mini-hunter/upgrades/" href="{{ '/mini-hunter/upgrades/' | relative_url }}"><span>10</span>Upgrade kits</a>
+          <a data-guide-path="/mini-hunter/attachments/" href="{{ '/mini-hunter/attachments/' | relative_url }}">Attachments</a>
+          <a data-guide-path="/mini-hunter/upgrades/" href="{{ '/mini-hunter/upgrades/' | relative_url }}">Upgrade kits</a>
           <p>Programming</p>
-          <a data-guide-path="/mini-hunter/modes/introduction.html" href="{{ '/mini-hunter/modes/introduction.html' | relative_url }}"><span>11</span>Modes introduction</a>
-          <a data-guide-path="/mini-hunter/modes/customization.html" href="{{ '/mini-hunter/modes/customization.html' | relative_url }}"><span>12</span>Modes customization</a>
-          <a data-guide-path="/mini-hunter/code-library/" href="{{ '/mini-hunter/code-library/' | relative_url }}"><span>13</span>Code library</a>
-          <p>Support</p>
-          <a data-guide-path="/mini-hunter/troubleshooting/" href="{{ '/mini-hunter/troubleshooting/' | relative_url }}"><span>14</span>Troubleshooting</a>
+          <a data-guide-path="/mini-hunter/modes/introduction.html" href="{{ '/mini-hunter/modes/introduction.html' | relative_url }}">Modes introduction</a>
+          <a data-guide-path="/mini-hunter/modes/customization.html" href="{{ '/mini-hunter/modes/customization.html' | relative_url }}">Modes customization</a>
+          <a data-guide-path="/mini-hunter/code-library/" href="{{ '/mini-hunter/code-library/' | relative_url }}">Code library</a>
+          <a class="nav-top-level" data-guide-path="/mini-hunter/troubleshooting/" href="{{ '/mini-hunter/troubleshooting/' | relative_url }}">Troubleshooting</a>
         </nav>
       </aside>
 
@@ -72,6 +70,7 @@
         <article class="guide-content">{{ content }}</article>
         <nav id="page-sequence" class="page-sequence" aria-label="Previous and next guide" hidden></nav>
       </main>
+      <aside id="page-outline" class="page-outline" aria-label="On this page" hidden><strong>On this page</strong><nav></nav></aside>
     </div>
 
     <footer class="site-footer">
@@ -118,6 +117,7 @@
         const basePrefix = markerIndex >= 0 ? location.pathname.slice(0, markerIndex) : "";
         const currentPath = markerIndex >= 0 ? location.pathname.slice(markerIndex) : location.pathname;
         const currentIndex = guides.findIndex(function (guide) { return currentPath === guide[0] || currentPath === guide[0] + "index.html"; });
+        if (document.querySelector(".home-hero")) document.body.classList.add("home-page");
 
         if (markerIndex >= 0) {
           document.body.classList.add("mini-hunter-page");
@@ -156,6 +156,24 @@
             if (next) sequenceHtml += '<a class="sequence-link next" href="' + basePrefix + next[0] + '"><small>Next →</small><strong>' + next[1] + '</strong></a>';
             sequence.innerHTML = sequenceHtml;
             sequence.hidden = false;
+          }
+
+          const headings = Array.from(document.querySelectorAll(".guide-content h2"));
+          const outline = document.getElementById("page-outline");
+          if (headings.length > 1) {
+            const usedIds = new Set();
+            headings.forEach(function (heading, index) {
+              if (!heading.id) {
+                let id = heading.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "section-" + (index + 1);
+                const original = id;
+                let suffix = 2;
+                while (usedIds.has(id)) id = original + "-" + suffix++;
+                heading.id = id;
+              }
+              usedIds.add(heading.id);
+            });
+            outline.querySelector("nav").innerHTML = headings.map(function (heading) { return '<a href="#' + heading.id + '">' + heading.textContent + '</a>'; }).join("");
+            outline.hidden = false;
           }
         }
 

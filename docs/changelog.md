@@ -12,6 +12,9 @@ description: A record of changes to the Twentynine Robotics online guides.
 - Added dark mode by default with a light/dark preference button.
 - Replaced the crowded top navigation with a Mini Hunter chapter sidebar, current-page indicator, breadcrumbs, and Previous/Next guide controls.
 - Added a mobile Guide menu drawer while keeping the full chapter list visible on larger screens.
+- Simplified the homepage into one clear product chooser and removed duplicated Mini Hunter and Hammerhead sections.
+- Reworked the guide navigation using established documentation patterns: grouped chapters, a quieter active-page marker, mobile Contents control, and an optional on-page outline for long articles.
+- Reorganized the Mini Hunter overview into task-based sections with one recommended starting point.
 - Added beginner-friendly Bluetooth, calibration, modes, code-library, and troubleshooting drafts.
 - Kept unfinished hardware procedures clearly marked for verification.
 - Removed the private photography checklist from the public repository and all public navigation.

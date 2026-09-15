@@ -30,5 +30,3 @@ The finished guide will show how to identify each plate, remove the installed pl
 The finished guide will identify approved weight positions and explain how to change distribution without pinching wires, loosening the battery, or exceeding the competition weight limit.
 
 <div class="warning note"><strong>Do not improvise from this draft.</strong> Power off, disconnect the battery where applicable, and wait for the verified procedure before removing guarded or load-bearing parts.</div>
-
-[Back to Mini Hunter guides](../)

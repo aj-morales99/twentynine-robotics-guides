@@ -23,5 +23,3 @@ Calibration makes the sensor readings match the robot's real surroundings. Work 
 5. Release them when the display shows **CAL MODE**.
 
 Use **SW1** once for line-sensor adjustment or twice for the enemy-sensor check. Hold **SW1** and **SW2** together again to leave calibration, then power off before removing the robot from its stand.
-
-[Back to Mini Hunter guides](../)

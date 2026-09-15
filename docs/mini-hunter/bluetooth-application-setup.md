@@ -82,5 +82,3 @@ If the phone connects but the robot does not respond, first confirm that the imp
   <div><h3>Do</h3><ul><li>Test with wheels and blade clear.</li><li>Use one control at a time.</li><li>Keep the original panel file as a backup.</li><li>Disconnect before changing wiring or attachments.</li></ul></div>
   <div><h3>Don't</h3><ul><li>Do not install an APK from an unknown source.</li><li>Do not assume every panel works with every firmware version.</li><li>Do not edit panel commands casually.</li><li>Do not hold a movement button during the first test.</li></ul></div>
 </div>
-
-[Back to Mini Hunter guides](./)

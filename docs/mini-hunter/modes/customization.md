@@ -62,5 +62,3 @@ MiniHunter_3kg_5System_7Mode
 ```
 
 Add a firmware version after the descriptive name rather than hiding the configuration in an unclear historical filename.
-
-[Browse the code library](../code-library/) · [Back to Mini Hunter guides](../)

@@ -1,37 +1,35 @@
 ---
 layout: default
 title: Twentynine Robotics Guides
-description: Setup, programming, and maintenance guides for Twentynine Robotics products.
+description: Setup, operation, programming, and maintenance guides for Twentynine Robotics products.
 permalink: /
 ---
 
-# Twentynine Robotics Guides
+<section class="home-hero">
+  <span class="eyebrow">TWENTYNINE ROBOTICS SUPPORT</span>
+  <h1>Choose your robot</h1>
+  <p>Find setup instructions, controller guides, calibration steps, code references, and troubleshooting for your model.</p>
+</section>
 
-Learn how to set up, operate, customize, and maintain your robot one step at a time.
-
-Start with the guide for your robot. Instructions explain the controls and expected results in words, so you can follow them without pictures.
-
-## Mini Hunter
-
-<div class="card-grid">
-  <a class="guide-card" href="mini-hunter/">
-    <span class="card-label">Available now</span>
-    <strong>Mini Hunter</strong>
-    <span>Computer and board setup, Bluetooth, RC control, calibration, modes, upgrades, attachments, code reference, and troubleshooting.</span>
+<div class="product-grid">
+  <a class="product-card product-card--ready" href="mini-hunter/">
+    <span class="product-card__mark" aria-hidden="true">MH</span>
+    <span class="product-card__content">
+      <span class="availability available">Guides available</span>
+      <strong>Mini Hunter</strong>
+      <span>FullVision STM32 setup, Bluetooth, RC control, sensors, modes, upgrades, and code.</span>
+      <span class="product-action">Open Mini Hunter guides <span aria-hidden="true">→</span></span>
+    </span>
   </a>
-  <a class="guide-card" href="hammerhead/">
-    <span class="card-label">Planned</span>
-    <strong>Hammerhead</strong>
-    <span>A separate guide area is ready for verified Hammerhead instructions and code.</span>
+  <a class="product-card product-card--planned" href="hammerhead/">
+    <span class="product-card__mark" aria-hidden="true">HH</span>
+    <span class="product-card__content">
+      <span class="availability planned">Coming soon</span>
+      <strong>Hammerhead</strong>
+      <span>The guide area is reserved. Verified setup and maintenance instructions are being prepared.</span>
+      <span class="product-action">View guide status <span aria-hidden="true">→</span></span>
+    </span>
   </a>
 </div>
 
-## Hammerhead
-
-Hammerhead instructions will be added separately. Do not apply Mini Hunter wiring, power, firmware, or removal instructions to Hammerhead unless its own guide explicitly says they are shared.
-
-[Open the Hammerhead guide area](hammerhead/)
-
-## Guide history
-
-[Read the documentation changelog](changelog.html). Documentation revisions are separate from board-package and robot-firmware versions.
+<p class="home-footnote">Looking for an update? Read the <a href="changelog.html">documentation history</a>.</p>

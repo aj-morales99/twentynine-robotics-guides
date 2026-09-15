@@ -47,5 +47,3 @@ The current firmware treats approximately **1500 microseconds** as neutral, acce
 5. Repeat the supported-wheel test.
 
 Do not reverse channels or change endpoints simply by trial and error while the robot is on the floor. Record the transmitter model and receiver wiring so a final model-specific page can be added.
-
-[Back to Mini Hunter guides](./) · [Troubleshooting](troubleshooting/)

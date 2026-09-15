@@ -450,5 +450,3 @@ Observed startup behavior:
 ```
 
 This makes it easier to repeat a working installation and explain what changed after an update. A successful first upload is the end of this setup procedure, not a complete test of the robot.
-
-[Back to all guides](../) · [Downloads and installation links](downloads.html)

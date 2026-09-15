@@ -27,5 +27,3 @@ Will cover compatible blade types, safe restraint, exact tools, fastener directi
 > Separate, labeled inventories for the 3 kg kit, RC conversion kit, and each supported blade.
 
 <div class="warning note"><strong>Moving-part hazard:</strong> do not work on a blade while the robot is powered or the battery is connected. The final procedure must include the verified restraint and tightening specification.</div>
-
-[Back to Mini Hunter guides](../)

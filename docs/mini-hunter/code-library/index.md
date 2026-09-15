@@ -56,5 +56,3 @@ motorSTOP();</code></pre><p><strong>Do:</strong> stop motors during a control-so
 ## Next library-guide improvements
 
 The next pass will add the exact parameter types, return values, shared global variables, pin map, and complete examples for each supported firmware version. It will also separate beginner functions from internal and advanced functions so users can modify code without accidentally entering timer or interrupt internals.
-
-[Modes customization](../modes/customization.html) · [Back to Mini Hunter guides](../)

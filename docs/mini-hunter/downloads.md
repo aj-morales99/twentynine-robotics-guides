@@ -61,5 +61,3 @@ Both indexes are needed: the FullVision entry describes its package, and the STM
 - [Arduino library installation](https://support.arduino.cc/hc/en-us/articles/5145457742236-Install-libraries-in-the-Arduino-IDE)
 - [STM32CubeProgrammer installation](https://dev.st.com/stm32cube-docs/prog/2.23.0/en/docs/markup/CubeProg_How_To_Start/CubeProg_Installation.html)
 - [FullVision package source and technical documentation](https://github.com/aj-morales99/FullVision-STM32V1.5)
-
-[Back to setup and first upload](setup-and-first-upload.html)

@@ -25,5 +25,3 @@ Three-sensor models use front-left, front, and front-right sensors. Five-sensor 
 ## A reading stays fixed
 
 Power off before touching wiring. Check for a blocked lens, loose connector, damaged cable, or a target surface that reflects poorly. Compare with another sensor using the same target and distance. If the fault remains, record which position fails and see [troubleshooting](../troubleshooting/).
-
-[Back to calibration](./)

@@ -5,68 +5,39 @@ description: Setup and support documentation for the Twentynine Robotics Mini Hu
 permalink: /mini-hunter/
 ---
 
-# Mini Hunter guides
+# Mini Hunter
 
-This is the home for every Mini Hunter instruction. If this is your first time programming the robot, begin with **Arduino IDE & board setup**. Every guide is written to remain understandable while supporting photographs are still being prepared.
+Choose what you want to do. If this is your first time programming the robot, begin with **Arduino IDE & board setup**.
 
-<div class="note"><strong>Recommended order:</strong> computer and board setup → upload test → controller setup → calibration → modes and code customization.</div>
-
-<div class="card-grid">
-  <a class="guide-card" href="setup-and-first-upload.html">
-    <span class="card-label">Start here</span>
-    <strong>Arduino IDE & board setup</strong>
-    <span>Install the required Windows software, check the program, connect the controller, and upload safely.</span>
-  </a>
-  <a class="guide-card" href="bluetooth-application-setup.html">
-    <span class="status-chip ready">Draft ready</span>
-    <strong>Bluetooth application setup</strong>
-    <span>Install the Android app, import the Mini Hunter panel, connect, and test safely.</span>
-  </a>
-  <a class="guide-card" href="rc-controller-setup.html">
-    <span class="status-chip pending">Verify on robot</span>
-    <strong>RC controller setup</strong>
-    <span>Prepare the receiver, check neutral signals, select RC mode, and perform a lifted-wheel test.</span>
-  </a>
-  <a class="guide-card" href="calibration/">
-    <span class="status-chip ready">Draft ready</span>
-    <strong>Calibration setup</strong>
-    <span>Adjust line sensors and check the enemy-detection sensors from CAL MODE.</span>
-  </a>
-  <a class="guide-card" href="attachments/">
-    <span class="status-chip pending">Procedures pending</span>
-    <strong>Attachment guides</strong>
-    <span>Robohockey Attachment V3, RC or Auto front plate, and weight removal or adjustment.</span>
-  </a>
-  <a class="guide-card" href="upgrades/">
-    <span class="status-chip pending">Procedures pending</span>
-    <strong>Upgrade kits</strong>
-    <span>3 kg upgrade, RC conversion, and blade swapping guides.</span>
-  </a>
-  <a class="guide-card" href="modes/introduction.html">
-    <span class="status-chip ready">Draft ready</span>
-    <strong>Modes introduction</strong>
-    <span>Understand AUTO, Bluetooth, RC, and joystick choices before running the robot.</span>
-  </a>
-  <a class="guide-card" href="modes/customization.html">
-    <span class="status-chip ready">Draft ready</span>
-    <strong>Modes customization in code</strong>
-    <span>Choose the correct system and mode count, then edit behavior without losing the original.</span>
-  </a>
-  <a class="guide-card" href="code-library/">
-    <span class="status-chip ready">Searchable</span>
-    <strong>Code library</strong>
-    <span>Search FullVision functions and see what each one does, examples, and important do's and don'ts.</span>
-  </a>
-  <a class="guide-card" href="troubleshooting/">
-    <span class="status-chip ready">Growing guide</span>
-    <strong>Something happened—what do I do?</strong>
-    <span>Start with the symptom and follow safe checks for upload, controls, sensors, and unexpected movement.</span>
-  </a>
-  <a class="guide-card" href="downloads.html">
-    <span class="card-label">Reference</span>
-    <strong>Downloads</strong>
-    <span>Find Arduino IDE, the FullVision installer, STM32CubeProgrammer, and library links.</span>
-  </a>
+<div class="start-panel">
+  <span class="eyebrow">RECOMMENDED FIRST GUIDE</span>
+  <h2>Set up your computer and controller board</h2>
+  <p>Install the required software, verify the program, connect the controller, and complete a safe first upload.</p>
+  <a class="primary-action" href="setup-and-first-upload.html">Start Arduino IDE & board setup <span aria-hidden="true">→</span></a>
 </div>
 
-[Return to all robot guides](../)
+<div class="guide-directory">
+  <section>
+    <h2>Getting started</h2>
+    <a class="directory-link" href="setup-and-first-upload.html"><span><strong>Arduino IDE & board setup</strong><small>Install, verify, connect, and upload.</small></span><span aria-hidden="true">→</span></a>
+    <a class="directory-link" href="downloads.html"><span><strong>Downloads</strong><small>Board installer, Arduino IDE, STM32CubeProgrammer, and libraries.</small></span><span aria-hidden="true">→</span></a>
+  </section>
+  <section>
+    <h2>Controllers and sensors</h2>
+    <a class="directory-link" href="bluetooth-application-setup.html"><span><strong>Bluetooth application setup</strong><small>Install the Android app and import the control panel.</small></span><span aria-hidden="true">→</span></a>
+    <a class="directory-link" href="rc-controller-setup.html"><span><strong>RC controller setup</strong><small>Prepare the receiver and perform a safe neutral test.</small></span><span aria-hidden="true">→</span></a>
+    <a class="directory-link" href="calibration/"><span><strong>Calibration</strong><small>Adjust line sensors and check enemy-detection sensors.</small></span><span aria-hidden="true">→</span></a>
+  </section>
+  <section>
+    <h2>Hardware</h2>
+    <a class="directory-link" href="attachments/"><span><strong>Attachment guides</strong><small>Robohockey, front plates, and weight adjustment.</small></span><span class="directory-status">Pending</span></a>
+    <a class="directory-link" href="upgrades/"><span><strong>Upgrade kits</strong><small>3 kg upgrade, RC conversion, and blade swapping.</small></span><span class="directory-status">Pending</span></a>
+  </section>
+  <section>
+    <h2>Programming and support</h2>
+    <a class="directory-link" href="modes/introduction.html"><span><strong>Modes introduction</strong><small>Understand control modes and autonomous modes.</small></span><span aria-hidden="true">→</span></a>
+    <a class="directory-link" href="modes/customization.html"><span><strong>Modes customization</strong><small>Choose system and mode counts, then edit behavior safely.</small></span><span aria-hidden="true">→</span></a>
+    <a class="directory-link" href="code-library/"><span><strong>Code library</strong><small>Search FullVision functions, examples, and cautions.</small></span><span aria-hidden="true">→</span></a>
+    <a class="directory-link" href="troubleshooting/"><span><strong>Troubleshooting</strong><small>Find help by symptom.</small></span><span aria-hidden="true">→</span></a>
+  </section>
+</div>

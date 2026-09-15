@@ -36,5 +36,3 @@ Check both the physical robot and the program configuration before uploading.
 3. Test sensor readings in calibration mode.
 4. Perform the first movement test on a stand or in a controlled test area.
 5. Keep a direct way to remove power.
-
-[Customize modes in code](customization.html) · [Back to Mini Hunter guides](../)

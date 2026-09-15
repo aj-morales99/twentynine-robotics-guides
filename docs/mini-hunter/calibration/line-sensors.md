@@ -41,5 +41,3 @@ Test all four combinations three times at normal ride height:
 | Light | Light | `####` |
 
 The readings should change cleanly and should not flicker while the robot is held still. If they flicker, clean the sensors, restore normal height, reduce strong direct light, and adjust again.
-
-[Back to calibration](./)

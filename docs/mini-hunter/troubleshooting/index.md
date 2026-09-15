@@ -68,5 +68,3 @@ Exact first error message, if any:
 What changed immediately before the problem:
 Photo or short video with the robot powered safely:
 ```
-
-[Back to Mini Hunter guides](../)

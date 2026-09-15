@@ -7,17 +7,10 @@ permalink: /hammerhead/
 
 # Hammerhead guides
 
-Hammerhead documentation is being prepared as a separate guide collection.
+<span class="status-chip pending">Coming soon</span>
 
-Mini Hunter instructions must not be applied to Hammerhead unless a Hammerhead page explicitly confirms that a procedure is shared. Its controller, connections, firmware, power system, and removal steps will be documented from verified Hammerhead materials.
+Verified Hammerhead setup, operation, programming, and maintenance instructions are being prepared as a separate product guide.
 
-## Planned topics
+Mini Hunter instructions should not be used on Hammerhead unless a future page specifically identifies a shared procedure.
 
-- Computer and board setup.
-- First program upload.
-- Firmware downloads and version history.
-- Code and library reference.
-- Configuration and maintenance procedures.
-- Symptom-based troubleshooting.
-
-[Return to all robot guides](../)
+[Return to all robots](../)
