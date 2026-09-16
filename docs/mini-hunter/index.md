@@ -30,6 +30,7 @@ Choose what you want to do. If this is your first time programming the robot, be
   </section>
   <section>
     <h2>Hardware</h2>
+    <a class="directory-link" href="hardware/wheels-gears-checkup.html"><span><strong>Wheels &amp; gears check-up</strong><small>Check loose wheels and service their set screws before a match.</small></span><span aria-hidden="true">→</span></a>
     <a class="directory-link" href="attachments/"><span><strong>Attachment guides</strong><small>Robohockey, front plates, and weight adjustment.</small></span><span class="directory-status">Pending</span></a>
     <a class="directory-link" href="upgrades/"><span><strong>Upgrade kits</strong><small>3 kg upgrade, RC conversion, and blade swapping.</small></span><span class="directory-status">Pending</span></a>
   </section>

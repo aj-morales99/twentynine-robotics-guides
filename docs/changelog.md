@@ -22,6 +22,7 @@ description: A record of changes to the Twentynine Robotics online guides.
 - Standardized the Bluetooth guide on the final Mini Hunter V2.6 control-panel file and removed the earlier panel filename.
 - Rebuilt calibration instructions around the two-second RC/RMT entry sequence, separated step-by-step technical SVGs, and added three- and five-sensor OLED and direction references.
 - Moved each page's section list into the left guide sidebar beneath the active chapter, removing the competing right-side navigation column.
+- Added red and green “Know Fact” callouts and introduced the Wheels &amp; Gears Check-up hardware guide with the first loose-wheel and set-screw procedure.
 
 ## 0.2.0 navigation and dark theme draft 2026 09 15
 

@@ -99,6 +99,12 @@ Check all four combinations at least three times:
 
 The readings should change cleanly and remain stable while the robot is held still. If they flicker, clean the sensor faces, restore the normal ride height, move away from strong direct light, and make another tiny adjustment.
 
-> **Before a match:** Test the sensors on the actual arena whenever possible. Paint, lighting, dirt, and sensor height can change the switching point.
+<div class="know-fact know-fact--danger" role="note">
+  <span class="know-fact__label">Before a match</span>
+  <p>Test the sensors on the actual arena whenever possible. Paint, lighting, dirt, and sensor height can change the switching point.</p>
+</div>
 
-> **Why this matters:** An uncalibrated or unstable line sensor can make the robot leave the arena even when no opponent is nearby, react to the floor as if it were the boundary, or ignore the white border completely.
+<div class="know-fact know-fact--success" role="note">
+  <span class="know-fact__label">Why this matters</span>
+  <p>An uncalibrated or unstable line sensor can make the robot leave the arena even when no opponent is nearby, react to the floor as if it were the boundary, or ignore the white border completely.</p>
+</div>

@@ -11,6 +11,9 @@
   --brand-soft: rgba(61, 132, 235, 0.14);
   --accent: #f4bb52;
   --success: #51d49a;
+  --success-soft: rgba(81, 212, 154, 0.12);
+  --danger: #ff6b72;
+  --danger-soft: rgba(255, 107, 114, 0.12);
   --code: #060b13;
   --header: #0b1120;
   --radius: 14px;
@@ -32,6 +35,9 @@
   --brand-soft: rgba(29, 95, 196, 0.09);
   --accent: #a85f00;
   --success: #16794b;
+  --success-soft: rgba(22, 121, 75, 0.1);
+  --danger: #c93743;
+  --danger-soft: rgba(201, 55, 67, 0.09);
   --code: #111827;
   --header: #ffffff;
   --shadow: 0 14px 36px rgba(23, 32, 51, 0.1);
@@ -130,6 +136,13 @@ pre code { background: transparent; color: inherit; padding: 0; border: 0; }
 .status-chip.pending { color: var(--accent); }
 .note { margin: 1.25rem 0; padding: 1rem 1.15rem; background: var(--surface-raised); border-left: 5px solid var(--brand); border-radius: 8px; }
 .warning { border-left-color: var(--accent); }
+.know-fact { margin: 1.35rem 0; padding: 1rem 1.15rem; border: 1px solid var(--line); border-left: 6px solid; border-radius: 9px; }
+.know-fact p { margin: 0.3rem 0 0; }
+.know-fact__label { display: block; font-size: 0.76rem; font-weight: 900; letter-spacing: 0.09em; text-transform: uppercase; }
+.know-fact--danger { background: var(--danger-soft); border-left-color: var(--danger); }
+.know-fact--danger .know-fact__label { color: var(--danger); }
+.know-fact--success { background: var(--success-soft); border-left-color: var(--success); }
+.know-fact--success .know-fact__label { color: var(--success); }
 
 .start-panel { margin: 2rem 0 2.5rem; padding: clamp(1.3rem, 4vw, 2rem); background: linear-gradient(135deg, var(--brand-soft), var(--surface-raised)); border: 1px solid color-mix(in srgb, var(--brand) 35%, var(--line)); border-radius: 14px; }
 .start-panel h2 { margin: 0.35rem 0 0.65rem; padding: 0; border: 0; }
