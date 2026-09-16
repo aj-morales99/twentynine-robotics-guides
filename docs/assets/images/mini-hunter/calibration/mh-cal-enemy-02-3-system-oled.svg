@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-labelledby="title desc">
+  <title id="title">Three-system enemy detection OLED example</title>
+  <desc id="desc">OLED example showing front-left, front, and front-right distance values.</desc>
+  <rect width="960" height="360" rx="24" fill="#101827"/>
+  <text x="48" y="58" fill="#f8fafc" font-family="Roboto,Arial,sans-serif" font-size="30" font-weight="700">3-system OLED example</text>
+  <g transform="translate(105 92)">
+    <rect width="750" height="210" rx="18" fill="#0b2f62" stroke="#4ea5ff" stroke-width="5"/>
+    <rect x="38" y="28" width="590" height="154" rx="6" fill="#02060d" stroke="#7894b9" stroke-width="3"/>
+    <text x="333" y="78" text-anchor="middle" fill="#fff" font-family="monospace" font-size="25">ENEMY DETECTION CHECK</text>
+    <text x="333" y="137" text-anchor="middle" fill="#fff" font-family="monospace" font-size="32">35cm 20cm 42cm</text>
+    <g fill="#cbd5e1"><circle cx="690" cy="48" r="11"/><circle cx="690" cy="86" r="11"/><circle cx="690" cy="124" r="11"/><circle cx="690" cy="162" r="11"/></g>
+  </g>
+  <g fill="#38d7f2" font-family="Roboto,Arial,sans-serif" font-size="18" font-weight="700"><text x="310" y="334" text-anchor="middle">FRONT LEFT</text><text x="480" y="334" text-anchor="middle">FRONT</text><text x="650" y="334" text-anchor="middle">FRONT RIGHT</text></g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Five-system enemy sensor directions</title>
+  <desc id="desc">A simple box represents the robot, with arrows pointing left, front-left, front, front-right, and right.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#38d7f2"/></marker></defs>
+  <rect width="960" height="520" rx="24" fill="#101827"/>
+  <text x="48" y="58" fill="#f8fafc" font-family="Roboto,Arial,sans-serif" font-size="30" font-weight="700">5-system sensor directions</text>
+  <rect x="350" y="260" width="260" height="180" rx="18" fill="#246bdb" stroke="#8fc5ff" stroke-width="4"/>
+  <path d="M480 275 454 315h52Z" fill="#fff"/>
+  <g fill="none" stroke="#38d7f2" stroke-width="8" marker-end="url(#arrow)">
+    <path d="M350 350 H145"/>
+    <path d="M400 270 Q315 205 250 125"/>
+    <path d="M480 260 V95"/>
+    <path d="M560 270 Q645 205 710 125"/>
+    <path d="M610 350 H815"/>
+  </g>
+  <g fill="#f8fafc" font-family="Roboto,Arial,sans-serif" font-size="22" font-weight="700">
+    <text x="85" y="357">LEFT</text><text x="155" y="115">FRONT LEFT</text><text x="480" y="82" text-anchor="middle">FRONT</text><text x="805" y="115" text-anchor="end">FRONT RIGHT</text><text x="875" y="357" text-anchor="end">RIGHT</text>
+  </g>
+  <text x="480" y="482" text-anchor="middle" fill="#93a4bb" font-family="Roboto,Arial,sans-serif" font-size="20">The box shows orientation only; it is not the robot's physical shape.</text>
+</svg>

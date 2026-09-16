@@ -19,6 +19,9 @@ description: A record of changes to the Twentynine Robotics online guides.
 - Removed the unnecessary STM32CubeProgrammer file screenshot placeholder and expanded the private `MH-SETUP-01` shot plan into three hardware photos.
 - Expanded line-sensor calibration into a complete white/black test procedure with board potentiometer and OLED adjustment visuals.
 - Added code-checked AUTO button instructions and simplified arena diagrams for default Modes 1–6, including the current attack-speed behavior.
+- Standardized the Bluetooth guide on the final Mini Hunter V2.6 control-panel file and removed the earlier panel filename.
+- Rebuilt calibration instructions around the two-second RC/RMT entry sequence, separated step-by-step technical SVGs, and added three- and five-sensor OLED and direction references.
+- Moved each page's section list into the left guide sidebar beneath the active chapter, removing the competing right-side navigation column.
 
 ## 0.2.0 navigation and dark theme draft 2026 09 15
 

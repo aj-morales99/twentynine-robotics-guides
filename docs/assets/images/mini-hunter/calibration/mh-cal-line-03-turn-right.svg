@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" role="img" aria-labelledby="title desc">
+  <title id="title">Turn one line-sensor potentiometer right to its end stop</title>
+  <desc id="desc">A simple blue potentiometer with a clockwise arrow beside an OLED reading dots for both line sensors.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#f4bb52"/></marker></defs>
+  <rect width="960" height="400" rx="24" fill="#101827"/>
+  <text x="48" y="58" fill="#f8fafc" font-family="Roboto,Arial,sans-serif" font-size="30" font-weight="700">Turn one potentiometer right to the end stop</text>
+  <g transform="translate(105 118)">
+    <rect width="190" height="190" rx="16" fill="#1261c9" stroke="#8fc5ff" stroke-width="5"/>
+    <circle cx="95" cy="95" r="53" fill="#f4bb52" stroke="#ffe1a3" stroke-width="5"/>
+    <path d="M62 128 128 62" stroke="#6a4700" stroke-width="11" stroke-linecap="round"/>
+    <path d="M18 80 A82 82 0 1 1 116 174" fill="none" stroke="#f4bb52" stroke-width="10" marker-end="url(#arrow)"/>
+  </g>
+  <g transform="translate(390 112)">
+    <rect width="470" height="208" rx="16" fill="#0b2f62" stroke="#4ea5ff" stroke-width="5"/>
+    <rect x="32" y="25" width="350" height="158" rx="5" fill="#02060d" stroke="#7894b9" stroke-width="3"/>
+    <text x="207" y="78" text-anchor="middle" fill="#fff" font-family="monospace" font-size="22">LINE SENSOR ADJUST</text>
+    <text x="207" y="142" text-anchor="middle" fill="#fff" font-family="monospace" font-size="43">..    ..</text>
+    <g fill="#cbd5e1"><circle cx="426" cy="50" r="10"/><circle cx="426" cy="87" r="10"/><circle cx="426" cy="124" r="10"/><circle cx="426" cy="161" r="10"/></g>
+  </g>
+  <text x="200" y="352" text-anchor="middle" fill="#f4bb52" font-family="Roboto,Arial,sans-serif" font-size="22" font-weight="700">STOP AT THE GENTLE CLICK</text>
+</svg>

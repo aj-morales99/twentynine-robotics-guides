@@ -63,6 +63,7 @@
           <a data-guide-path="/mini-hunter/code-library/" href="{{ '/mini-hunter/code-library/' | relative_url }}">Code library</a>
           <a class="nav-top-level" data-guide-path="/mini-hunter/troubleshooting/" href="{{ '/mini-hunter/troubleshooting/' | relative_url }}">Troubleshooting</a>
         </nav>
+        <div id="page-outline" class="page-outline" aria-label="Sections on this page" hidden><strong>On this page</strong><nav></nav></div>
       </aside>
 
       <main id="main-content" class="page-shell">
@@ -70,7 +71,6 @@
         <article class="guide-content">{{ content }}</article>
         <nav id="page-sequence" class="page-sequence" aria-label="Previous and next guide" hidden></nav>
       </main>
-      <aside id="page-outline" class="page-outline" aria-label="On this page" hidden><strong>On this page</strong><nav></nav></aside>
     </div>
 
     <footer class="site-footer">
@@ -173,6 +173,7 @@
               usedIds.add(heading.id);
             });
             outline.querySelector("nav").innerHTML = headings.map(function (heading) { return '<a href="#' + heading.id + '">' + heading.textContent + '</a>'; }).join("");
+            if (activeLink) activeLink.insertAdjacentElement("afterend", outline);
             outline.hidden = false;
           }
         }

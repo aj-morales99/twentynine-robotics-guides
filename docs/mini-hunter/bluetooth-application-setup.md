@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Mini Hunter Bluetooth application setup
-description: Beginner-friendly Android setup for the Mini Hunter Bluetooth Electronics control panel.
+description: Beginner-friendly Android setup for the final Mini Hunter V2.6 Bluetooth Electronics control panel.
 ---
 
 # Bluetooth application setup
@@ -14,10 +14,10 @@ This guide prepares an Android phone to control a compatible Mini Hunter through
 
 - An Android phone or tablet with Bluetooth.
 - The `Bluetooth-Electronics.apk` installer supplied by Twentynine Robotics.
-- The `MiniHunterV2-RCV2.kwl` control-panel file.
+- The final `MiniHunterV2.6-BTController.kwl` control-panel file.
 - A charged Mini Hunter with firmware that supports Bluetooth mode.
 
-The optional `MiniHunterV2.6-BTController.kwl` panel is version-dependent. Use it only when Twentynine Robotics confirms that it matches the firmware in your robot.
+This guide uses only the final Mini Hunter V2.6 panel. Keep the panel file and robot firmware on the same release.
 
 > **Supporting image coming later — MH-BT-01**
 > The three required items: Android device, application file, and Mini Hunter panel file.
@@ -35,7 +35,7 @@ Only install the APK from the Twentynine Robotics download provided with your ro
 ## 2 Put the panel file in the correct folder
 
 1. Open the Android **Files** app.
-2. Find `MiniHunterV2-RCV2.kwl`, usually in **Downloads**.
+2. Find `MiniHunterV2.6-BTController.kwl`, usually in **Downloads**.
 3. Move or copy it to the `keuwlsoft` folder at the top level of internal storage.
 4. Keep the folder name exactly lowercase: `keuwlsoft`.
 5. If the folder was not created, create it using that exact name.
@@ -45,11 +45,11 @@ Your final file location should resemble:
 ```text
 Internal storage/
   keuwlsoft/
-    MiniHunterV2-RCV2.kwl
+    MiniHunterV2.6-BTController.kwl
 ```
 
 > **Supporting image coming later — MH-BT-02**
-> Android Files showing `MiniHunterV2-RCV2.kwl` inside the lowercase `keuwlsoft` folder.
+> Android Files showing `MiniHunterV2.6-BTController.kwl` inside the lowercase `keuwlsoft` folder.
 
 ## 3 Import the control panel
 
@@ -58,7 +58,7 @@ Internal storage/
 3. Tap **Edit**.
 4. Open **Import/Export**.
 5. Choose **Import panel**.
-6. Select `MiniHunterV2-RCV2.kwl`.
+6. Select `MiniHunterV2.6-BTController.kwl`.
 7. Confirm that the Mini Hunter controls appear.
 
 Do not rename buttons or change the commands they send unless you are also updating the matching firmware. A button can look correct while sending a command the robot does not understand.

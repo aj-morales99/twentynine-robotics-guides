@@ -18,8 +18,8 @@ Calibration makes the sensor readings match the robot's real surroundings. Work 
 
 1. Support the robot so it cannot drive away.
 2. Power on the robot using the connector or power switch fitted to your revision.
-3. Select the **RC/RMT** menu.
-4. Hold **SW1** and **SW2** together for about three seconds.
-5. Release them when the display shows **CAL MODE**.
+3. Use the latching **MODE** switch to show the **RC/RMT** screen. Do not select BT MODE or RC MODE first.
+4. Press **SW1** and **SW2** together and keep holding both buttons for **two seconds**.
+5. When the OLED shows **CAL MODE**, release both buttons. The robot remains in CAL MODE after you release them.
 
-Use **SW1** once for line-sensor adjustment or twice for the enemy-sensor check. Hold **SW1** and **SW2** together again to leave calibration, then power off before removing the robot from its stand.
+Press **SW1 once** to cycle from CAL MODE to **LINE SENSOR ADJUST**. Press **SW1 again** to cycle to **ENEMY DETECTION CHECK**. Hold **SW1** and **SW2** together again to leave calibration, then power off before removing the robot from its stand.

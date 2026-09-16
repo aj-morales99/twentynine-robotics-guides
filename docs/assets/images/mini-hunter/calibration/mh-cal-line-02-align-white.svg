@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Align the front line sensors with the white arena boundary</title>
+  <desc id="desc">A black circular arena with a thick white border and a simple blue box representing the robot. The front edge of the box overlaps the white border.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#38d7f2"/></marker>
+  </defs>
+  <rect width="960" height="520" rx="24" fill="#101827"/>
+  <text x="48" y="60" fill="#f8fafc" font-family="Roboto,Arial,sans-serif" font-size="30" font-weight="700">Align both front line sensors on white</text>
+  <circle cx="480" cy="290" r="190" fill="#05070a" stroke="#fff" stroke-width="20"/>
+  <rect x="410" y="94" width="140" height="112" rx="12" fill="#246bdb" stroke="#8fc5ff" stroke-width="3"/>
+  <path d="M480 110 460 143h40Z" fill="#fff"/>
+  <circle cx="438" cy="103" r="9" fill="#f4bb52" stroke="#fff" stroke-width="3"/>
+  <circle cx="522" cy="103" r="9" fill="#f4bb52" stroke="#fff" stroke-width="3"/>
+  <path d="M370 235 C390 180 407 132 430 110" fill="none" stroke="#38d7f2" stroke-width="6" marker-end="url(#arrow)"/>
+  <path d="M590 235 C570 180 553 132 530 110" fill="none" stroke="#38d7f2" stroke-width="6" marker-end="url(#arrow)"/>
+  <text x="285" y="270" fill="#38d7f2" font-family="Roboto,Arial,sans-serif" font-size="22" font-weight="700">LEFT SENSOR</text>
+  <text x="585" y="270" fill="#38d7f2" font-family="Roboto,Arial,sans-serif" font-size="22" font-weight="700">RIGHT SENSOR</text>
+  <g transform="translate(314 454)">
+    <rect width="332" height="42" rx="21" fill="#172236" stroke="#26364d"/>
+    <text x="166" y="28" text-anchor="middle" fill="#e8eef8" font-family="Roboto,Arial,sans-serif" font-size="19">Front edge rests over the white border</text>
+  </g>
+</svg>
