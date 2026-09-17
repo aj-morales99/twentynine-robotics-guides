@@ -221,6 +221,7 @@ pre code { background: transparent; color: inherit; padding: 0; border: 0; }
 .function-card[hidden] { display: none; }
 .function-card h3 { margin-top: 0; }
 .function-meta { color: var(--muted); font-size: 0.92rem; }
+.function-output { padding: 0.75rem 0.85rem; color: var(--ink); background: color-mix(in srgb, var(--success) 9%, var(--surface)); border-left: 3px solid var(--success); border-radius: 0 8px 8px 0; }
 .do-dont { display: grid; grid-template-columns: repeat(auto-fit, minmax(245px, 1fr)); gap: 1rem; margin: 1rem 0; }
 .do-dont > div { padding: 1rem; background: var(--surface-raised); border: 1px solid var(--line); border-radius: 10px; }
 .do-dont h3 { margin-top: 0; }

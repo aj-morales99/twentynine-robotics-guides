@@ -28,9 +28,11 @@ Use the combination that matches the robot and sketch:
 | 3-system / 4-mode | `3` | `4` |
 | 5-system / 7-mode | `5` | `7` |
 
-The same choice applies whether the build is 1 kg or 3 kg, but the actual movement values and installed hardware can still differ. In the supplied files reviewed for this guide, both library copies currently contain `SYSTEM = 5` and `NUM_MODES = 7`, even where a folder name suggests 3-system/4-mode. Verify the values rather than trusting the folder name.
+The same sensor/mode choice applies whether the build is 1KG or 3KG, but the movement speed and delay block must still match the robot's weight. The reviewed `1KG_MiniHunterV2_7_3SYSTEM_7Modes` source contains `SYSTEM = 3` and `NUM_MODES = 7`, matching its folder name. Always verify the values inside the files instead of trusting only the folder name.
 
 <div class="warning note"><strong>Important:</strong> if `NUM_MODES` is 7, the sketch must contain seven valid mode behaviors. If `SYSTEM` is 5, the robot must have the matching sensors and wiring.</div>
+
+For the 1KG/3KG speed blocks and the commonly adjusted detection distances, see [Common firmware settings](../programming/common-settings.html).
 
 ## Edit a mode safely
 

@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=0.4.1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=0.4.2">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -48,23 +48,26 @@
             <div class="kit-tree__children">
               <a class="nav-top-level" data-guide-path="/mini-hunter/" href="{{ '/mini-hunter/' | relative_url }}">Overview</a>
               <p>Getting started</p>
-              <a data-guide-path="/mini-hunter/setup-and-first-upload.html" href="{{ '/mini-hunter/setup-and-first-upload.html' | relative_url }}">Arduino IDE &amp; board setup <span class="tree-status in-progress">In progress</span></a>
-              <a data-guide-path="/mini-hunter/downloads.html" href="{{ '/mini-hunter/downloads.html' | relative_url }}">Downloads</a>
-              <p>Controllers</p>
+              <a data-guide-path="/mini-hunter/getting-started.html" href="{{ '/mini-hunter/getting-started.html' | relative_url }}">Using your Mini Hunter</a>
+              <a data-guide-path="/mini-hunter/modes/introduction.html" href="{{ '/mini-hunter/modes/introduction.html' | relative_url }}">Modes introduction</a>
+              <a data-guide-path="/mini-hunter/hardware/wheels-gears-checkup.html" href="{{ '/mini-hunter/hardware/wheels-gears-checkup.html' | relative_url }}">Wheels &amp; gears check-up <span class="tree-status in-progress">In progress</span></a>
+              <p>Controllers &amp; calibration</p>
               <a data-guide-path="/mini-hunter/bluetooth-application-setup.html" href="{{ '/mini-hunter/bluetooth-application-setup.html' | relative_url }}">Bluetooth application <span class="tree-status in-progress">In progress</span></a>
               <a data-guide-path="/mini-hunter/rc-controller-setup.html" href="{{ '/mini-hunter/rc-controller-setup.html' | relative_url }}">RC controller</a>
-              <p>Calibration</p>
               <a data-guide-path="/mini-hunter/calibration/" href="{{ '/mini-hunter/calibration/' | relative_url }}">Calibration overview</a>
               <a data-guide-path="/mini-hunter/calibration/line-sensors.html" href="{{ '/mini-hunter/calibration/line-sensors.html' | relative_url }}">Line sensors</a>
               <a data-guide-path="/mini-hunter/calibration/enemy-detection.html" href="{{ '/mini-hunter/calibration/enemy-detection.html' | relative_url }}">Enemy detection</a>
-              <p>Hardware</p>
-              <a data-guide-path="/mini-hunter/hardware/wheels-gears-checkup.html" href="{{ '/mini-hunter/hardware/wheels-gears-checkup.html' | relative_url }}">Wheels &amp; gears check-up <span class="tree-status in-progress">In progress</span></a>
+              <p>Hardware &amp; upgrades</p>
               <a data-guide-path="/mini-hunter/attachments/" href="{{ '/mini-hunter/attachments/' | relative_url }}">Attachments <span class="tree-status pending">Pending</span></a>
               <a data-guide-path="/mini-hunter/upgrades/" href="{{ '/mini-hunter/upgrades/' | relative_url }}">Upgrade kits <span class="tree-status pending">Pending</span></a>
               <p>Programming</p>
-              <a data-guide-path="/mini-hunter/modes/introduction.html" href="{{ '/mini-hunter/modes/introduction.html' | relative_url }}">Modes introduction</a>
+              <a data-guide-path="/mini-hunter/setup-and-first-upload.html" href="{{ '/mini-hunter/setup-and-first-upload.html' | relative_url }}">IDE, board &amp; uploading <span class="tree-status in-progress">In progress</span></a>
+              <a data-guide-path="/mini-hunter/downloads.html" href="{{ '/mini-hunter/downloads.html' | relative_url }}">Programming downloads</a>
+              <a data-guide-path="/mini-hunter/programming/common-settings.html" href="{{ '/mini-hunter/programming/common-settings.html' | relative_url }}">Common firmware settings</a>
               <a data-guide-path="/mini-hunter/modes/customization.html" href="{{ '/mini-hunter/modes/customization.html' | relative_url }}">Modes customization <span class="tree-status in-progress">In progress</span></a>
-              <a data-guide-path="/mini-hunter/code-library/" href="{{ '/mini-hunter/code-library/' | relative_url }}">Code library <span class="tree-status in-progress">In progress</span></a>
+              <a data-guide-path="/mini-hunter/code-library/" href="{{ '/mini-hunter/code-library/' | relative_url }}">Function library</a>
+              <a data-guide-path="/mini-hunter/programming/pin-map.html" href="{{ '/mini-hunter/programming/pin-map.html' | relative_url }}">STM32 pin map</a>
+              <p>Help</p>
               <a class="nav-top-level" data-guide-path="/mini-hunter/troubleshooting/" href="{{ '/mini-hunter/troubleshooting/' | relative_url }}">Troubleshooting <span class="tree-status in-progress">In progress</span></a>
             </div>
           </details>
@@ -116,19 +119,22 @@
 
         const guides = [
           ["/mini-hunter/", "Guide overview"],
-          ["/mini-hunter/setup-and-first-upload.html", "Arduino IDE & board setup"],
-          ["/mini-hunter/downloads.html", "Downloads"],
+          ["/mini-hunter/getting-started.html", "Start using your Mini Hunter"],
+          ["/mini-hunter/modes/introduction.html", "Modes introduction"],
+          ["/mini-hunter/hardware/wheels-gears-checkup.html", "Wheels & gears check-up"],
           ["/mini-hunter/bluetooth-application-setup.html", "Bluetooth application setup"],
           ["/mini-hunter/rc-controller-setup.html", "RC controller setup"],
           ["/mini-hunter/calibration/", "Calibration setup"],
           ["/mini-hunter/calibration/line-sensors.html", "Line-sensor calibration"],
           ["/mini-hunter/calibration/enemy-detection.html", "Enemy-detection check"],
-          ["/mini-hunter/hardware/wheels-gears-checkup.html", "Wheels & gears check-up"],
           ["/mini-hunter/attachments/", "Attachment guides"],
           ["/mini-hunter/upgrades/", "Upgrade kits"],
-          ["/mini-hunter/modes/introduction.html", "Modes introduction"],
+          ["/mini-hunter/setup-and-first-upload.html", "Arduino IDE, board setup & uploading"],
+          ["/mini-hunter/downloads.html", "Programming downloads"],
+          ["/mini-hunter/programming/common-settings.html", "Common firmware settings"],
           ["/mini-hunter/modes/customization.html", "Modes customization"],
-          ["/mini-hunter/code-library/", "Code library"],
+          ["/mini-hunter/code-library/", "FullVision function library"],
+          ["/mini-hunter/programming/pin-map.html", "FullVision STM32 pin map"],
           ["/mini-hunter/troubleshooting/", "Troubleshooting"]
         ];
         const kitMarkers = ["/mini-hunter/", "/micro-hunter/", "/hammerhead/", "/blt-n20/"];

@@ -6,6 +6,15 @@ description: A record of changes to the Twentynine Robotics online guides.
 
 # Documentation changelog
 
+## 0.3.2 operation-first navigation and programming references 2026 09 17
+
+- Replaced the code-first Mini Hunter entry point with a no-programming-required guide for controls, safety checks, RC/RMT or AUTO selection, calibration, and first operation.
+- Moved Arduino IDE setup, board installation, downloads, uploading, customization, and code references into the Programming section.
+- Added a code-checked FullVision STM32 pin map covering motors, switches, line sensors, three- and five-sensor enemy layouts, shared Bluetooth/RC pins, OLED I²C, servo, and Serial1.
+- Added a common firmware settings guide for selecting the 1KG or 3KG variable block and tuning scan, attack, speed, and delay values.
+- Expanded the searchable function library with return behavior or expected physical/display output, corrected the `FRONT_PIN` example, and documented important sketch-level functions.
+- Corrected the configuration note for the reviewed `1KG_MiniHunterV2_7_3SYSTEM_7Modes` source to `SYSTEM = 3` and `NUM_MODES = 7`.
+
 ## 0.3.1 RC controller guide 2026 09 17
 
 - Replaced the provisional RC controller page with a complete text-only setup procedure based on the supplied Twentynine Robotics demonstration.
