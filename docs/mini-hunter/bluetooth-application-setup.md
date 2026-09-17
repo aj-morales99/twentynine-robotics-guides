@@ -12,6 +12,23 @@ This guide prepares an Android phone to control a compatible Mini Hunter through
 
 <div class="warning note"><strong>Before the robot moves:</strong> place it on a stable stand so the wheels and blade cannot touch the table, floor, clothing, cables, or hands.</div>
 
+## Downloads
+
+Use these copies together so the Android application and Mini Hunter panel stay easy to find:
+
+<div class="download-list">
+  <a class="download-item" href="../downloads/mini-hunter/bluetooth/Bluetooth-Electronics.apk" download>
+    <strong>Download Bluetooth Electronics</strong>
+    <span>Android APK · 7.6 MB</span>
+  </a>
+  <a class="download-item" href="../downloads/mini-hunter/bluetooth/panel/MiniHunterV2.6-BTController.kwl" download>
+    <strong>Download the Mini Hunter V2.6 panel</strong>
+    <span>Final control-panel file · KWL</span>
+  </a>
+</div>
+
+The earlier `MiniHunterV2-RCV2.kwl` file is retained only in the repository under `panel/.old/`. It is intentionally not linked as a user download. Use **MiniHunterV2.6-BTController.kwl** for this guide.
+
 ## What you need
 
 - An Android phone or tablet with Bluetooth.
@@ -32,7 +49,7 @@ This guide uses only the final Mini Hunter V2.6 panel. Keep the panel file and r
 4. Allow Bluetooth or **Nearby devices** permission when asked.
 5. Close the app after its first launch. This normally creates a folder named `keuwlsoft` in internal storage.
 
-Only install the APK from the Twentynine Robotics download provided with your robot. The permanent download link will be added after the app file and panel are versioned together.
+Only install the APK from the Twentynine Robotics download above or the matching copy supplied with your robot.
 
 ## 2 Put the panel file in the correct folder
 

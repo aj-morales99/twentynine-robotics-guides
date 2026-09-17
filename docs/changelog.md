@@ -15,7 +15,7 @@ description: A record of changes to the Twentynine Robotics online guides.
 - Added a code-derived AUTO menu flow and documented that `NUM_RCRMT = 2` leaves the existing `JS MODE` display case outside the normal selector.
 - Repositioned multi-image setup references directly beneath the instructions and outcomes they illustrate instead of grouping them as galleries after each procedure.
 - Corrected the modes control visual to match the board reference's vertically arranged blue rectangular switches instead of generic tactile switches.
-- Added sanitized installer warning and interrupted-run references plus a clearly labeled reconstructed success screen based on the current batch file.
+- Added sanitized installer-warning and in-progress references plus a clearly labeled reconstructed success screen based on the current batch file.
 - Removed the unnecessary STM32CubeProgrammer file screenshot placeholder and expanded the private `MH-SETUP-01` shot plan into three hardware photos.
 - Expanded line-sensor calibration into a complete white/black test procedure with board potentiometer and OLED adjustment visuals.
 - Added code-checked AUTO button instructions and simplified arena diagrams for default Modes 1–6, including the current attack-speed behavior.
@@ -24,6 +24,7 @@ description: A record of changes to the Twentynine Robotics online guides.
 - Moved each page's section list into the left guide sidebar beneath the active chapter, removing the competing right-side navigation column.
 - Added red and green “Know Fact” callouts and introduced the Wheels &amp; Gears Check-up hardware guide with the first loose-wheel and set-screw procedure.
 - Replaced the product-only sidebar with a four-kit guide tree, moved the mobile Contents control to the left, labeled unfinished guides as In progress or Pending, and removed the unverified wheel illustration.
+- Refined guide-status labels, corrected numbering around inline setup images, clarified the installer-progress screenshot, and added direct Mini Hunter Bluetooth APK and V2.6 panel downloads.
 
 ## 0.2.0 navigation and dark theme draft 2026 09 15
 

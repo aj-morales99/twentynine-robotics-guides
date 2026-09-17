@@ -98,17 +98,17 @@ Uploading replaces the program on the board. Having the original source files ma
 
 1. Open the [FullVision v1.5.0 release](https://github.com/aj-morales99/FullVision-STM32V1.5/releases/tag/v1.5.0).
 
-<figure class="guide-figure step-figure">
-  <img src="../assets/images/mini-hunter/setup/mh-setup-02a-release-overview.png" alt="FullVision STM32 V1.5.0 release page on GitHub" loading="lazy">
-  <figcaption><strong>MH-SETUP-02A.</strong> Before continuing, confirm that the release heading says <strong>FullVision STM32 V1.5.0</strong>.</figcaption>
-</figure>
+   <figure class="guide-figure step-figure">
+     <img src="../assets/images/mini-hunter/setup/mh-setup-02a-release-overview.png" alt="FullVision STM32 V1.5.0 release page on GitHub" loading="lazy">
+     <figcaption><strong>MH-SETUP-02A.</strong> Before continuing, confirm that the release heading says <strong>FullVision STM32 V1.5.0</strong>.</figcaption>
+   </figure>
 
 2. Find the section named **Assets**. Expand it if necessary.
 
-<figure class="guide-figure step-figure">
-  <img src="../assets/images/mini-hunter/setup/mh-setup-02b-release-assets.png" alt="Expanded GitHub release Assets list with install-windows.bat visible" loading="lazy">
-  <figcaption><strong>MH-SETUP-02B.</strong> Under <strong>Assets</strong>, choose <code>install-windows.bat</code>, not either Source code archive.</figcaption>
-</figure>
+   <figure class="guide-figure step-figure">
+     <img src="../assets/images/mini-hunter/setup/mh-setup-02b-release-assets.png" alt="Expanded GitHub release Assets list with install-windows.bat visible" loading="lazy">
+     <figcaption><strong>MH-SETUP-02B.</strong> Under <strong>Assets</strong>, choose <code>install-windows.bat</code>, not either Source code archive.</figcaption>
+   </figure>
 
 3. Download **install-windows.bat**. A [direct installer download](https://github.com/aj-morales99/FullVision-STM32V1.5/releases/download/v1.5.0/install-windows.bat) is also available.
 4. Locate the downloaded file in your Downloads folder.
@@ -122,10 +122,10 @@ Use the release linked here for this guide. If you choose a newer release from t
 1. Save any work in Arduino IDE, then close every Arduino IDE window.
 2. Double-click `install-windows.bat`.
 
-<figure class="guide-figure guide-figure--compact step-figure">
-  <img src="../assets/images/mini-hunter/setup/mh-setup-03a-security-warning-sanitized.png" alt="Windows Open File Security Warning for install-windows.bat with Run and Cancel buttons" loading="lazy">
-  <figcaption><strong>MH-SETUP-03A.</strong> Windows may show this warning after step 2. Choose <strong>Run</strong> only after confirming that the file came from the FullVision release linked above.</figcaption>
-</figure>
+   <figure class="guide-figure guide-figure--compact step-figure">
+     <img src="../assets/images/mini-hunter/setup/mh-setup-03a-security-warning-sanitized.png" alt="Windows Open File Security Warning for install-windows.bat with Run and Cancel buttons" loading="lazy">
+     <figcaption><strong>MH-SETUP-03A.</strong> Windows may show this warning after step 2. Choose <strong>Run</strong> only after confirming that the file came from the FullVision release linked above.</figcaption>
+   </figure>
 
 3. Keep the command window open and read the prompts.
 4. If Arduino IDE is missing, follow the installer's prompt to install it. If a browser opens instead, download Arduino IDE 2 from the [official Arduino software page](https://www.arduino.cc/en/software), complete its installation, and return to the waiting window. Keep Arduino IDE closed while the FullVision setup continues.
@@ -134,13 +134,13 @@ Use the release linked here for this guide. If you choose a newer release from t
 
 Approve an administrator prompt only when you recognize the installation you started. If Windows or security software blocks a download, verify its source and follow your computer administrator's policy. Do not disable security protection to continue.
 
-### If the installer stops instead of finishing
+### While the installer is in progress
 
-The screen below is an example of an interrupted run, not normal progress. If the same batch-label error appears, close the window, download the current installer again, and restart it with Arduino IDE closed.
+The screen below was captured while the installer was still working through its checks. A percentage or a paused-looking progress bar is not the final result. Keep the command window open, read any prompts, and wait for a clear success or failure message before continuing.
 
 <figure class="guide-figure step-figure">
-  <img src="../assets/images/mini-hunter/setup/mh-setup-03b-interrupted-run-sanitized.png" alt="FullVision installer stopped during the Arduino CLI check with a batch-label error" loading="lazy">
-  <figcaption><strong>MH-SETUP-03B.</strong> Stop here if this error appears. Do not continue to board selection as though installation succeeded.</figcaption>
+  <img src="../assets/images/mini-hunter/setup/mh-setup-03b-installation-in-progress.png" alt="FullVision installer command window showing the Arduino CLI check and a 75 percent progress indicator" loading="lazy">
+  <figcaption><strong>MH-SETUP-03B.</strong> Installation in progress. Leave this window open and wait for the final result; this intermediate screen alone does not confirm success.</figcaption>
 </figure>
 
 ### Understand the progress messages
@@ -249,24 +249,24 @@ The supplied Mini Hunter code uses two Adafruit display libraries. The FullVisio
 2. Search for **Adafruit GFX Library** and check that the author is Adafruit.
 3. Install it. Accept its required dependencies if prompted.
 
-<figure class="guide-figure guide-figure--compact step-figure">
-  <img src="../assets/images/mini-hunter/setup/mh-setup-06a-adafruit-gfx-installed.png" alt="Arduino Library Manager showing Adafruit GFX Library by Adafruit installed" loading="lazy">
-  <figcaption><strong>MH-SETUP-06A.</strong> After step 3, the GFX entry should say <strong>installed</strong>.</figcaption>
-</figure>
+   <figure class="guide-figure guide-figure--compact step-figure">
+     <img src="../assets/images/mini-hunter/setup/mh-setup-06a-adafruit-gfx-installed.png" alt="Arduino Library Manager showing Adafruit GFX Library by Adafruit installed" loading="lazy">
+     <figcaption><strong>MH-SETUP-06A.</strong> After step 3, the GFX entry should say <strong>installed</strong>.</figcaption>
+   </figure>
 
 4. Search for **Adafruit SSD1306**, also by Adafruit, and install it with its dependencies.
 
-<figure class="guide-figure guide-figure--compact step-figure">
-  <img src="../assets/images/mini-hunter/setup/mh-setup-06b-adafruit-ssd1306-installed.png" alt="Arduino Library Manager showing Adafruit SSD1306 by Adafruit installed" loading="lazy">
-  <figcaption><strong>MH-SETUP-06B.</strong> Confirm that the SSD1306 entry also says <strong>installed</strong>.</figcaption>
-</figure>
+   <figure class="guide-figure guide-figure--compact step-figure">
+     <img src="../assets/images/mini-hunter/setup/mh-setup-06b-adafruit-ssd1306-installed.png" alt="Arduino Library Manager showing Adafruit SSD1306 by Adafruit installed" loading="lazy">
+     <figcaption><strong>MH-SETUP-06B.</strong> Confirm that the SSD1306 entry also says <strong>installed</strong>.</figcaption>
+   </figure>
 
 5. If **Adafruit BusIO** is required, install that dependency too.
 
-<figure class="guide-figure guide-figure--compact step-figure">
-  <img src="../assets/images/mini-hunter/setup/mh-setup-06c-adafruit-busio-installed.png" alt="Arduino Library Manager showing Adafruit BusIO by Adafruit installed" loading="lazy">
-  <figcaption><strong>MH-SETUP-06C.</strong> BusIO is a dependency used by the Adafruit libraries. It may be installed automatically.</figcaption>
-</figure>
+   <figure class="guide-figure guide-figure--compact step-figure">
+     <img src="../assets/images/mini-hunter/setup/mh-setup-06c-adafruit-busio-installed.png" alt="Arduino Library Manager showing Adafruit BusIO by Adafruit installed" loading="lazy">
+     <figcaption><strong>MH-SETUP-06C.</strong> BusIO is a dependency used by the Adafruit libraries. It may be installed automatically.</figcaption>
+   </figure>
 
 The version numbers in these screenshots are examples from one working installation. If your robot firmware release specifies exact library versions, use those versions instead.
 
@@ -302,18 +302,18 @@ This shows the existing filenames, not a new naming standard. Do not rename the 
 1. Extract the complete sketch ZIP if your files were supplied in one.
 2. Open the working-copy folder, not your backup.
 
-<figure class="guide-figure guide-figure--compact step-figure">
-  <img src="../assets/images/mini-hunter/setup/mh-setup-07a-sketch-files.png" alt="File Explorer showing a Mini Hunter INO sketch, FullVision-STM32.cpp, and FullVision-STM32.h together" loading="lazy">
-  <figcaption><strong>MH-SETUP-07A.</strong> Before opening the program, confirm that the folder contains the main <code>.ino</code> file and both FullVision companion files.</figcaption>
-</figure>
+   <figure class="guide-figure guide-figure--compact step-figure">
+     <img src="../assets/images/mini-hunter/setup/mh-setup-07a-sketch-files.png" alt="File Explorer showing a Mini Hunter INO sketch, FullVision-STM32.cpp, and FullVision-STM32.h together" loading="lazy">
+     <figcaption><strong>MH-SETUP-07A.</strong> Before opening the program, confirm that the folder contains the main <code>.ino</code> file and both FullVision companion files.</figcaption>
+   </figure>
 
 3. Open the `.ino` file in Arduino IDE.
 4. Confirm that the companion `.h` and `.cpp` files are present. They normally appear as tabs.
 
-<figure class="guide-figure step-figure">
-  <img src="../assets/images/mini-hunter/setup/mh-setup-07b-arduino-tabs.png" alt="Arduino IDE tabs for the Mini Hunter INO sketch, FullVision-STM32.cpp, and FullVision-STM32.h" loading="lazy">
-  <figcaption><strong>MH-SETUP-07B.</strong> After opening the <code>.ino</code>, all three files should appear as Arduino IDE tabs.</figcaption>
-</figure>
+   <figure class="guide-figure step-figure">
+     <img src="../assets/images/mini-hunter/setup/mh-setup-07b-arduino-tabs.png" alt="Arduino IDE tabs for the Mini Hunter INO sketch, FullVision-STM32.cpp, and FullVision-STM32.h" loading="lazy">
+     <figcaption><strong>MH-SETUP-07B.</strong> After opening the <code>.ino</code>, all three files should appear as Arduino IDE tabs.</figcaption>
+   </figure>
 
 5. If Arduino offers to move the `.ino` into a matching folder, ensure the companion files also end up in that folder. Do not continue with only the `.ino`.
 

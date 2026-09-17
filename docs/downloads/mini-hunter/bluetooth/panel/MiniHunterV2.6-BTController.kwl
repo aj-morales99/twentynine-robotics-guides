@@ -1,0 +1,26 @@
+Keuwlsoft Bluetooth Electronics Panel File
+2026-04-08 20:07:54
+2
+
+*.kwl
+set_grid_size(13,7)
+add_text_box(0,6,8,L,Disconnected!,181,178,178,R)
+add_text(7,5,large,L,SPEED,245,240,245,)
+add_text(9,0,medium,L,Connection Status:,245,240,245,)
+add_text(9,1,xlarge,C,◀️,245,240,245,)
+add_text(11,1,xlarge,C,▶️,245,240,245,)
+add_text(3,1,xlarge,C,⏫,245,240,245,)
+add_text(1,1,xlarge,C,⏬,245,240,245,)
+add_text(4,0,small,L,V2.6 RC Controller,245,240,245,)
+add_text(0,0,xlarge,L,MINI HUNTER,245,240,245,)
+add_text(0,5,large,L,RC MODE,245,240,245,)
+add_button(6,2,22,SPEED2*,)
+add_button(7,2,23,SPEED3*,)
+add_button(5,2,21,SPEED1*,)
+add_switch(3,5,1,RC_ON*,RC_OFF*,0,0)
+add_free_pad(9,2,0,200,0,0,S,*)
+add_free_pad(1,2,0,200,0,0,F,*)
+add_led(12,5,1,S,0,255,0)
+add_led(12,0,1,L,200,0,0)
+add_send_box(8,6,5,C0,,*)
+set_panel_notes(-,,,)
