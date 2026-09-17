@@ -6,6 +6,14 @@ description: A record of changes to the Twentynine Robotics online guides.
 
 # Documentation changelog
 
+## 0.3.4 visual RC controller guide 2026 09 17
+
+- Added separate visual control maps for the bundled HotRC HT-10A joystick transmitter and CT-6A trigger transmitter, with the receiver removed from each product view.
+- Documented HT-10A CH3/CH1 and CT-6A CH2/CH1 receiver-channel pairs instead of applying one mapping to both controllers.
+- Added code-checked Mini Hunter OLED examples for neutral, forward/reverse, and turning input using the firmware's `Trig:` and `Turn:` display labels.
+- Added a shared-header orientation diagram showing the Bluetooth cable bending left and RC Cable V1 bending right.
+- Added visual binding flows for HT-10A/F-10A and CT-6A/F-06A, including the required blinking-to-steady receiver LED checkpoint.
+
 ## 0.3.3 first-use power and charging guide 2026 09 17
 
 - Added Mini Hunter battery-level checking through the supplied 4-pin JST charge balancer and battery indicator.

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="780" viewBox="0 0 1500 780" role="img" aria-labelledby="title desc">
+  <title id="title">HotRC receiver binding visual guide</title>
+  <desc id="desc">HT-10A uses Settings, Bind Set, and Start. CT-6A uses the F-06A receiver bind control and transmitter power. Both end with a steady receiver LED.</desc>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#60a5fa"/></marker><style>.t{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#f8fafc}.m{fill:#9fb4cf}.h{font-size:35px;font-weight:800}.sh{font-size:25px;font-weight:800}.b{font-size:20px;font-weight:650}.small{font-size:17px}.panel{fill:#101b2d;stroke:#2c4160;stroke-width:2}.screen{fill:#06101f;stroke:#5b8bd8;stroke-width:3}.sel{fill:#123f73}.led-off{fill:#475569}.led-on{fill:#22c55e}</style></defs>
+  <rect width="1500" height="780" fill="#07111f"/>
+  <text x="60" y="58" class="t h">Binding: watch the receiver LED</text>
+  <text x="60" y="94" class="t m small">Keep the robot supported with its wheels raised. Screen wording can vary slightly by transmitter firmware.</text>
+
+  <rect x="55" y="135" width="665" height="540" rx="22" class="panel"/>
+  <text x="90" y="185" class="t sh">HT-10A + F-10A</text>
+  <rect x="100" y="230" width="210" height="275" rx="16" class="screen"/>
+  <text x="130" y="275" class="t b">Settings</text><rect x="122" y="300" width="165" height="48" rx="8" class="sel"/><text x="145" y="332" class="t b">Bind Set</text><text x="145" y="392" class="t m small">RX Set</text><text x="145" y="438" class="t m small">Failsafe</text>
+  <line x1="322" y1="367" x2="387" y2="367" stroke="#60a5fa" stroke-width="5" marker-end="url(#a)"/>
+  <rect x="400" y="265" width="250" height="205" rx="16" class="screen"/>
+  <text x="525" y="312" text-anchor="middle" class="t b">Bind Set</text><rect x="435" y="345" width="180" height="62" rx="12" class="sel"/><text x="525" y="384" text-anchor="middle" class="t sh">START</text>
+  <circle cx="155" cy="560" r="17" class="led-off"/><text x="190" y="567" class="t b">Blinking before bind</text>
+  <circle cx="155" cy="620" r="17" class="led-on"/><text x="190" y="627" class="t b">Steady when bound</text>
+
+  <rect x="780" y="135" width="665" height="540" rx="22" class="panel"/>
+  <text x="815" y="185" class="t sh">CT-6A + F-06A</text>
+  <circle cx="920" cy="325" r="82" fill="#172033" stroke="#64748b" stroke-width="3"/><circle cx="920" cy="325" r="25" fill="#fb7185"/><text x="920" y="332" text-anchor="middle" class="t small">BIND</text>
+  <text x="815" y="450" class="t b">1. Put the receiver in bind mode.</text>
+  <text x="815" y="490" class="t b">2. Power on the CT-6A.</text>
+  <text x="815" y="530" class="t b">3. Wait for a steady receiver LED.</text>
+  <circle cx="850" cy="590" r="17" class="led-off"/><text x="885" y="597" class="t b">Blinking = still pairing</text>
+  <circle cx="1170" cy="590" r="17" class="led-on"/><text x="1205" y="597" class="t b">Steady = bound</text>
+
+  <rect x="260" y="705" width="980" height="52" rx="14" fill="#0b2846" stroke="#60a5fa" stroke-width="2"/>
+  <text x="750" y="739" text-anchor="middle" class="t b">Do not continue to the wheel test while the receiver LED is still blinking.</text>
+</svg>

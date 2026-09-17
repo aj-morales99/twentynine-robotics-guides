@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="720" viewBox="0 0 1500 720" role="img" aria-labelledby="title desc">
+  <title id="title">RC Cable V1 plug orientation at the shared Bluetooth and RC header</title>
+  <desc id="desc">The Bluetooth cable bends left. RC Cable V1 uses the same header but its bend points right, away from the Bluetooth direction.</desc>
+  <defs>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#60a5fa"/></marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#fb7185"/></marker>
+    <style>
+      .t{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#f8fafc}.m{fill:#9fb4cf}.h{font-size:34px;font-weight:800}.sh{font-size:25px;font-weight:800}.b{font-size:21px;font-weight:600}.small{font-size:18px}.panel{fill:#101b2d;stroke:#2c4160;stroke-width:2}.board{fill:#172033;stroke:#64748b;stroke-width:3}.pin{fill:#f5c84c;stroke:#8a6412;stroke-width:2}.plug{fill:#1f2937;stroke:#cbd5e1;stroke-width:3}.wire-bt{fill:none;stroke:#60a5fa;stroke-width:12;stroke-linecap:round}.wire-rc{fill:none;stroke:#fb7185;stroke-width:12;stroke-linecap:round}
+    </style>
+  </defs>
+  <rect width="1500" height="720" fill="#07111f"/>
+  <text x="750" y="60" text-anchor="middle" class="t h">One header — opposite cable bends</text>
+  <text x="750" y="96" text-anchor="middle" class="t m small">Power the robot off before changing the Bluetooth module for RC Cable V1.</text>
+
+  <rect x="55" y="135" width="665" height="460" rx="22" class="panel"/>
+  <text x="90" y="185" class="t sh">Bluetooth module</text>
+  <text x="90" y="220" class="t m small">Normal Bluetooth installation</text>
+  <rect x="230" y="315" width="315" height="195" rx="18" class="board"/>
+  <text x="387" y="468" text-anchor="middle" class="t small">FullVision board</text>
+  <rect x="330" y="275" width="115" height="68" rx="10" class="plug"/>
+  <circle cx="350" cy="330" r="8" class="pin"/><circle cx="375" cy="330" r="8" class="pin"/><circle cx="400" cy="330" r="8" class="pin"/><circle cx="425" cy="330" r="8" class="pin"/>
+  <path d="M350 287 C310 275 275 265 225 265" class="wire-bt" marker-end="url(#arrow-blue)"/>
+  <text x="92" y="245" class="t b">Cable bend</text><text x="92" y="275" class="t b">exits LEFT</text>
+  <text x="387" y="545" text-anchor="middle" class="t m small">Reference direction only</text>
+
+  <rect x="780" y="135" width="665" height="460" rx="22" class="panel"/>
+  <text x="815" y="185" class="t sh">RC Cable V1</text>
+  <text x="815" y="220" class="t m small">Plug into the same header</text>
+  <rect x="955" y="315" width="315" height="195" rx="18" class="board"/>
+  <text x="1112" y="468" text-anchor="middle" class="t small">FullVision board</text>
+  <rect x="1055" y="275" width="115" height="68" rx="10" class="plug"/>
+  <circle cx="1075" cy="330" r="8" class="pin"/><circle cx="1100" cy="330" r="8" class="pin"/><circle cx="1125" cy="330" r="8" class="pin"/><circle cx="1150" cy="330" r="8" class="pin"/>
+  <path d="M1150 287 C1190 275 1225 265 1275 265" class="wire-rc" marker-end="url(#arrow-red)"/>
+  <text x="1290" y="245" class="t b">Cable bend</text><text x="1290" y="275" class="t b">exits RIGHT</text>
+  <text x="1112" y="545" text-anchor="middle" class="t m small">Opposite the Bluetooth bend</text>
+
+  <rect x="260" y="625" width="980" height="58" rx="16" fill="#3a1420" stroke="#fb7185" stroke-width="2"/>
+  <text x="750" y="662" text-anchor="middle" class="t b">Do not force the plug. If its bend points left, stop and check the orientation.</text>
+</svg>

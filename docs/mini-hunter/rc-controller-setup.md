@@ -6,29 +6,39 @@ description: Connect, bind, and safely test the Mini Hunter RC controller using 
 
 # RC controller setup
 
-<span class="status-chip ready">Ready — text-only guide</span>
+<span class="status-chip ready">Ready — visual guide</span>
 
-Use this guide to prepare the supplied RC controller, connect its receiver to the Mini Hunter, bind the controller and receiver, and check the controls safely.
+Use this guide to prepare the supplied RC controller, connect its receiver to the Mini Hunter, bind the controller and receiver, and check the live control values safely.
 
 <div class="note"><strong>RC Cable V1 record:</strong> This procedure intentionally uses <strong>RC Cable V1</strong>, which is normally supplied with the Mini Hunter kit. Keep this cable with the robot. A different-looking receiver cable may have a different pin arrangement and must not be connected by guesswork.</div>
 
-## Setup record
+## Identify your bundled controller first
 
-| Item | Configuration used by this guide |
-|---|---|
-| Transmitter | HotRC HT-10A shown in the supplied demonstration |
-| Receiver | HotRC F-10A shown in the supplied demonstration |
-| Receiver cable | **RC Cable V1 — normally supplied with the Mini Hunter kit** |
-| Throttle channel | CH3 — left stick up/down |
-| Steering channel | CH1 — right stick left/right |
-| Robot connection | Bluetooth/RC header on the FullVision STM32 board |
+The kit may include either controller below. They do **not** use the same throttle channel.
+
+| Bundled controller | Receiver channels for RC Cable V1 | Forward/reverse control | Turning control |
+|---|---|---|---|
+| **HotRC HT-10A** twin-stick | CH3 and CH1 | CH3 — left stick up/down | CH1 — right stick left/right |
+| **HotRC CT-6A** trigger type | CH2 and CH1 | CH2 — trigger pull/push | CH1 — steering wheel left/right |
+
+<div class="warning note"><strong>Use the row for your controller.</strong> Connecting a CT-6A as though it were an HT-10A can put the wrong control on <code>Trig</code>. The robot-side connection is the same, but the receiver channel numbers are different.</div>
+
+<figure class="guide-figure step-figure">
+  <img src="../assets/images/mini-hunter/rc/hotrc-ht10a-controls.svg" alt="HotRC HT-10A controller with arrows showing CH3 on the left stick and CH1 on the right stick, plus Mini Hunter OLED examples" loading="lazy">
+  <figcaption><strong>HT-10A:</strong> Move the left stick vertically for <code>Trig</code>. Move the right stick horizontally for <code>Turn</code>. The separate receiver is omitted from the picture so the controls remain clear.</figcaption>
+</figure>
+
+<figure class="guide-figure step-figure">
+  <img src="../assets/images/mini-hunter/rc/hotrc-ct6a-controls.svg" alt="HotRC CT-6A controller with arrows showing CH2 on the trigger and CH1 on the steering wheel, plus Mini Hunter OLED examples" loading="lazy">
+  <figcaption><strong>CT-6A:</strong> Pull or push the CH2 trigger for <code>Trig</code>. Rotate the CH1 wheel for <code>Turn</code>. This is an example of the trigger-style controller bundled with some kits.</figcaption>
+</figure>
 
 ## What you need
 
 - Mini Hunter 1KG or 3KG Sumobot Kit
 - Compatible HotRC transmitter and receiver supplied with the kit
 - **RC Cable V1**, normally included with the kit
-- Four AA batteries for the transmitter
+- The battery type required by the bundled transmitter
 - A stable stand or block that can hold the robot with both wheels off the surface
 
 ## Before you begin
@@ -44,88 +54,105 @@ Use this guide to prepare the supplied RC controller, connect its receiver to th
 ## 1. Prepare the RC transmitter
 
 1. Open the battery compartment at the back of the transmitter.
-2. Insert four AA batteries. Match the `+` and `−` markings in the battery compartment.
+2. Install the battery type supplied or specified for that transmitter. Match the `+` and `−` markings in the battery compartment.
 3. Close the battery cover securely.
 4. Turn on the transmitter.
 5. If the transmitter asks for a language, use the buttons beside the screen to select **English**.
-6. Install the supplied thumb pins or stick extensions on the two control sticks, if they are not already installed.
+6. For an HT-10A, install the supplied thumb pins or stick extensions if they are not already installed. For a CT-6A, make sure the steering wheel and trigger return freely to center.
 
-### Check the stick channels
+### Check the control channels
 
-Use the transmitter's channel display to confirm these two controls:
+Use the transmitter's channel display to confirm the controls for your model:
 
 | Control movement | Channel shown on the transmitter | Robot function after setup |
 |---|---:|---|
-| Left stick up and down | CH3 | Forward and reverse |
-| Right stick left and right | CH1 | Turn left and right |
+| HT-10A left stick up and down | CH3 | Forward and reverse |
+| HT-10A right stick left and right | CH1 | Turn left and right |
+| CT-6A trigger pull and push | CH2 | Forward and reverse |
+| CT-6A steering wheel left and right | CH1 | Turn left and right |
 
-Move only one stick direction at a time. Confirm that CH3 responds to the left stick's up/down movement and CH1 responds to the right stick's left/right movement. Then return both sticks to their center positions.
+Move only one control at a time. Confirm that its channel responds, then allow the control to return to center.
 
 ## 2. Connect RC Cable V1 to the receiver
 
 Leave the transmitter on with both sticks centered. The robot must remain powered off while the receiver cable is connected.
 
-1. Find the receiver's **CH1** and **CH3** connections.
-2. Connect the two receiver ends of RC Cable V1 to CH1 and CH3.
+1. Find the correct receiver connections for your controller:
+
+   - HT-10A: **CH3 and CH1**
+   - CT-6A: **CH2 and CH1**
+
+2. Connect the two receiver ends of RC Cable V1 to those channels.
 3. On each receiver connection, keep the wire colors aligned with the receiver markings:
 
    - Yellow wire → `S` for signal
    - Red wire → `+` for power
    - Black wire → `−` for ground
 
-If the two channel leads are not labeled, either lead may be placed in CH1 or CH3 for the first test. The channel assignment can be corrected later by swapping the **two complete channel plugs**.
+If the two channel leads are not labeled, either complete lead may be placed on either of the two required channels for the first supported-wheel test. If <code>Trig</code> and <code>Turn</code> respond to the wrong controls, swap the **two complete channel plugs**.
 
-<div class="warning note"><strong>Do not reverse the wire colors.</strong> Swapping the complete CH1 and CH3 plugs is different from reversing the wires inside a plug. Yellow must remain on <strong>S</strong>, red on <strong>+</strong>, and black on <strong>−</strong>.</div>
+<div class="warning note"><strong>Do not reverse the wire colors.</strong> Swapping the two complete channel plugs is different from reversing the wires inside a plug. Yellow must remain on <strong>S</strong>, red on <strong>+</strong>, and black on <strong>−</strong>.</div>
 
 ## 3. Connect the receiver to the Mini Hunter
 
 1. Confirm that the robot is still powered off.
 2. Locate the Bluetooth module on the FullVision STM32 board.
 3. Carefully unplug the Bluetooth module from its header. Pull it straight out without bending its pins.
-4. Connect the robot-side plug of RC Cable V1 to the same board header.
+4. Connect the robot-side plug of RC Cable V1 to the same board header, with the cable bend facing **right**. This is the opposite direction from the Bluetooth cable, which bends left.
 5. Place the receiver where it cannot touch the wheels, blade, or loose metal parts.
 6. Check every connection once more before applying power.
 
 The Bluetooth module and RC receiver use the same controller connection in this setup. Do not try to install both at the same time.
 
+<figure class="guide-figure step-figure">
+  <img src="../assets/images/mini-hunter/rc/rc-cable-v1-orientation.svg" alt="RC Cable V1 orientation diagram showing the Bluetooth cable bending left and RC Cable V1 bending right from the same FullVision board header" loading="lazy">
+  <figcaption><strong>Opposite bends:</strong> Bluetooth bends left; RC Cable V1 bends right. Power off first, align the plug carefully, and never force it into the shared header.</figcaption>
+</figure>
+
 ## 4. Bind the receiver and transmitter
 
 Binding makes the receiver listen to this transmitter.
 
-1. Make sure both transmitter sticks are centered.
+1. Center the HT-10A sticks, or release the CT-6A wheel and trigger so they return to center.
 2. Turn on the robot. The receiver LED should blink if it is not yet bound.
-3. Press the receiver's **Bind** button. Its LED should begin blinking faster.
-4. On the transmitter, open **Settings**.
-5. Open **Bind Set**, then start the binding command shown on the screen.
+3. Put the receiver into bind mode using its **BIND** button or bind control.
+4. For the **HT-10A**, open **Settings**, open **Bind Set**, and choose **START**.
+5. For the **CT-6A**, power on the transmitter while the F-06A receiver is in bind mode.
 6. Wait for the receiver LED to stop blinking and remain steadily lit.
 
 <div class="note"><strong>Binding checkpoint:</strong> A steady receiver LED indicates that binding is complete. If the LED continues blinking, turn the robot off and repeat this section. Do not continue to the movement test until the connection is stable.</div>
+
+<figure class="guide-figure step-figure">
+  <img src="../assets/images/mini-hunter/rc/hotrc-binding-flow.svg" alt="Visual binding flow for HT-10A and CT-6A controllers showing Bind Set and receiver LED states" loading="lazy">
+  <figcaption><strong>Binding screen and LED guide:</strong> The HT-10A flow uses <em>Settings → Bind Set → START</em>. The CT-6A flow uses the F-06A receiver's bind control. In both cases, finish only when the receiver LED remains steady. Screen wording may differ slightly by firmware.</figcaption>
+</figure>
+
+For the manufacturer's model-specific instructions and videos, see [HotRC technical support](https://www.hotrc.cn/support/7.html).
 
 ## 5. Select RC Mode
 
 1. Keep the robot supported with its wheels raised.
 2. Use the switches on the FullVision STM32 board to display **RC MODE** on the OLED.
 3. Select RC Mode.
-4. Leave both transmitter sticks centered and watch the wheels.
+4. Leave both transmitter controls centered and watch the OLED and wheels.
 
-Both wheels should remain stopped while the sticks are centered. If either wheel moves, turn off the robot immediately and see [If the robot moves at neutral](#if-the-robot-moves-at-neutral).
+The OLED should show <code>Trig:0</code> and <code>Turn:0</code>, and both wheels should remain stopped. If a value does not settle near zero or either wheel moves, turn off the robot immediately and see [If the robot moves at neutral](#if-the-robot-moves-at-neutral).
 
 ## 6. Test and correct the controls
 
-Use small stick movements during the first test.
+Use small control movements during the first test. Values can run from <code>-100</code> to <code>100</code>; the sign may reverse if a transmitter channel is reversed.
 
-1. Move the left stick slightly upward. The robot wheels should respond as a forward command.
-2. Move the left stick slightly downward. The wheels should respond as a reverse command.
-3. Return the left stick to center. The wheels should stop.
-4. Move the right stick slightly left. The robot should turn left.
-5. Move the right stick slightly right. The robot should turn right.
-6. Return the right stick to center. The wheels should stop.
+1. Move the forward/reverse control slightly: HT-10A left stick vertically, or CT-6A trigger pull/push. Only <code>Trig</code> should change.
+2. Return the control to center. <code>Trig</code> should return to <code>0</code> and the wheels should stop.
+3. Move the turning control slightly: HT-10A right stick horizontally, or CT-6A steering wheel left/right. Only <code>Turn</code> should change.
+4. Return the control to center. <code>Turn</code> should return to <code>0</code> and the wheels should stop.
+5. Repeat with small movements while confirming the robot responds in the expected direction.
 
 ### If forward/reverse and turning use the wrong sticks
 
 1. Turn off the robot.
 2. Turn off the transmitter.
-3. At the receiver, swap the two **complete channel plugs** between CH1 and CH3.
+3. At the receiver, swap the two **complete channel plugs** between the required channel pair: CH1/CH3 for HT-10A, or CH1/CH2 for CT-6A.
 4. Keep the yellow, red, and black wires in their correct `S`, `+`, and `−` orientation.
 5. Power the system again, select RC Mode, and repeat the supported-wheel test.
 
@@ -134,13 +161,13 @@ If the correct stick controls the correct function but the direction itself is r
 ## If the robot moves at neutral
 
 1. Turn off the robot immediately.
-2. Return both sticks to their center positions.
+2. Return both transmitter controls to their center positions.
 3. Center the transmitter trims.
 4. Confirm that the correct transmitter model memory is selected.
 5. Check that the two RC Cable V1 receiver plugs are fully seated and correctly aligned.
 6. Repeat the test with the wheels raised.
 
-Do not place the robot on the arena until all four commands work correctly and both wheels stop whenever the sticks return to center.
+Do not place the robot on the arena until all four commands work correctly and both wheels stop whenever the transmitter controls return to center.
 
 ## Final checklist
 
@@ -149,9 +176,10 @@ Do not place the robot on the arena until all four commands work correctly and b
 - [ ] The Bluetooth module has been removed from the shared board header.
 - [ ] The receiver LED remains steadily lit.
 - [ ] RC Mode is selected on the robot.
-- [ ] Left stick up/down controls forward/reverse.
-- [ ] Right stick left/right controls turning.
-- [ ] The wheels stop when both sticks are centered.
+- [ ] The correct control changes <code>Trig</code>: HT-10A CH3 stick or CT-6A CH2 trigger.
+- [ ] The correct control changes <code>Turn</code>: HT-10A CH1 stick or CT-6A CH1 wheel.
+- [ ] The OLED returns to <code>Trig:0</code> and <code>Turn:0</code> at neutral.
+- [ ] The wheels stop when the transmitter controls are centered.
 - [ ] The first complete test was performed with the wheels raised.
 
-The original Twentynine Robotics demonstration used to prepare this text guide is available in the [RC controller setup reference video](https://drive.google.com/file/d/1IzRf03yDP47ePiNyPkbAr98qOXkC-erA/view?usp=drive_link).
+The original Twentynine Robotics demonstration used to prepare this guide is available in the [RC controller setup reference video](https://drive.google.com/file/d/1IzRf03yDP47ePiNyPkbAr98qOXkC-erA/view?usp=drive_link).
