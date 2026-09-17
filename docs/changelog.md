@@ -6,6 +6,13 @@ description: A record of changes to the Twentynine Robotics online guides.
 
 # Documentation changelog
 
+## 0.3.1 RC controller guide 2026 09 17
+
+- Replaced the provisional RC controller page with a complete text-only setup procedure based on the supplied Twentynine Robotics demonstration.
+- Recorded RC Cable V1 as the cable normally supplied with the Mini Hunter kit.
+- Documented transmitter preparation, CH3/CH1 control mapping, receiver wire orientation, Bluetooth-module removal, binding, RC Mode selection, supported-wheel testing, and channel correction.
+- Added explicit safety guidance distinguishing a complete CH1/CH3 plug swap from reversing signal, power, and ground wires.
+
 ## 0.3.0 setup visuals draft 2026 09 16
 
 - Added the supplied release-page and Arduino board-selection screenshots to the setup guide.

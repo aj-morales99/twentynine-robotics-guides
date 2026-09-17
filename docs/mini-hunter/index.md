@@ -27,7 +27,7 @@ Choose what you want to do. If this is your first time programming the robot, be
   <section>
     <h2>Controllers and sensors</h2>
     <a class="directory-link" href="bluetooth-application-setup.html"><span><strong>Bluetooth application setup</strong><small>Install the Android app and import the control panel.</small></span><span class="directory-status in-progress">In progress</span></a>
-    <a class="directory-link" href="rc-controller-setup.html"><span><strong>RC controller setup</strong><small>Prepare the receiver and perform a safe neutral test.</small></span><span class="directory-status in-progress">In progress</span></a>
+    <a class="directory-link" href="rc-controller-setup.html"><span><strong>RC controller setup</strong><small>Connect RC Cable V1, bind the receiver, and safely test every control.</small></span><span aria-hidden="true">→</span></a>
     <a class="directory-link" href="calibration/"><span><strong>Calibration</strong><small>Adjust line sensors and check enemy-detection sensors.</small></span><span aria-hidden="true">→</span></a>
   </section>
   <section>
