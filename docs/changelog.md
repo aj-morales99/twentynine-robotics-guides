@@ -6,6 +6,16 @@ description: A record of changes to the Twentynine Robotics online guides.
 
 # Documentation changelog
 
+## 0.3.3 first-use power and charging guide 2026 09 17
+
+- Added Mini Hunter battery-level checking through the supplied 4-pin JST charge balancer and battery indicator.
+- Added the JST-first, USB Type-C-second charging sequence, normal steady-LED behavior, blinking-LED checks, battery-damage warnings, and support contact information.
+- Documented the XT30 connector as the normal main-power connection and explained the newer loop switch key as a rapid safety disconnect subject to event quarantine rules.
+- Added explicit power-on and power-off procedures and warned against deliberately running a low battery completely flat.
+- Clarified that the initial run-down is a supervised motor break-in and component warranty check, normally ending at one bar; no bars is an immediate stop condition.
+- Added code-derived AUTO, RC/RMT, mode-selection, delay, countdown, and running OLED previews to the first-use guide.
+- Documented the one-second SW1+SW2 exit action for BT, RC, AUTO, and Calibration modes.
+
 ## 0.3.2 operation-first navigation and programming references 2026 09 17
 
 - Replaced the code-first Mini Hunter entry point with a no-programming-required guide for controls, safety checks, RC/RMT or AUTO selection, calibration, and first operation.
