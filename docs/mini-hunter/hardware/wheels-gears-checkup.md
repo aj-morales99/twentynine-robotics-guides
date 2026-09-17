@@ -6,6 +6,8 @@ description: Check Mini Hunter wheels for looseness and safely service the wheel
 
 # Wheels & gears check-up
 
+<span class="status-chip in-progress">In progress — written wheel procedure available; verified photos and gearbox section are still being added</span>
+
 This guide starts with the wheels. A gearbox inspection section will be added after the procedure and acceptable movement are verified.
 
 <div class="know-fact know-fact--danger" role="note">
@@ -69,11 +71,6 @@ If you are replacing the set screw or adding threadlocker:
 4. Turn it gently **to the right (clockwise)** until secure.
 
 Keep threadlocker away from the motor, gearbox, bearings, ABS rim, and silicone tire.
-
-<figure class="guide-figure">
-  <img src="../../assets/images/mini-hunter/hardware/mh-wheel-check-01-set-screw-process.png?v=2" alt="Three-step illustration showing only the red silicone tire removed from a mounted black ABS rim, a circumference access hole located, and a flange-coupling set screw tightened with an Allen key" loading="lazy">
-  <figcaption><strong>MH-WHEEL-01.</strong> Remove only the red silicone tire. Keep the black ABS rim and flange coupling mounted, find a circumference access hole, then tighten the set screw gently.</figcaption>
-</figure>
 
 <div class="know-fact know-fact--danger" role="note">
   <span class="know-fact__label">Do not overtighten</span>

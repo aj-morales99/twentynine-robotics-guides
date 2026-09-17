@@ -6,6 +6,8 @@ description: A beginner-friendly Windows guide for preparing and programming a M
 
 # Mini Hunter setup and first upload
 
+<span class="status-chip in-progress">In progress — the guide is usable; remaining supporting photos are still being added</span>
+
 Twentynine Robotics
 
 This guide helps you prepare a Windows computer to program a Mini Hunter with a FullVision STM32 V1.5 controller. You will install the software, open the robot program, check it for errors, and learn how to upload it through the board's USB-to-serial connection.

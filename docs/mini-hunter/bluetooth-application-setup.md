@@ -6,6 +6,8 @@ description: Beginner-friendly Android setup for the final Mini Hunter V2.6 Blue
 
 # Bluetooth application setup
 
+<span class="status-chip in-progress">In progress — written steps are available; supporting images are still being added</span>
+
 This guide prepares an Android phone to control a compatible Mini Hunter through the **Bluetooth Electronics** app. Complete the [Arduino IDE and board setup](setup-and-first-upload.html) first if the robot has not yet received its correct firmware.
 
 <div class="warning note"><strong>Before the robot moves:</strong> place it on a stable stand so the wheels and blade cannot touch the table, floor, clothing, cables, or hands.</div>

@@ -7,6 +7,8 @@ permalink: /mini-hunter/code-library/
 
 # FullVision code library
 
+<span class="status-chip in-progress">In progress — documented functions are usable while more entries and examples are being added</span>
+
 Search by a function name or a word such as `motor`, `sensor`, `display`, `RC`, or `interrupt`. This reference describes the public functions found in the supplied `FullVision-STM32.h`; always check the library version bundled with the firmware you are editing.
 
 <div class="function-search">

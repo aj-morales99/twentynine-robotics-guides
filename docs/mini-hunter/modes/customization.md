@@ -6,6 +6,8 @@ description: Safely choose Mini Hunter system and mode counts and edit autonomou
 
 # Modes customization in code
 
+<span class="status-chip in-progress">In progress — custom mode creation and simplified uploading are still under development</span>
+
 <div class="note"><strong>Under development:</strong> Twentynine Robotics is developing a simpler workflow that will let users create their own modes and upload them to the robot more easily. Until that workflow is released and tested, the instructions below are intended for careful source-code editing.</div>
 
 Always edit a working copy and keep the original release untouched. A filename is only a label; the values inside the FullVision library determine the active sensor and mode counts.

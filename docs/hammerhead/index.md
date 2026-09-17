@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Hammerhead guides
-description: Future setup and support documentation for the Twentynine Robotics Hammerhead.
+title: Hammerhead Robohockey Kit guides
+description: Future setup and support documentation for the Twentynine Robotics Hammerhead Robohockey Kit.
 permalink: /hammerhead/
 ---
 
-# Hammerhead guides
+# Hammerhead Robohockey Kit
 
-<span class="status-chip pending">Coming soon</span>
+<span class="status-chip pending">Pending</span>
 
 Verified Hammerhead setup, operation, programming, and maintenance instructions are being prepared as a separate product guide.
 

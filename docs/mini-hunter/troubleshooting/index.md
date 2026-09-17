@@ -7,6 +7,8 @@ permalink: /mini-hunter/troubleshooting/
 
 # Something happened—what do I do?
 
+<span class="status-chip in-progress">In progress — initial checks are available while more verified symptoms and fixes are being added</span>
+
 Start with the symptom you can observe. Change only one thing at a time and write down what happened.
 
 <div class="warning note"><strong>If the robot moves unexpectedly:</strong> keep clear of the blade and wheels, use the normal power control if safely reachable, then disconnect power before touching hardware.</div>

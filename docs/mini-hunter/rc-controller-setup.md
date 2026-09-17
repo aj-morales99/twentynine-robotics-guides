@@ -6,6 +6,8 @@ description: Safe preparation and first test for a Mini Hunter RC receiver and c
 
 # RC controller setup
 
+<span class="status-chip in-progress">In progress — written steps are available; supporting images are still being added</span>
+
 <span class="status-chip pending">Hardware verification required</span>
 
 This page explains the safe order for preparing RC control. The FullVision firmware reads two receiver channels through pins shared with the Bluetooth connection, so the robot must be in the correct control mode. Final receiver wiring, transmitter settings, and channel direction still need to be verified for the exact RC kit supplied with your robot.
