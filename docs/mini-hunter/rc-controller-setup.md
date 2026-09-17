@@ -111,8 +111,8 @@ Use the procedure for the controller and receiver supplied with your kit.
 ### HT-10A with F-10A receiver
 
 <figure class="guide-figure step-figure">
-  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ht10a-binding-manual.png" alt="Cropped HotRC HT-10A official manual showing the transmitter pairing screen and Start button" loading="lazy">
-  <figcaption><strong>Official HT-10A manual reference.</strong> The screen title is Pairing Settings. The blue control is Start Pairing; the orange button is Start. The text at right explains the receiver BIND-button sequence.</figcaption>
+  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ht10a-binding-manual-en.svg" alt="English HT-10A manual reference showing the Pairing Settings screen, Start button, and receiver binding sequence" loading="lazy">
+  <figcaption><strong>HT-10A manual reference in English.</strong> The blue control is Start pairing; the orange button is Start. The receiver LED must change from fast flashing to steady green.</figcaption>
 </figure>
 
 1. Leave the HT-10A powered off and center both sticks.
@@ -125,8 +125,8 @@ Use the procedure for the controller and receiver supplied with your kit.
 ### CT-6A with F-06A receiver
 
 <figure class="guide-figure step-figure">
-  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ct6a-binding-manual.png" alt="Cropped HotRC CT-6A official manual showing its three-step receiver binding procedure" loading="lazy">
-  <figcaption><strong>Official CT-6A manual reference.</strong> The sequence is: power the receiver, press its BIND button, and then power on the transmitter. Slow flash means no signal, fast flash means pairing, and steady green means connected.</figcaption>
+  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ct6a-binding-manual-en.svg" alt="English CT-6A manual reference showing its three-step receiver binding procedure" loading="lazy">
+  <figcaption><strong>CT-6A manual reference in English.</strong> Power the receiver, press BIND once, and then power the transmitter. Slow flash means no signal, fast flash means pairing, and steady green means connected.</figcaption>
 </figure>
 
 1. Leave the CT-6A powered off and release the wheel and trigger so they return to center.
@@ -149,22 +149,22 @@ Center the transmitter before allowing the wheels to touch a surface.
 2. On the HT-10A home screen, check **CH3** and **CH1**. Both should read approximately **1500** at center.
 
 <figure class="guide-figure step-figure">
-  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ht10a-channel-values-manual.png" alt="Cropped HotRC HT-10A official manual showing centered CH3 and CH1 values of 1500" loading="lazy">
-  <figcaption><strong>HT-10A centered reference.</strong> The official screen diagram shows CH3 at 1500 and CH1 at 1500 when the sticks are centered.</figcaption>
+  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ht10a-channel-values-manual-en.svg" alt="English HT-10A manual reference showing centered CH3 and CH1 values of 1500" loading="lazy">
+  <figcaption><strong>HT-10A centered reference in English.</strong> CH3 and CH1 should both read 1500 when the sticks are released at center.</figcaption>
 </figure>
 
 3. If either channel has a small offset, open **Channel Trim** and adjust only that channel toward its 1500 center. In the manual, `+` adds to the 1500 center and `−` subtracts from it.
 
 <figure class="guide-figure step-figure">
-  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ht10a-channel-trim-manual.png" alt="Cropped HotRC HT-10A official manual showing the Channel Trim screen" loading="lazy">
-  <figcaption><strong>HT-10A Channel Trim.</strong> Use CH3 for the forward/reverse stick and CH1 for the turning stick. Make small adjustments and recheck the home-screen values.</figcaption>
+  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ht10a-channel-trim-manual-en.svg" alt="English HT-10A manual reference showing the Channel Trim screen" loading="lazy">
+  <figcaption><strong>HT-10A Channel Trim in English.</strong> Use CH3 for forward/reverse and CH1 for turning. Make small adjustments and recheck the home-screen values.</figcaption>
 </figure>
 
 4. If the physical stick center is still incorrect after removing trim, open **Stick Calibration**. Start calibration, follow the on-screen stick movements, return both sticks to their center positions, and confirm.
 
 <figure class="guide-figure step-figure">
-  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ht10a-stick-calibration-manual.png" alt="Cropped HotRC HT-10A official manual showing its stick calibration screen and instructions" loading="lazy">
-  <figcaption><strong>HT-10A Stick Calibration.</strong> The manual says to use this only when the stick center has drifted: begin calibration, follow the direction prompts, return the sticks to center, and confirm.</figcaption>
+  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ht10a-stick-calibration-manual-en.svg" alt="English HT-10A manual reference showing its stick calibration screen and instructions" loading="lazy">
+  <figcaption><strong>HT-10A Stick Calibration in English.</strong> Use it only when the stick center has drifted: begin calibration, follow the direction prompts, return the sticks to center, and confirm.</figcaption>
 </figure>
 
 ### CT-6A trim controls
@@ -172,8 +172,8 @@ Center the transmitter before allowing the wheels to touch a surface.
 The CT-6A manual identifies dedicated **TH TRIM** controls for throttle and **SH TRIM** controls for steering. It does not provide the same CH1/CH2 numeric home-screen view as the HT-10A, so use the Mini Hunter OLED for the final zero check.
 
 <figure class="guide-figure step-figure">
-  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ct6a-trim-controls-manual.png" alt="Cropped HotRC CT-6A official manual identifying throttle and steering trim controls" loading="lazy">
-  <figcaption><strong>CT-6A trim reference.</strong> TH TRIM corrects the trigger's throttle center. SH TRIM corrects the steering-wheel center. The other nearby controls are not used for centering Mini Hunter RC input.</figcaption>
+  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ct6a-trim-controls-manual-en.svg" alt="English CT-6A manual reference identifying throttle and steering trim controls" loading="lazy">
+  <figcaption><strong>CT-6A trim reference in English.</strong> TH TRIM corrects the trigger's throttle center. SH TRIM corrects the steering-wheel center. Adjust one click at a time.</figcaption>
 </figure>
 
 1. Release the trigger and steering wheel so both return naturally to center.

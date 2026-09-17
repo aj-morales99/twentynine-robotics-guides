@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="650" viewBox="0 0 1400 650" role="img" aria-labelledby="t d">
+  <title id="t">CT-6A trim controls in English</title><desc id="d">English diagram identifying throttle and steering trim directions used to center Mini Hunter RC input.</desc>
+  <style>.txt{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172033}.h{font-size:34px;font-weight:800}.sh{font-size:25px;font-weight:800}.b{font-size:21px;font-weight:650}.s{font-size:17px}.muted{fill:#52647c}.white{fill:#fff}.red{fill:#fb7185}.blue{fill:#60a5fa}</style>
+  <rect width="1400" height="650" fill="#f8fafc"/><rect width="1400" height="68" fill="#e5e7eb"/><text x="38" y="46" class="txt h">CT-6A - Throttle and Steering Trim</text>
+  <rect x="430" y="100" width="540" height="450" rx="30" fill="#fff" stroke="#64748b" stroke-width="4"/><text x="700" y="145" text-anchor="middle" class="txt sh">HotRC CT-6A control panel</text>
+  <circle cx="585" cy="220" r="60" fill="#f1f5f9" stroke="#94a3b8" stroke-width="3"/><text x="585" y="211" text-anchor="middle" class="txt b">CH5</text><text x="585" y="241" text-anchor="middle" class="txt s muted">travel</text>
+  <circle cx="815" cy="220" r="60" fill="#f1f5f9" stroke="#94a3b8" stroke-width="3"/><text x="815" y="211" text-anchor="middle" class="txt b">CH6</text><text x="815" y="241" text-anchor="middle" class="txt s muted">travel</text>
+  <circle cx="700" cy="365" r="55" fill="#f1f5f9" stroke="#64748b" stroke-width="3"/><path d="M700 280l-28 48h56zM700 450l-28-48h56z" class="red"/><path d="M615 365l48-28v56zM785 365l-48-28v56z" class="blue"/>
+  <text x="700" y="265" text-anchor="middle" class="txt b">TH TRIM +</text><text x="700" y="510" text-anchor="middle" class="txt b">TH TRIM -</text><text x="600" y="335" text-anchor="end" class="txt b">SH TRIM -</text><text x="800" y="335" class="txt b">SH TRIM +</text>
+  <path d="M665 300H260" stroke="#fb7185" stroke-width="4"/><circle cx="665" cy="300" r="7" class="red"/><text x="55" y="286" class="txt sh">TH TRIM</text><text x="55" y="318" class="txt s muted">Centers trigger / Trig</text>
+  <path d="M750 365H1140" stroke="#60a5fa" stroke-width="4"/><circle cx="750" cy="365" r="7" class="blue"/><text x="1160" y="351" class="txt sh">SH TRIM</text><text x="1160" y="383" class="txt s muted">Centers wheel / Turn</text>
+  <rect x="260" y="565" width="880" height="54" rx="13" fill="#e8f1ff" stroke="#60a5fa" stroke-width="2"/><text x="700" y="599" text-anchor="middle" class="txt b">Adjust one click at a time until the robot OLED reads Trig:0 and Turn:0.</text>
+  <text x="1360" y="638" text-anchor="end" class="txt s muted">English recreation of the official HotRC manual</text>
+</svg>

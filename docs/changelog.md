@@ -6,6 +6,13 @@ description: A record of changes to the Twentynine Robotics online guides.
 
 # Documentation changelog
 
+## 0.3.6 English RC manual diagrams 2026 09 17
+
+- Replaced all Chinese-language HotRC manual crops in the RC controller guide with complete English recreations.
+- Preserved the official HT-10A binding sequence, CH3/CH1 1500 center values, Channel Trim behavior, and Stick Calibration procedure.
+- Preserved the official CT-6A binding order and made the TH TRIM and SH TRIM directions immediately identifiable for Mini Hunter users.
+- Kept the original manufacturer manuals linked through HotRC technical support for source verification.
+
 ## 0.3.5 official RC manual references 2026 09 17
 
 - Removed the approximate RC Cable V1 opposite-bend illustration while retaining the written orientation instruction.
