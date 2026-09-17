@@ -6,6 +6,12 @@ description: A record of changes to the Twentynine Robotics online guides.
 
 # Documentation changelog
 
+## 0.3.7 receiver locator visuals 2026 09 17
+
+- Added focused F-10A and F-06A receiver pictures immediately before their binding procedures.
+- Circled and labeled each receiver's physical BIND button and status LED location without changing the hardware image.
+- Added an English LED-state key for no signal, pairing, and connected states.
+
 ## 0.3.6 English RC manual diagrams 2026 09 17
 
 - Replaced all Chinese-language HotRC manual crops in the RC controller guide with complete English recreations.

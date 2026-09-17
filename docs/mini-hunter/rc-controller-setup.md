@@ -111,6 +111,11 @@ Use the procedure for the controller and receiver supplied with your kit.
 ### HT-10A with F-10A receiver
 
 <figure class="guide-figure step-figure">
+  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-f10a-receiver-locator.png" alt="HotRC F-10A receiver with the BIND button circled in coral and the status LED location circled in green" loading="lazy">
+  <figcaption><strong>F-10A receiver locator.</strong> The coral circle identifies the round BIND button; the green circle identifies the small status LED on the receiver's left edge. Use the printed labels on the receiver to confirm the locations before pressing anything.</figcaption>
+</figure>
+
+<figure class="guide-figure step-figure">
   <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ht10a-binding-manual-en.svg" alt="English HT-10A manual reference showing the Pairing Settings screen, Start button, and receiver binding sequence" loading="lazy">
   <figcaption><strong>HT-10A manual reference in English.</strong> The blue control is Start pairing; the orange button is Start. The receiver LED must change from fast flashing to steady green.</figcaption>
 </figure>
@@ -123,6 +128,11 @@ Use the procedure for the controller and receiver supplied with your kit.
 6. Wait for the receiver LED to remain steadily green.
 
 ### CT-6A with F-06A receiver
+
+<figure class="guide-figure step-figure">
+  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-f06a-receiver-locator.png" alt="HotRC F-06A receiver with the BIND button circled in coral and the status LED location circled in green" loading="lazy">
+  <figcaption><strong>F-06A receiver locator.</strong> The coral circle identifies the round BIND button inside its printed box; the green circle identifies the small status LED on the receiver's left edge. Do not confuse either with the EXT-V socket.</figcaption>
+</figure>
 
 <figure class="guide-figure step-figure">
   <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ct6a-binding-manual-en.svg" alt="English CT-6A manual reference showing its three-step receiver binding procedure" loading="lazy">
