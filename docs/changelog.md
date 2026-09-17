@@ -6,6 +6,12 @@ description: A record of changes to the Twentynine Robotics online guides.
 
 # Documentation changelog
 
+## 0.3.9 white-circle favicon 2026 09 17
+
+- Rebuilt the website favicon from the supplied Twentynine Robotics SVG logo.
+- Replaced the yellow square with a white circular badge, subtle gray edge, and transparent outer corners.
+- Updated every favicon size and the Apple touch icon, with a new cache version so browsers request the revision.
+
 ## 0.3.8 site identity and Mini Hunter showcase 2026 09 17
 
 - Added a multi-size Twentynine Robotics favicon for browser tabs and bookmarks, plus an Apple touch icon.
