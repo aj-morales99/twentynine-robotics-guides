@@ -137,6 +137,9 @@ pre code { background: transparent; color: inherit; padding: 0; border: 0; }
 .guide-figure--compact { max-width: 620px; }
 .guide-figure figcaption { padding: 0.8rem 0.95rem; color: var(--muted); font-size: 0.82rem; line-height: 1.55; }
 .guide-figure figcaption strong { color: var(--ink); }
+.product-showcase { max-width: 760px; margin: 1.5rem auto 2rem; }
+.product-showcase a { display: block; background: #090d14; }
+.product-showcase img { width: 100%; max-height: min(78vh, 820px); object-fit: contain; }
 .step-figure { margin: 0.9rem 0 1.6rem 1.5rem; }
 
 .card-grid, .section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 1rem; margin: 1.5rem 0 2rem; }
@@ -269,6 +272,7 @@ pre code { background: transparent; color: inherit; padding: 0; border: 0; }
   .sequence-link.next { text-align: left; align-items: flex-start; }
   .home-page .page-shell { padding: 3rem 1rem 1.5rem; }
   .guide-directory { grid-template-columns: 1fr; gap: 2rem; }
+  .product-showcase img { max-height: 72vh; }
   .step-figure { margin-left: 0; }
   .product-card { min-height: 230px; grid-template-columns: 48px 1fr; padding: 1.25rem; }
   .product-card__mark { width: 44px; height: 44px; border-radius: 11px; }

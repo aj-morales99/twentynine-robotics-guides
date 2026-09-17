@@ -6,6 +6,9 @@
     <meta name="theme-color" content="#0b1120">
     <meta name="description" content="{{ page.description | default: site.description | escape }}">
     <title>{{ page.title | default: site.title }} | Twentynine Robotics</title>
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}?v=1" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32x32.png' | relative_url }}?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}?v=1">
     <script>
       (function () {
         try { document.documentElement.dataset.theme = localStorage.getItem("twentynine-theme") || "dark"; }
@@ -15,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=0.4.2">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=0.4.3">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>

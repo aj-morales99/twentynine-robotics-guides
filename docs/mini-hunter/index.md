@@ -9,6 +9,13 @@ permalink: /mini-hunter/
 
 The robot normally arrives with working firmware already installed. Start by learning the controls and completing the safety checks. Open the Programming section only when you want to reinstall or customize the code.
 
+<figure class="guide-figure product-showcase">
+  <a href="../assets/images/mini-hunter/mini-hunter-multi-angle.webp" aria-label="Open the full Mini Hunter multi-angle photo">
+    <img src="../assets/images/mini-hunter/mini-hunter-multi-angle.webp" alt="Mini Hunter Sumobot Kit shown from the front, blade, internal controller board, wheel, and front-sensor angles" width="1440" height="2560" fetchpriority="high">
+  </a>
+  <figcaption><strong>Meet the Mini Hunter.</strong> This multi-angle reference shows the assembled robot, front blade, FullVision controller board, drive wheel, and front sensor openings. Select the image to view it at full size.</figcaption>
+</figure>
+
 <div class="note"><strong>Guide status:</strong> <strong>In progress</strong> pages contain usable instructions but still need verified sections or supporting material. <strong>Pending</strong> pages are planned and should not yet be used as complete procedures.</div>
 
 <div class="start-panel">

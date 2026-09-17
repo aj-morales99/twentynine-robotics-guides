@@ -6,6 +6,12 @@ description: A record of changes to the Twentynine Robotics online guides.
 
 # Documentation changelog
 
+## 0.3.8 site identity and Mini Hunter showcase 2026 09 17
+
+- Added a multi-size Twentynine Robotics favicon for browser tabs and bookmarks, plus an Apple touch icon.
+- Added the supplied Mini Hunter multi-angle product photograph to the Mini Hunter overview page.
+- Optimized the large photograph for fast web delivery while keeping the full collage visible and selectable.
+
 ## 0.3.7 receiver locator visuals 2026 09 17
 
 - Added focused F-10A and F-06A receiver pictures immediately before their binding procedures.
