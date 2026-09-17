@@ -6,6 +6,14 @@ description: A record of changes to the Twentynine Robotics online guides.
 
 # Documentation changelog
 
+## 0.3.5 official RC manual references 2026 09 17
+
+- Removed the approximate RC Cable V1 opposite-bend illustration while retaining the written orientation instruction.
+- Replaced the reconstructed binding flow with focused excerpts from the official HotRC HT-10A and CT-6A manuals.
+- Split binding into the manufacturer's HT-10A/F-10A and CT-6A/F-06A sequences, including their documented receiver LED states.
+- Added official-manual references for HT-10A CH3/CH1 center values, Channel Trim, and Stick Calibration.
+- Added the CT-6A manual's TH TRIM and SH TRIM control reference and tied final centering to the Mini Hunter OLED's `Trig:0` and `Turn:0` readings.
+
 ## 0.3.4 visual RC controller guide 2026 09 17
 
 - Added separate visual control maps for the bundled HotRC HT-10A joystick transmitter and CT-6A trigger transmitter, with the receiver removed from each product view.

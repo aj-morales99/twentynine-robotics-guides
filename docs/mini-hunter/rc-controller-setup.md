@@ -104,32 +104,85 @@ If the two channel leads are not labeled, either complete lead may be placed on 
 
 The Bluetooth module and RC receiver use the same controller connection in this setup. Do not try to install both at the same time.
 
-<figure class="guide-figure step-figure">
-  <img src="../assets/images/mini-hunter/rc/rc-cable-v1-orientation.svg" alt="RC Cable V1 orientation diagram showing the Bluetooth cable bending left and RC Cable V1 bending right from the same FullVision board header" loading="lazy">
-  <figcaption><strong>Opposite bends:</strong> Bluetooth bends left; RC Cable V1 bends right. Power off first, align the plug carefully, and never force it into the shared header.</figcaption>
-</figure>
-
 ## 4. Bind the receiver and transmitter
 
-Binding makes the receiver listen to this transmitter.
+Use the procedure for the controller and receiver supplied with your kit.
 
-1. Center the HT-10A sticks, or release the CT-6A wheel and trigger so they return to center.
-2. Turn on the robot. The receiver LED should blink if it is not yet bound.
-3. Put the receiver into bind mode using its **BIND** button or bind control.
-4. For the **HT-10A**, open **Settings**, open **Bind Set**, and choose **START**.
-5. For the **CT-6A**, power on the transmitter while the F-06A receiver is in bind mode.
-6. Wait for the receiver LED to stop blinking and remain steadily lit.
+### HT-10A with F-10A receiver
+
+<figure class="guide-figure step-figure">
+  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ht10a-binding-manual.png" alt="Cropped HotRC HT-10A official manual showing the transmitter pairing screen and Start button" loading="lazy">
+  <figcaption><strong>Official HT-10A manual reference.</strong> The screen title is Pairing Settings. The blue control is Start Pairing; the orange button is Start. The text at right explains the receiver BIND-button sequence.</figcaption>
+</figure>
+
+1. Leave the HT-10A powered off and center both sticks.
+2. Power the robot and F-10A receiver. A slow green flash means the receiver has no transmitter signal.
+3. Press the F-10A receiver's **BIND** button once. The green LED should flash quickly.
+4. Power on the HT-10A and open **Pairing Settings**.
+5. Select **Start Pairing**, then press the orange **Start** button shown in the manual.
+6. Wait for the receiver LED to remain steadily green.
+
+### CT-6A with F-06A receiver
+
+<figure class="guide-figure step-figure">
+  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ct6a-binding-manual.png" alt="Cropped HotRC CT-6A official manual showing its three-step receiver binding procedure" loading="lazy">
+  <figcaption><strong>Official CT-6A manual reference.</strong> The sequence is: power the receiver, press its BIND button, and then power on the transmitter. Slow flash means no signal, fast flash means pairing, and steady green means connected.</figcaption>
+</figure>
+
+1. Leave the CT-6A powered off and release the wheel and trigger so they return to center.
+2. Power the robot and F-06A receiver. Its green LED should flash slowly.
+3. Press the F-06A receiver's **BIND** button once. Its green LED should flash quickly.
+4. Turn on the CT-6A transmitter.
+5. Wait for the receiver LED to remain steadily green.
 
 <div class="note"><strong>Binding checkpoint:</strong> A steady receiver LED indicates that binding is complete. If the LED continues blinking, turn the robot off and repeat this section. Do not continue to the movement test until the connection is stable.</div>
 
+For the complete manufacturer documents, open [HotRC technical support](https://www.hotrc.cn/support/7.html), then select **HT-10A** or **CT-6A** and choose the manual link for that model.
+
+## 5. Center the transmitter channels
+
+Center the transmitter before allowing the wheels to touch a surface.
+
+### HT-10A channel values
+
+1. Release both sticks and remove your hands from them.
+2. On the HT-10A home screen, check **CH3** and **CH1**. Both should read approximately **1500** at center.
+
 <figure class="guide-figure step-figure">
-  <img src="../assets/images/mini-hunter/rc/hotrc-binding-flow.svg" alt="Visual binding flow for HT-10A and CT-6A controllers showing Bind Set and receiver LED states" loading="lazy">
-  <figcaption><strong>Binding screen and LED guide:</strong> The HT-10A flow uses <em>Settings → Bind Set → START</em>. The CT-6A flow uses the F-06A receiver's bind control. In both cases, finish only when the receiver LED remains steady. Screen wording may differ slightly by firmware.</figcaption>
+  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ht10a-channel-values-manual.png" alt="Cropped HotRC HT-10A official manual showing centered CH3 and CH1 values of 1500" loading="lazy">
+  <figcaption><strong>HT-10A centered reference.</strong> The official screen diagram shows CH3 at 1500 and CH1 at 1500 when the sticks are centered.</figcaption>
 </figure>
 
-For the manufacturer's model-specific instructions and videos, see [HotRC technical support](https://www.hotrc.cn/support/7.html).
+3. If either channel has a small offset, open **Channel Trim** and adjust only that channel toward its 1500 center. In the manual, `+` adds to the 1500 center and `−` subtracts from it.
 
-## 5. Select RC Mode
+<figure class="guide-figure step-figure">
+  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ht10a-channel-trim-manual.png" alt="Cropped HotRC HT-10A official manual showing the Channel Trim screen" loading="lazy">
+  <figcaption><strong>HT-10A Channel Trim.</strong> Use CH3 for the forward/reverse stick and CH1 for the turning stick. Make small adjustments and recheck the home-screen values.</figcaption>
+</figure>
+
+4. If the physical stick center is still incorrect after removing trim, open **Stick Calibration**. Start calibration, follow the on-screen stick movements, return both sticks to their center positions, and confirm.
+
+<figure class="guide-figure step-figure">
+  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ht10a-stick-calibration-manual.png" alt="Cropped HotRC HT-10A official manual showing its stick calibration screen and instructions" loading="lazy">
+  <figcaption><strong>HT-10A Stick Calibration.</strong> The manual says to use this only when the stick center has drifted: begin calibration, follow the direction prompts, return the sticks to center, and confirm.</figcaption>
+</figure>
+
+### CT-6A trim controls
+
+The CT-6A manual identifies dedicated **TH TRIM** controls for throttle and **SH TRIM** controls for steering. It does not provide the same CH1/CH2 numeric home-screen view as the HT-10A, so use the Mini Hunter OLED for the final zero check.
+
+<figure class="guide-figure step-figure">
+  <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ct6a-trim-controls-manual.png" alt="Cropped HotRC CT-6A official manual identifying throttle and steering trim controls" loading="lazy">
+  <figcaption><strong>CT-6A trim reference.</strong> TH TRIM corrects the trigger's throttle center. SH TRIM corrects the steering-wheel center. The other nearby controls are not used for centering Mini Hunter RC input.</figcaption>
+</figure>
+
+1. Release the trigger and steering wheel so both return naturally to center.
+2. Continue to RC Mode below and observe the robot OLED.
+3. If <code>Trig</code> is not zero, tap the appropriate **TH TRIM** direction once, then recheck.
+4. If <code>Turn</code> is not zero, tap the appropriate **SH TRIM** direction once, then recheck.
+5. Stop as soon as the OLED settles at <code>Trig:0</code> and <code>Turn:0</code>. Do not hold a trim button or make large adjustments.
+
+## 6. Select RC Mode
 
 1. Keep the robot supported with its wheels raised.
 2. Use the switches on the FullVision STM32 board to display **RC MODE** on the OLED.
@@ -138,7 +191,7 @@ For the manufacturer's model-specific instructions and videos, see [HotRC techni
 
 The OLED should show <code>Trig:0</code> and <code>Turn:0</code>, and both wheels should remain stopped. If a value does not settle near zero or either wheel moves, turn off the robot immediately and see [If the robot moves at neutral](#if-the-robot-moves-at-neutral).
 
-## 6. Test and correct the controls
+## 7. Test and correct the controls
 
 Use small control movements during the first test. Values can run from <code>-100</code> to <code>100</code>; the sign may reverse if a transmitter channel is reversed.
 
