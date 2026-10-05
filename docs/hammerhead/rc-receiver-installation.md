@@ -141,12 +141,13 @@ Use the pairing method for the controller and receiver supplied with the kit.
 
 ### Start the Hammerhead
 
-1. Press **SW2** once. The three LEDs should illuminate red.
-2. To choose a different color, long-press **SW2** to exit.
-3. Press and hold **SW1** to enter color selection.
-4. While holding SW1, press **SW2** to cycle through the available colors.
-5. Release SW1 when the desired color appears.
-6. Press **SW2** once to start the robot.
+1. Confirm that only **one LED** is illuminated. This is the standby state and the LED shows the selected robot color.
+2. Press **SW2 once** to start. All three LEDs illuminate in the selected color, which means the robot is running.
+3. To stop, press and hold **SW2** until the LEDs begin blinking. The robot then returns to standby with one LED illuminated.
+
+To change the robot color, keep **SW1 held**, then press **SW2** to cycle through the six available colors. Only one LED is illuminated during color selection. Release SW1 when the required color appears, then press SW2 once to start; all three LEDs illuminate in that color.
+
+See [Start using Hammerhead](getting-started.html#understand-the-led-states) for the complete illustrated LED and color-selection procedure.
 
 ### Check the controls
 
