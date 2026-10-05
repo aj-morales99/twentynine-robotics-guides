@@ -159,6 +159,13 @@ pre code { background: transparent; color: inherit; padding: 0; border: 0; }
 .spec-card p { margin: 0; color: var(--muted); font-size: 0.9rem; line-height: 1.65; }
 .spec-card strong { color: var(--ink); }
 
+.upgrade-flow { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr); align-items: stretch; gap: 0.65rem; margin: 1.5rem 0; }
+.upgrade-flow section { min-width: 0; display: grid; align-content: center; gap: 0.35rem; padding: 1.1rem; background: linear-gradient(145deg, var(--surface-raised), var(--surface)); border: 1px solid var(--line); border-top: 3px solid var(--brand); border-radius: 12px; text-align: center; }
+.upgrade-flow small { color: var(--brand-strong); font-size: 0.65rem; font-weight: 900; letter-spacing: 0.08em; }
+.upgrade-flow strong { font-size: 1.15rem; }
+.upgrade-flow section span { color: var(--muted); font-size: 0.82rem; line-height: 1.55; }
+.upgrade-flow__arrow { display: grid; place-items: center; color: var(--brand-strong); font-size: 1.65rem; font-weight: 900; }
+
 .card-grid, .section-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 1rem; margin: 1.5rem 0 2rem; }
 .guide-card { display: flex; flex-direction: column; gap: 0.55rem; min-height: 190px; padding: 1.25rem; color: var(--ink); text-decoration: none; background: linear-gradient(145deg, var(--surface-raised), var(--surface)); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); transition: transform 160ms ease, border-color 160ms ease; }
 .guide-card:hover { transform: translateY(-2px); border-color: var(--brand); color: var(--ink); }
@@ -279,6 +286,8 @@ pre code { background: transparent; color: inherit; padding: 0; border: 0; }
   .theme-toggle { padding: 0.45rem 0.6rem; }
   .theme-toggle .button-label { display: none; }
   .menu-toggle { padding: 0.45rem 0.6rem; }
+  .upgrade-flow { grid-template-columns: 1fr; }
+  .upgrade-flow__arrow { transform: rotate(90deg); }
   .page-shell { padding: 0.9rem 0.7rem 1.5rem; }
   .guide-content { padding: 1rem 0.55rem 1.5rem; }
   .breadcrumbs { padding: 0 0.2rem; }

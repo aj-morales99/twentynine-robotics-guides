@@ -25,6 +25,8 @@ The robot normally arrives with working firmware already installed. Start by lea
   <a class="primary-action" href="getting-started.html">Start using the robot <span aria-hidden="true">→</span></a>
 </div>
 
+<div class="note"><strong>Which Mini Hunter do you have?</strong> Compare the Basic and Advanced models, review the specifications, and see the modular path to a 3 kg build in <a href="specifications-and-upgrades.html">Models, specifications &amp; upgrades</a>.</div>
+
 <div class="guide-directory">
   <section>
     <h2>Getting started</h2>
@@ -40,6 +42,7 @@ The robot normally arrives with working firmware already installed. Start by lea
   </section>
   <section>
     <h2>Hardware and upgrades</h2>
+    <a class="directory-link" href="specifications-and-upgrades.html"><span><strong>Models, specifications &amp; upgrade paths</strong><small>Identify Basic or Advanced hardware and plan 1 kg or 3 kg configurations.</small></span><span class="directory-status ready">Ready</span></a>
     <a class="directory-link" href="attachments/"><span><strong>Attachment guides</strong><small>Robohockey, front plates, and weight adjustment.</small></span><span class="directory-status pending">Pending</span></a>
     <a class="directory-link" href="upgrades/"><span><strong>Upgrade kits</strong><small>3 kg upgrade, RC conversion, and blade swapping.</small></span><span class="directory-status pending">Pending</span></a>
   </section>
