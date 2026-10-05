@@ -32,13 +32,13 @@ permalink: /
       <span class="product-action">View guide status <span aria-hidden="true">→</span></span>
     </span>
   </a>
-  <a class="product-card product-card--planned" href="hammerhead/">
+  <a class="product-card product-card--ready" href="hammerhead/">
     <span class="product-card__mark" aria-hidden="true">HH</span>
     <span class="product-card__content">
-      <span class="availability planned">Pending</span>
-      <strong>Hammerhead Robohockey Kit</strong>
-      <span>The guide area is reserved. Verified setup and maintenance instructions are being prepared.</span>
-      <span class="product-action">View guide status <span aria-hidden="true">→</span></span>
+      <span class="availability available">Ready</span>
+      <strong>Shark Series: Hammerhead Robohockey Kit</strong>
+      <span>Product specifications, RC startup, receiver installation, drivetrain checks, and attachment updates.</span>
+      <span class="product-action">Open Shark Series guides <span aria-hidden="true">→</span></span>
     </span>
   </a>
   <a class="product-card product-card--planned" href="blt-n20/">

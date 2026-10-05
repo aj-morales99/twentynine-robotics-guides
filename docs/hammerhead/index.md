@@ -1,11 +1,18 @@
 ---
 layout: default
-title: Hammerhead Robohockey Kit guides
-description: Setup, operation, controller, hardware, and attachment guides for the Twentynine Robotics Hammerhead Robohockey Kit.
+title: "Shark Series: Hammerhead Robohockey Kit guides"
+description: Setup, operation, controller, hardware, and attachment guides for the Twentynine Robotics Shark Series Hammerhead Robohockey Kit.
 permalink: /hammerhead/
 ---
 
-# Hammerhead Robohockey Kit
+# Shark Series: Hammerhead Robohockey Kit
+
+The **Hammerhead** is part of the Twentynine Robotics **Shark Series**—a competition-focused family built around speed, grip, durability, and adaptable control.
+
+<figure class="brand-intro">
+  <img src="../assets/images/hammerhead/shark-series-logo.webp" alt="Shark Series logo featuring a streamlined shark above the words Shark Series" width="1200" height="800" fetchpriority="high">
+  <figcaption><span class="eyebrow">SHARK SERIES</span><strong>Engineered with a predator's instinct.</strong> Fast response, aggressive traction, and hardware prepared for competition.</figcaption>
+</figure>
 
 Fast, durable, and competition-ready, Hammerhead combines high-speed drive hardware, high-grip silicone wheels, a front-biased chassis, and flexible RC or Bluetooth control.
 
