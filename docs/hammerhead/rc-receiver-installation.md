@@ -145,7 +145,7 @@ Use the pairing method for the controller and receiver supplied with the kit.
 2. Press **SW2 once** to start. All three LEDs illuminate in the selected color, which means the robot is running.
 3. To stop, press and hold **SW2** until the LEDs begin blinking. The robot then returns to standby with one LED illuminated.
 
-To change the robot color, keep **SW1 held**, then press **SW2** to cycle through the six available colors. Only one LED is illuminated during color selection. Release SW1 when the required color appears, then press SW2 once to start; all three LEDs illuminate in that color.
+To change the robot color, press **SW1 once** to latch the detent switch; you do not need to keep holding it. Press **SW2** to cycle through the six available colors. Only one LED is illuminated during color selection. When the required color appears, press **SW1 again** to unlatch it, then press SW2 once to start. All three LEDs illuminate in the selected color.
 
 See [Start using Hammerhead](getting-started.html#understand-the-led-states) for the complete illustrated LED and color-selection procedure.
 
@@ -158,7 +158,9 @@ Use small transmitter movements during this first test:
 3. Check left and right steering.
 4. Release the controls and confirm that both motors stop at neutral.
 
-If forward/reverse and steering are assigned to the wrong controls, stop the robot and disconnect the battery. Swap the positions of the **two complete 3-pin receiver plugs**, then reconnect power and repeat the raised-wheel test.
+### Correct an inverted or swapped control
+
+If the wheel response or transmitter controls are inverted, stop the robot and disconnect the battery. Swap the positions of the **two complete 3-pin receiver plugs**, then reconnect power and repeat the raised-wheel test.
 
 <div class="warning note"><strong>Swap complete plugs only.</strong> Never rearrange or reverse the individual white, red, and black wires.</div>
 

@@ -74,21 +74,21 @@ Use the status LEDs to assign a visible robot color before the match. Six colors
     <p>Make sure the robot is in standby with only <strong>one LED</strong> illuminated. If all three LEDs are illuminated, press and hold <strong>SW2</strong> until they blink and return to one LED.</p>
   </li>
   <li>
-    <p>Press and keep holding the <strong>SW1 detent switch</strong> to enter color selection. Only one LED remains illuminated while you choose.</p>
+    <p>Press <strong>SW1 once</strong> to latch the detent switch and enter color selection. You do not need to keep holding it. Only one LED remains illuminated while you choose.</p>
     <figure class="guide-figure step-figure">
-      <img src="../assets/images/hammerhead/getting-started/hh-start-01-red-ready.webp" alt="User holding SW1 while one red Hammerhead status LED is illuminated during color selection" width="1600" height="900" loading="lazy">
-      <figcaption><strong>Color selection:</strong> hold SW1. A single LED shows the currently selected color.</figcaption>
+      <img src="../assets/images/hammerhead/getting-started/hh-start-01-red-ready.webp" alt="User pressing SW1 to latch color selection while one red Hammerhead status LED is illuminated" width="1600" height="900" loading="lazy">
+      <figcaption><strong>Enter color selection:</strong> press SW1 once to latch it. A single LED shows the currently selected color.</figcaption>
     </figure>
   </li>
   <li>
-    <p>While continuing to hold <strong>SW1</strong>, press <strong>SW2</strong> to move through the six available colors. Only one LED should be illuminated as the color changes.</p>
+    <p>With <strong>SW1 latched</strong>, press <strong>SW2</strong> to move through the six available colors. Only one LED should be illuminated as the color changes.</p>
     <figure class="guide-figure step-figure">
-      <img src="../assets/images/hammerhead/getting-started/hh-start-02-color-select.webp" alt="User holding SW1 while one blue Hammerhead status LED is illuminated during color selection" width="1600" height="900" loading="lazy">
+      <img src="../assets/images/hammerhead/getting-started/hh-start-02-color-select.webp" alt="Hammerhead showing one blue status LED while SW1 is latched in color selection" width="1600" height="900" loading="lazy">
       <figcaption>Each press of SW2 selects the next color; this example shows blue on one LED.</figcaption>
     </figure>
   </li>
   <li>
-    <p>When the required color appears, release <strong>SW1</strong>. The robot remains in standby with one LED illuminated.</p>
+    <p>When the required color appears, press <strong>SW1 again</strong> to unlatch it and leave color selection. The robot remains in standby with one LED illuminated.</p>
   </li>
   <li>
     <p>Press <strong>SW2 once</strong> to start. All three LEDs illuminate using the color you selected.</p>
@@ -111,6 +111,8 @@ Keep the robot supported with both wheels raised.
 3. Check left and right steering.
 4. Release the controls and confirm that both motors stop at neutral.
 5. Press and hold SW2 to stop the robot after the test.
+
+If the wheel response or transmitter controls are inverted, stop the robot and disconnect the battery. Go directly to [Correct an inverted or swapped control](rc-receiver-installation.html#correct-an-inverted-or-swapped-control) and follow the receiver-plug correction before testing again.
 
 Do not place the robot on the floor until the controller returns reliably to neutral and every direction responds correctly.
 
