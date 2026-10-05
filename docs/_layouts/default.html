@@ -132,29 +132,48 @@
         });
         updateThemeButton();
 
-        const guides = [
-          ["/mini-hunter/", "Guide overview"],
-          ["/mini-hunter/getting-started.html", "Start using your Mini Hunter"],
-          ["/mini-hunter/modes/introduction.html", "Modes introduction"],
-          ["/mini-hunter/hardware/wheels-gears-checkup.html", "Wheels & gears check-up"],
-          ["/mini-hunter/bluetooth-application-setup.html", "Bluetooth application setup"],
-          ["/mini-hunter/rc-controller-setup.html", "RC controller setup"],
-          ["/mini-hunter/calibration/", "Calibration setup"],
-          ["/mini-hunter/calibration/line-sensors.html", "Line-sensor calibration"],
-          ["/mini-hunter/calibration/enemy-detection.html", "Enemy-detection check"],
-          ["/mini-hunter/attachments/", "Attachment guides"],
-          ["/mini-hunter/upgrades/", "Upgrade kits"],
-          ["/mini-hunter/setup-and-first-upload.html", "Arduino IDE, board setup & uploading"],
-          ["/mini-hunter/downloads.html", "Programming downloads"],
-          ["/mini-hunter/programming/common-settings.html", "Common firmware settings"],
-          ["/mini-hunter/modes/customization.html", "Modes customization"],
-          ["/mini-hunter/code-library/", "FullVision function library"],
-          ["/mini-hunter/programming/pin-map.html", "FullVision STM32 pin map"],
-          ["/mini-hunter/troubleshooting/", "Troubleshooting"]
-        ];
+        const guideSets = {
+          "/mini-hunter/": {
+            name: "Mini Hunter",
+            guides: [
+              ["/mini-hunter/", "Guide overview"],
+              ["/mini-hunter/getting-started.html", "Start using your Mini Hunter"],
+              ["/mini-hunter/modes/introduction.html", "Modes introduction"],
+              ["/mini-hunter/hardware/wheels-gears-checkup.html", "Wheels & gears check-up"],
+              ["/mini-hunter/bluetooth-application-setup.html", "Bluetooth application setup"],
+              ["/mini-hunter/rc-controller-setup.html", "RC controller setup"],
+              ["/mini-hunter/calibration/", "Calibration setup"],
+              ["/mini-hunter/calibration/line-sensors.html", "Line-sensor calibration"],
+              ["/mini-hunter/calibration/enemy-detection.html", "Enemy-detection check"],
+              ["/mini-hunter/attachments/", "Attachment guides"],
+              ["/mini-hunter/upgrades/", "Upgrade kits"],
+              ["/mini-hunter/setup-and-first-upload.html", "Arduino IDE, board setup & uploading"],
+              ["/mini-hunter/downloads.html", "Programming downloads"],
+              ["/mini-hunter/programming/common-settings.html", "Common firmware settings"],
+              ["/mini-hunter/modes/customization.html", "Modes customization"],
+              ["/mini-hunter/code-library/", "FullVision function library"],
+              ["/mini-hunter/programming/pin-map.html", "FullVision STM32 pin map"],
+              ["/mini-hunter/troubleshooting/", "Troubleshooting"]
+            ]
+          },
+          "/hammerhead/": {
+            name: "Hammerhead",
+            guides: [
+              ["/hammerhead/", "Guide overview"],
+              ["/hammerhead/getting-started.html", "Start using Hammerhead"],
+              ["/hammerhead/hardware/wheels-gears-checkup.html", "Wheels & gears check-up"],
+              ["/hammerhead/controllers/bluetooth-variant-installation.html", "Bluetooth Variant installation"],
+              ["/hammerhead/rc-receiver-installation.html", "RC Variant installation"],
+              ["/hammerhead/assembly/robo-z-attachment.html", "ROBO Z attachment"],
+              ["/hammerhead/assembly/soccerbot-gladiator-attachment.html", "Soccerbot Gladiator attachment"]
+            ]
+          }
+        };
         const kitMarkers = ["/mini-hunter/", "/micro-hunter/", "/hammerhead/", "/blt-n20/"];
         const activeKitMarker = kitMarkers.find(function (kit) { return location.pathname.indexOf(kit) >= 0; });
-        const marker = "/mini-hunter/";
+        const marker = activeKitMarker || "/mini-hunter/";
+        const activeGuideSet = guideSets[activeKitMarker];
+        const guides = activeGuideSet ? activeGuideSet.guides : [];
         const markerIndex = location.pathname.indexOf(marker);
         const basePrefix = markerIndex >= 0 ? location.pathname.slice(0, markerIndex) : "";
         const currentPath = markerIndex >= 0 ? location.pathname.slice(markerIndex) : location.pathname;
@@ -177,7 +196,14 @@
             }
           });
           document.querySelectorAll(".kit-tree__kit").forEach(function (kit) {
-            kit.open = kit.dataset.kitPath === activeKitMarker;
+            const isActiveKit = kit.dataset.kitPath === activeKitMarker;
+            kit.open = isActiveKit;
+            kit.classList.toggle("active-kit", isActiveKit);
+            if (isActiveKit) {
+              kit.addEventListener("toggle", function () {
+                if (!kit.open) requestAnimationFrame(function () { kit.open = true; });
+              });
+            }
           });
           if (activeLink && activeLink.closest("details")) activeLink.closest("details").open = true;
           if (activeLink) requestAnimationFrame(function () { sidebar.scrollTop = Math.max(0, activeLink.offsetTop - sidebar.clientHeight / 2); });
@@ -193,7 +219,7 @@
 
           if (markerIndex >= 0 && currentIndex >= 0) {
             const breadcrumbs = document.getElementById("breadcrumbs");
-            breadcrumbs.innerHTML = '<a href="' + basePrefix + '/">All robots</a><span aria-hidden="true">/</span><a href="' + basePrefix + '/mini-hunter/">Mini Hunter</a><span aria-hidden="true">/</span><span aria-current="page">' + guides[currentIndex][1] + '</span>';
+            breadcrumbs.innerHTML = '<a href="' + basePrefix + '/">All robots</a><span aria-hidden="true">/</span><a href="' + basePrefix + activeKitMarker + '">' + activeGuideSet.name + '</a><span aria-hidden="true">/</span><span aria-current="page">' + guides[currentIndex][1] + '</span>';
             breadcrumbs.hidden = false;
             const sequence = document.getElementById("page-sequence");
             const previous = guides[currentIndex - 1];
