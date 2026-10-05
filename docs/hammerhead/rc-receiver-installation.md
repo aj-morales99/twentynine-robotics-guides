@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Install an RC receiver in a Basic Hammerhead
-description: Open the Hammerhead, connect and test an RC receiver, route its wires, and reinstall the battery safely.
+title: Install or replace a Hammerhead RC receiver
+description: Install an RC receiver in a Basic Hammerhead or replace the receiver in an RC Variant safely.
 permalink: /hammerhead/rc-receiver-installation.html
 ---
 
-# Install an RC receiver
+# Install or replace the RC receiver
 
-<span class="status-chip in-progress">In progress — review draft</span>
+<span class="status-chip ready">Ready</span>
 
-Use this guide when upgrading a **Basic Hammerhead Robohockey Kit** that was supplied without an RC receiver.
+Use this guide when upgrading a **Basic Hammerhead Robohockey Kit** that was supplied without an RC receiver, or when replacing the receiver in an existing **RC Variant**.
 
 <figure class="guide-figure product-showcase">
   <img src="../assets/images/hammerhead/rc-receiver/hh-rc-01-open-chassis-overview.webp" alt="Hammerhead Robohockey Kit viewed from underneath with its battery compartment open and an F-10A RC receiver beside it" width="1400" height="1050" fetchpriority="high">

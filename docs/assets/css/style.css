@@ -100,6 +100,8 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid 
 .tree-status { flex: 0 0 auto; padding: 0.1rem 0.32rem; border-radius: 4px; font-size: 0.55rem; font-weight: 900; letter-spacing: 0.03em; line-height: 1.4; text-transform: uppercase; white-space: nowrap; }
 .tree-status.pending { color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, transparent); }
 .tree-status.in-progress { color: var(--brand-strong); background: var(--brand-soft); }
+.tree-status.ready { color: var(--success); background: var(--success-soft); }
+.kit-tree__group { display: block; margin: 0.72rem 0 0.18rem; padding: 0 0.45rem; color: var(--muted); font-size: 0.6rem; font-weight: 900; letter-spacing: 0.09em; text-transform: uppercase; }
 
 .page-shell { width: 100%; max-width: 920px; min-width: 0; margin: 0 auto; padding: 1.6rem clamp(1.25rem, 4vw, 3.8rem) 2rem; }
 .breadcrumbs { display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 1rem; color: var(--muted); font-size: 0.82rem; }
