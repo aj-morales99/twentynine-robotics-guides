@@ -10,8 +10,8 @@ permalink: /hammerhead/
 The **Hammerhead** is part of the Twentynine Robotics **Shark Series**—a competition-focused family built around speed, grip, durability, and adaptable control.
 
 <figure class="brand-intro">
-  <img src="../assets/images/hammerhead/shark-series-logo.webp" alt="Shark Series logo featuring a streamlined shark above the words Shark Series" width="1200" height="800" fetchpriority="high">
-  <figcaption><span class="eyebrow">SHARK SERIES</span><strong>Engineered for speed, grip, and control.</strong> Responsive handling, high-traction hardware, and competition-ready performance.</figcaption>
+  <img src="../assets/images/hammerhead/shark-series-logo-transparent.png" alt="Shark Series logo featuring a streamlined shark above the words Shark Series" width="1774" height="887" fetchpriority="high">
+  <figcaption><strong>Engineered for speed, grip, and control.</strong><span>Responsive handling, high-traction hardware, and competition-ready performance.</span></figcaption>
 </figure>
 
 Fast, durable, and competition-ready, Hammerhead combines high-speed drive hardware, high-grip silicone wheels, a front-biased chassis, and flexible RC or Bluetooth control.
