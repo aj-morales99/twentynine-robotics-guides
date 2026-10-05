@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Micro Hunter 500g Sumobot Kit guides
-description: Future setup and support documentation for the Twentynine Robotics Micro Hunter 500g Sumobot Kit.
+title: "Hunter Series: Micro Hunter 500g Sumobot Kit guides"
+description: Future setup and support documentation for the Twentynine Robotics Hunter Series Micro Hunter 500g Sumobot Kit.
 permalink: /micro-hunter/
 ---
 
-# Micro Hunter 500g Sumobot Kit
+# Hunter Series: Micro Hunter 500g Sumobot Kit
 
 <span class="status-chip pending">Pending</span>
 

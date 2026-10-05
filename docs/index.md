@@ -18,7 +18,7 @@ permalink: /
     <span class="product-card__mark" aria-hidden="true">MH</span>
     <span class="product-card__content">
       <span class="availability progress">In progress</span>
-      <strong>Mini Hunter 1KG/3KG Sumobot Kit</strong>
+      <strong>Hunter Series: Mini Hunter V2.7</strong>
       <span>FullVision STM32 setup, Bluetooth, RC control, sensors, modes, upgrades, and code.</span>
       <span class="product-action">Open Mini Hunter guides <span aria-hidden="true">→</span></span>
     </span>
@@ -27,7 +27,7 @@ permalink: /
     <span class="product-card__mark" aria-hidden="true">µH</span>
     <span class="product-card__content">
       <span class="availability planned">Pending</span>
-      <strong>Micro Hunter 500g Sumobot Kit</strong>
+      <strong>Hunter Series: Micro Hunter 500g Sumobot Kit</strong>
       <span>Setup, operation, calibration, and maintenance documentation is being prepared.</span>
       <span class="product-action">View guide status <span aria-hidden="true">→</span></span>
     </span>

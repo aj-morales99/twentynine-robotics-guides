@@ -1,11 +1,18 @@
 ---
 layout: default
-title: Mini Hunter guides
-description: Operation, setup, programming, and maintenance guides for the Twentynine Robotics Mini Hunter.
+title: "Hunter Series: Mini Hunter V2.7 guides"
+description: Operation, setup, programming, upgrades, and maintenance guides for the Twentynine Robotics Hunter Series Mini Hunter V2.7.
 permalink: /mini-hunter/
 ---
 
-# Mini Hunter 1KG/3KG Sumobot Kit
+# Hunter Series: Mini Hunter V2.7
+
+The **Mini Hunter V2.7** is part of the Twentynine Robotics **Hunter Series**—a growing family of sumobot platforms designed for dependable detection, adaptable competition configurations, and aggressive arena control.
+
+<figure class="brand-intro">
+  <img src="../assets/images/mini-hunter/mini-hunter-v2.7-official-logo.png" alt="Official Mini Hunter Sumobot Kit Version 2.7 logo" width="750" height="300" fetchpriority="high">
+  <figcaption><strong>Built to detect, pursue, and control the ring.</strong><span>Modular sensing, configurable combat modes, and upgrade paths from Basic to Advanced and 3 kg competition builds.</span></figcaption>
+</figure>
 
 The robot normally arrives with working firmware already installed. Start by learning the controls and completing the safety checks. Open the Programming section only when you want to reinstall or customize the code.
 
