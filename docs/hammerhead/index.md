@@ -7,7 +7,7 @@ permalink: /hammerhead/
 
 # Hammerhead Robohockey Kit
 
-Identify your Hammerhead variant first, then follow the matching startup and controller instructions.
+Fast, durable, and competition-ready, Hammerhead combines high-speed drive hardware, high-grip silicone wheels, a front-biased chassis, and flexible RC or Bluetooth control.
 
 <figure class="guide-figure product-showcase">
   <a href="../assets/images/hammerhead/hammerhead-multi-angle.webp" aria-label="Open the full Hammerhead multi-angle photo">
@@ -15,6 +15,66 @@ Identify your Hammerhead variant first, then follow the matching startup and con
   </a>
   <figcaption><strong>Meet the Hammerhead.</strong> This reference shows the assembled robohockey kit, front attachment, drive wheels, and NANO-MCB10A controller board. Select the image to view it at full size.</figcaption>
 </figure>
+
+<div class="performance-banner">
+  <span class="eyebrow">BUILT TO OUTPERFORM</span>
+  <h2>Competition-focused power in a compact platform</h2>
+  <p>Hammerhead is built for fast acceleration, strong pushing performance, dependable runtime, and quick attachment changes between different robohockey formats.</p>
+</div>
+
+## Specifications
+
+<div class="spec-grid">
+  <section class="spec-card">
+    <span class="spec-card__label">Drive system</span>
+    <h3>High-speed 7.4 V motors</h3>
+    <p><strong>1,200–1,400 RPM</strong> through a <strong>1:35 gearbox</strong>. Each drive unit uses a modified GM25-370 assembly: a GM25 gearbox paired with a high-RPM 370 DC motor.</p>
+  </section>
+  <section class="spec-card">
+    <span class="spec-card__label">Wheels</span>
+    <h3>High-grip silicone tread</h3>
+    <p><strong>50 mm × 30 mm</strong> wheels with <strong>Shore A 10 silicone</strong> and an anti-slip locking system. The soft tread provides strong arena grip and can be refreshed by cleaning it with isopropyl alcohol (IPA), then allowing it to dry completely before use.</p>
+  </section>
+  <section class="spec-card">
+    <span class="spec-card__label">Battery &amp; power</span>
+    <h3>2S high-drain battery pack</h3>
+    <p><strong>2S 2,500 mAh</strong> pack built with Molicel P26A high-drain cells and an XT30 connector, selected to support the Hammerhead's fast acceleration and sustained match use.</p>
+  </section>
+  <section class="spec-card">
+    <span class="spec-card__label">Chassis</span>
+    <h3>Purpose-matched materials</h3>
+    <p>SUNLU PETG is used at the front for impact resistance. SUNLU ABS is used at the rear for stiffness, motor-vibration support, and stable heat transfer around the drive system.</p>
+  </section>
+  <section class="spec-card">
+    <span class="spec-card__label">Control board</span>
+    <h3>NANO-MCB10A programmable controller</h3>
+    <p>Powered by an Arduino Nano Super Mini paired with BTS7960 motor drivers, three analog-ready outputs, a Bluetooth/RC-ready port, and two onboard configuration switches. Kits are pre-coded for their supplied Bluetooth or RC Variant.</p>
+  </section>
+  <section class="spec-card">
+    <span class="spec-card__label">Attachments</span>
+    <h3>Adaptable front nose</h3>
+    <p>The front nose accepts interchangeable attachments. The current option is the <strong>Soccerbot Gladiator</strong> build, with more attachment updates planned.</p>
+  </section>
+</div>
+
+<div class="warning note"><strong>2S power only.</strong> The drive motors are rated for a 2S battery system. Using a battery above 2S can over-speed, overheat, and permanently damage the motors.</div>
+
+### Balanced for contact
+
+Hammerhead carries more of its weight toward the front to create a **front-biased center of gravity (COG)**. The center of gravity is the point where the robot's mass is balanced. Moving it forward helps keep the nose and front attachment planted during acceleration, pushing, and contact with the ball or another robot.
+
+### NANO-MCB10A power stage
+
+The BTS7960 driver stage is configured for up to **10 A continuous use without a heatsink** and up to **20 A with correctly installed heatsinking and adequate cooling**. Actual safe current depends on airflow, wiring, ambient temperature, duty cycle, and installation quality.
+
+### Tested performance
+
+- Tested pushing capability exceeds **3 kg** and can reach up to **5 kg under controlled conditions** when the wheels are clean and the robot is set up correctly.
+- Accelerates to full speed within seconds.
+- Delivers up to approximately **30 minutes of continuous full-speed operation**.
+- Can reach approximately **1 hour 30 minutes of typical mixed use**. During beta testing, some users completed an entire championship event without replacing the 2,500 mAh battery.
+
+<div class="note"><strong>Performance varies.</strong> Runtime and pushing results depend on wheel cleanliness, surface grip, robot setup, attachment weight, driving style, battery condition, and match conditions.</div>
 
 <div class="start-panel">
   <span class="eyebrow">START HERE — IDENTIFY YOUR VARIANT</span>
