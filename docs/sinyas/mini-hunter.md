@@ -29,23 +29,26 @@ The blue OLED illustrations below are simulations of the **MiniHunterV2.8_Advanc
 
 1. Switch the robot on while it is on the stand.
 2. Move the **MODE** switch until the OLED shows **REMOTE**.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/oled/remote.png"><img src="../assets/images/sinyas/oled/remote.png" width="576" height="172" alt="REMOTE. SW1 for BT/RC/IR. SW2 for START/STOP." loading="lazy"></a>
+      <figcaption>The Remote menu shows what SW1 and SW2 do.</figcaption>
+    </figure>
+
 3. Tap and release **SW1** until you see **BT MODE**.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/oled/bt-menu.png"><img src="../assets/images/sinyas/oled/bt-menu.png" width="576" height="172" alt="BT MODE. SW2 for START/STOP." loading="lazy"></a>
+      <figcaption>BT MODE is selected.</figcaption>
+    </figure>
+
 4. Tap and release **SW2**. The OLED should say **Waiting for Sinyas**.
 
-<div class="oled-preview-grid">
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/remote.png"><img src="../assets/images/sinyas/oled/remote.png" width="576" height="172" alt="REMOTE. SW1 for BT/RC/IR. SW2 for START/STOP." loading="lazy"></a>
-    <figcaption><strong>1. Set MODE to Remote.</strong> This is the main Remote menu.</figcaption>
-  </figure>
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/bt-menu.png"><img src="../assets/images/sinyas/oled/bt-menu.png" width="576" height="172" alt="BT MODE. SW2 for START/STOP." loading="lazy"></a>
-    <figcaption><strong>2. Tap SW1 to select BT MODE.</strong> The board is waiting for you to open the mode.</figcaption>
-  </figure>
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/bt-wait.png"><img src="../assets/images/sinyas/oled/bt-wait.png" width="576" height="172" alt="BT Mode. Waiting for Sinyas." loading="lazy"></a>
-    <figcaption><strong>3. Tap SW2 to open BT MODE.</strong> Now connect from the phone.</figcaption>
-  </figure>
-</div>
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/oled/bt-wait.png"><img src="../assets/images/sinyas/oled/bt-wait.png" width="576" height="172" alt="BT Mode. Waiting for Sinyas." loading="lazy"></a>
+      <figcaption>The board is ready for the phone.</figcaption>
+    </figure>
+
 
 **Check:** When the robot says **Waiting for Sinyas**, it is ready for the phone. If you see **AUTO** or a numbered mode, return the MODE switch to **REMOTE**.
 
@@ -55,19 +58,19 @@ The blue OLED illustrations below are simulations of the **MiniHunterV2.8_Advanc
 2. Turn Bluetooth on. Pick the HC-05 from the list of nearby devices and enter the PIN configured for your robot if asked. This pairing step is normally needed once.
 3. Return to Sinyas. If the module does not appear under **Paired devices**, tap the refresh icon.
 4. Tap **Connect** beside your HC-05.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/bluetooth.webp"><img src="../assets/images/sinyas/bluetooth.webp" width="800" height="400" alt="The Bluetooth page showing a connected HC-05 and Mini Hunter identification" loading="lazy"></a>
+      <figcaption>The HC-05 shows Connected in the paired-device list.</figcaption>
+    </figure>
+
 5. Check the upper-right corner. **Connected** means the phone has reached the Bluetooth module. **MiniHunter**, under the Sinyas logo, means the robot’s program has also identified itself.
 
-<figure class="guide-figure">
-  <a href="../assets/images/sinyas/bluetooth.webp"><img src="../assets/images/sinyas/bluetooth.webp" width="800" height="400" alt="The Bluetooth page showing a connected HC-05 and Mini Hunter identification" loading="lazy"></a>
-  <figcaption>Open Android settings to pair, select the HC-05 on the right, then confirm MiniHunter under the logo.</figcaption>
-</figure>
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/oled/bt-connected.png"><img src="../assets/images/sinyas/oled/bt-connected.png" width="576" height="172" alt="BT Mode. Sinyas connected." loading="lazy"></a>
+      <figcaption>The board has received data from Sinyas.</figcaption>
+    </figure>
 
-<div class="oled-preview-grid">
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/bt-connected.png"><img src="../assets/images/sinyas/oled/bt-connected.png" width="576" height="172" alt="BT Mode. Sinyas connected." loading="lazy"></a>
-    <figcaption><strong>The board heard Sinyas.</strong> Open Drive on the phone and wait for Start to become available.</figcaption>
-  </figure>
-</div>
 
 **Check:** Wait for **MiniHunter** before looking for the tuning tools. If the screen stays on **Generic**, check the OLED, confirm the firmware, then disconnect and reconnect. The HC-05 name alone does not tell Sinyas which robot is connected.
 
@@ -76,14 +79,15 @@ The blue OLED illustrations below are simulations of the **MiniHunterV2.8_Advanc
 1. Tap **☰ → Drive**. Wait for **Start** to turn on.
 2. Choose speed button **1**. If its limit is higher than your teacher wants, change it under **Setup → Speed presets** while Drive is stopped.
 3. Tap **Start**. Wait until the app says the robot accepted the run.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/drive.webp"><img src="../assets/images/sinyas/drive.webp" width="800" height="400" alt="Two joystick pads, speed presets and Stop in Sinyas" loading="lazy"></a>
+      <figcaption>When Drive is on, use the sticks, speed buttons, or Stop.</figcaption>
+    </figure>
+
 4. Move the **throttle** stick a little forward, then release it. Check that the wheels turn in the correct direction and stop when the stick centers.
 5. Move the **steering** stick slightly left, then right. Release it after each check. Try both sticks together once you know what each one does.
 6. Press and hold **Stop** for **2 seconds**, until the bar fills. The app sends the stop when the hold starts. Finish the hold so the app unlocks its menu and the robot can return to its board menu.
-
-<figure class="guide-figure">
-  <a href="../assets/images/sinyas/drive.webp"><img src="../assets/images/sinyas/drive.webp" width="800" height="400" alt="Two joystick pads, speed presets and Stop in Sinyas" loading="lazy"></a>
-  <figcaption>Use the sticks to move, the numbered buttons to set a limit, and Stop to end the run.</figcaption>
-</figure>
 
 **Check:** The wheels stop, **Start** returns on the app, and the Mini Hunter returns to its menu after confirming the exit. Open **BT MODE** again with SW2 before the next Drive session. Buttons **A**, **B**, and **C** only operate an accessory if your robot's program assigns something to them.
 
@@ -91,10 +95,29 @@ The blue OLED illustrations below are simulations of the **MiniHunterV2.8_Advanc
 
 *Calibration* means checking a sensor or adjusting how the robot reacts. Stop Drive first. At the board’s normal menu:
 
-1. Press **SW1 and SW2 together**. Keep them pressed until the calibration screen appears, then release both.
-2. From **CAL MODE**, tap **SW1** until the OLED shows the tool name in the table below.
-3. Tap **SW2** to enter the tool. Leave the phone connected and open the matching Sinyas screen.
-4. Wait for the app’s board-ready message or live readings. To leave the board tool, hold **SW2 for 2 seconds**. Releasing early cancels the exit hold.
+1. Press and hold **SW1 and SW2 together**. Watch the calibration progress bar fill.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/oled/cal-start.png"><img src="../assets/images/sinyas/oled/cal-start.png" width="576" height="172" alt="Calibration. A partly filled progress bar." loading="lazy"></a>
+      <figcaption>The bar fills while Calibration opens.</figcaption>
+    </figure>
+
+2. Release both buttons when the board reaches **CAL MODE**.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/oled/cal-menu.png"><img src="../assets/images/sinyas/oled/cal-menu.png" width="576" height="172" alt="CAL. MODE." loading="lazy"></a>
+      <figcaption>CAL MODE is open.</figcaption>
+    </figure>
+
+3. Tap **SW1** until the OLED shows the tool name in the table below.
+4. Tap **SW2** to enter the tool. Open the matching app screen and wait for its board-ready message or live readings.
+5. When you are finished, hold **SW2 for 2 seconds**. Releasing early cancels the exit hold.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/oled/hold-stop.png"><img src="../assets/images/sinyas/oled/hold-stop.png" width="576" height="172" alt="Hold to Stop. A partly filled progress bar." loading="lazy"></a>
+      <figcaption>Release SW2 when the bar is full to return to the tool menu.</figcaption>
+    </figure>
+
 
 | What you want to try | OLED label | Phone menu |
 | --- | --- | --- |
@@ -103,49 +126,40 @@ The blue OLED illustrations below are simulations of the **MiniHunterV2.8_Advanc
 | Rehearse the first movements | **Auto Test** | **Auto modes → Opening** |
 | Check the flag by itself | **Auto Test** | **Auto modes → Flag servo** |
 
-<div class="oled-preview-grid">
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/cal-start.png"><img src="../assets/images/sinyas/oled/cal-start.png" width="576" height="172" alt="Calibration. A partly filled progress bar." loading="lazy"></a>
-    <figcaption><strong>Hold both buttons.</strong> The Calibration progress bar appears while opening the menu.</figcaption>
-  </figure>
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/cal-menu.png"><img src="../assets/images/sinyas/oled/cal-menu.png" width="576" height="172" alt="CAL. MODE." loading="lazy"></a>
-    <figcaption><strong>Release both buttons.</strong> From CAL MODE, tap SW1 to find the tool you want.</figcaption>
-  </figure>
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/hold-stop.png"><img src="../assets/images/sinyas/oled/hold-stop.png" width="576" height="172" alt="Hold to Stop. A partly filled progress bar." loading="lazy"></a>
-    <figcaption><strong>Hold SW2 to leave a tool.</strong> Keep holding for two seconds, then release to return to that tool’s menu entry.</figcaption>
-  </figure>
-</div>
-
 ## 6 Check the line sensors before changing movement
 
 A line sensor measures the surface underneath it. The **Pot** value comes from the small adjustment screw on the board, called a potentiometer. It sets the number that separates the floor from the line.
 
-1. Enter **CAL → Line Tune** on the board and open **Line Detection Tuning** on the phone.
-2. Leave the test stopped. Put a piece of the normal arena surface under the left sensor and observe **ADC**, **Pot**, and the status. Then show it the white line.
-3. With your teacher, adjust the left pot so the floor reads **Clear** and the white line shows a hit. On this firmware, a sensor number lower than the pot number counts as a hit. Repeat on the right.
-4. Test one side at a time, then both, to check the app reacts to the correct sensor.
+1. From **CAL MODE**, tap **SW1** until you see **Line Tune**.
 
-<figure class="guide-figure">
-  <a href="../assets/images/sinyas/line.webp"><img src="../assets/images/sinyas/line.webp" width="800" height="400" alt="Live readings and recovery fields in Sinyas Line Detection Tuning" loading="lazy"></a>
-  <figcaption><strong>Calibrate in this order.</strong> Compare live readings, choose the hit condition, then adjust its power and timing.</figcaption>
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/oled/line-menu.png"><img src="../assets/images/sinyas/oled/line-menu.png" width="576" height="172" alt="Line Tune. SW2 to start." loading="lazy"></a>
+      <figcaption>Line Tune is selected.</figcaption>
+    </figure>
+
+2. Tap **SW2** to open **Line Tune**.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/oled/line-running.png"><img src="../assets/images/sinyas/oled/line-running.png" width="576" height="172" alt="Line Tune. Open Sinyas Setup. Hold SW2 to exit." loading="lazy"></a>
+      <figcaption>Open Sinyas Setup is the wording on the board. The phone screen is called Line Detection Tuning.</figcaption>
+    </figure>
+
+3. Open **Line Detection Tuning** on the phone. Leave the test stopped. Put a piece of the normal arena surface under the left sensor and observe **ADC**, **Pot**, and the status. Then show it the white line.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/line.webp"><img src="../assets/images/sinyas/line.webp" width="800" height="400" alt="Live readings and recovery fields in Sinyas Line Detection Tuning" loading="lazy"></a>
+      <figcaption>Read both sensors on the phone before starting a movement test.</figcaption>
+    </figure>
+
+4. With your teacher, adjust the left pot so the floor reads **Clear** and the white line shows a hit. On this firmware, a sensor number lower than the pot number counts as a hit. Repeat on the right.
+5. Test one side at a time, then both, to check the app reacts to the correct sensor.
+
+**Optional OLED check.** From CAL MODE, tap SW1 once to see which side detects the line.
+
+<figure class="guide-figure guide-figure--compact step-figure">
+  <a href="../assets/images/sinyas/oled/line-adjust.png"><img src="../assets/images/sinyas/oled/line-adjust.png" width="576" height="172" alt="LINE SENSOR ADJUST. Hash marks on the left, dots on the right." loading="lazy"></a>
+  <figcaption>In this example, the left side detects the line and the right side is clear.</figcaption>
 </figure>
-
-<div class="oled-preview-grid">
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/line-adjust.png"><img src="../assets/images/sinyas/oled/line-adjust.png" width="576" height="172" alt="LINE SENSOR ADJUST. Hash marks on the left, dots on the right." loading="lazy"></a>
-    <figcaption><strong>Optional quick check on the OLED.</strong> One tap of SW1 from CAL MODE shows the sensor indicators. This example shows a line on the left and clear on the right.</figcaption>
-  </figure>
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/line-menu.png"><img src="../assets/images/sinyas/oled/line-menu.png" width="576" height="172" alt="Line Tune. SW2 to start." loading="lazy"></a>
-    <figcaption><strong>When you find Line Tune, tap SW2.</strong> This opens the live connection for the phone.</figcaption>
-  </figure>
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/line-running.png"><img src="../assets/images/sinyas/oled/line-running.png" width="576" height="172" alt="Line Tune. Open Sinyas Setup. Hold SW2 to exit." loading="lazy"></a>
-    <figcaption><strong>Line Tune is open.</strong> On the phone, choose Line Detection Tuning from the Sinyas menu. Open Sinyas Setup is the wording on the board.</figcaption>
-  </figure>
-</div>
 
 ### Adjust the robot’s response to the line
 
@@ -182,29 +196,32 @@ The [full enemy tuning lesson](enemy-tuning.html) explains how to read the senso
 
 An *opening* is a short list of moves that plays in order. The *base mode* is what the robot can do after the last move.
 
-1. Open **CAL → Auto Test** on the board and **Auto modes → Opening** in Sinyas.
-2. Pick slot **8** if it is empty, or select any slot marked **Needs setup**. Slots 5–7 contain example presets. Use **Mode details** to enter a short name such as **First turn**.
-3. Tap **Add step**. Choose **Spin left**, enter **20%** power and **200 ms**, then tap **Apply step**.
-4. Add **Wait** for **500 ms**. Open the three-dot menu on a step and choose **Move up** or **Move down** to change its order. If you try **Drive curve** later, give the left and right wheels different power values.
-5. Check **After last step**. Leave **Include base mode in test** switched **off**. Tap **Test draft** and watch the short spin and pause. The wheels should then stay stopped.
-6. If you want to see a handoff later with your teacher, select a base mode, lower its no-target speed in **Base modes**, and turn the switch on. Tap **Stop test** to finish. A line hit or command loss can also end the test.
-7. Use **Save preset** to keep your draft on the phone. The robot uses it temporarily for testing. Its onboard competition modes remain separate.
+1. From **CAL MODE**, tap **SW1** until you see **Auto Test**.
 
-<figure class="guide-figure">
-  <a href="../assets/images/sinyas/opening.webp"><img src="../assets/images/sinyas/opening.webp" width="800" height="400" alt="Opening editor showing steps, the base mode selector, the Include base mode in test switch, and Test draft" loading="lazy"></a>
-  <figcaption><strong>Opening test sequence.</strong> Arrange the steps, choose whether the test continues into the base mode, then tap Test draft.</figcaption>
-</figure>
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/oled/auto-menu.png"><img src="../assets/images/sinyas/oled/auto-menu.png" width="576" height="172" alt="Auto Test. SW2 to start." loading="lazy"></a>
+      <figcaption>Auto Test is selected.</figcaption>
+    </figure>
 
-<div class="oled-preview-grid">
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/auto-menu.png"><img src="../assets/images/sinyas/oled/auto-menu.png" width="576" height="172" alt="Auto Test. SW2 to start." loading="lazy"></a>
-    <figcaption><strong>Select Auto Test with SW1.</strong> Tap SW2 to open the tool.</figcaption>
-  </figure>
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/auto-running.png"><img src="../assets/images/sinyas/oled/auto-running.png" width="576" height="172" alt="Auto Test. Open Sinyas Auto. Hold SW2 to exit." loading="lazy"></a>
-    <figcaption><strong>Auto Test is open.</strong> Use Auto modes in Sinyas. The same board screen is used for Test draft and Test servo.</figcaption>
-  </figure>
-</div>
+2. Tap **SW2** to open the tool. On the phone, open **Auto modes → Opening**.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/oled/auto-running.png"><img src="../assets/images/sinyas/oled/auto-running.png" width="576" height="172" alt="Auto Test. Open Sinyas Auto. Hold SW2 to exit." loading="lazy"></a>
+      <figcaption>The board stays on Auto Test during both opening and flag tests.</figcaption>
+    </figure>
+
+3. Pick slot **8** if it is empty, or select any slot marked **Needs setup**. Slots 5–7 contain example presets. Use **Mode details** to enter a short name such as **First turn**.
+4. Tap **Add step**. Choose **Spin left**, enter **20%** power and **200 ms**, then tap **Apply step**.
+5. Add **Wait** for **500 ms**. Open the three-dot menu on a step and choose **Move up** or **Move down** to change its order. If you try **Drive curve** later, give the left and right wheels different power values.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/opening.webp"><img src="../assets/images/sinyas/opening.webp" width="800" height="400" alt="Opening editor showing steps, the base mode selector, the Include base mode in test switch, and Test draft" loading="lazy"></a>
+      <figcaption>The example shows a draft with two steps and the base-mode test switch.</figcaption>
+    </figure>
+
+6. Check **After last step**. Leave **Include base mode in test** switched **off**. Tap **Test draft** and watch the short spin and pause. The wheels should then stay stopped.
+7. If you want to see a handoff later with your teacher, select a base mode, lower its no-target speed in **Base modes**, and turn the switch on. Tap **Stop test** to finish. A line hit or command loss can also end the test.
+8. Use **Save preset** to keep your draft on the phone. The robot uses it temporarily for testing. Its onboard competition modes remain separate.
 
 **Check:** With the switch off, **Opening complete. Robot stopped.** should appear after the last step.
 
@@ -224,13 +241,14 @@ An *opening* is a short list of moves that plays in order. The *base mode* is wh
 
 1. Keep the robot in **CAL → Auto Test** and change to **Auto modes → Flag servo** in Sinyas.
 2. Enter the **Closed angle** and **Open angle** in degrees. Start from the kit’s known angles. Change one angle in small steps so the flag does not hit its mount.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/servo.webp"><img src="../assets/images/sinyas/servo.webp" width="800" height="400" alt="Flag servo tab with closed angle, open angle, and a Test servo button" loading="lazy"></a>
+      <figcaption>The two angles are above the Test servo button.</figcaption>
+    </figure>
+
 3. Tap **Test servo**. The flag opens and returns to the closed angle. The drive wheels stay stopped.
 4. Use **Save preset** to remember the angles on this phone.
-
-<figure class="guide-figure">
-  <a href="../assets/images/sinyas/servo.webp"><img src="../assets/images/sinyas/servo.webp" width="800" height="400" alt="Flag servo tab with closed angle, open angle, and a Test servo button" loading="lazy"></a>
-  <figcaption><strong>Test the flag on its own.</strong> Set the angles, then tap Test servo and check that the mechanism clears its mount.</figcaption>
-</figure>
 
 **Check:** The flag moves freely in both directions. **Servo test complete.** means the board finished the test.
 
@@ -253,11 +271,11 @@ The OLED stays on **Auto Test** during the servo test. Look for **Servo test com
 | The test stops as soon as it starts | Check whether a line sensor is already seeing the boundary or the Bluetooth link dropped. |
 | The buttons still look right after changing a preset, but the robot acts differently | Check where it was saved. Auto presets live on the phone. Supported line and Classic/track selection settings use **Save to robot**. |
 
-<div class="oled-preview-grid">
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/bt-lost.png"><img src="../assets/images/sinyas/oled/bt-lost.png" width="576" height="172" alt="BT Mode. SIGNAL LOST." loading="lazy"></a>
-    <figcaption><strong>The board stopped receiving Drive commands.</strong> Check the phone’s connection and wait for the board to reconnect before starting again.</figcaption>
-  </figure>
-</div>
+If the OLED says **SIGNAL LOST**, check the phone’s Bluetooth link before starting again.
+
+<figure class="guide-figure guide-figure--compact step-figure">
+  <a href="../assets/images/sinyas/oled/bt-lost.png"><img src="../assets/images/sinyas/oled/bt-lost.png" width="576" height="172" alt="BT Mode. SIGNAL LOST." loading="lazy"></a>
+  <figcaption>The board stopped receiving Drive commands.</figcaption>
+</figure>
 
 [Back to Sinyas setup](./)

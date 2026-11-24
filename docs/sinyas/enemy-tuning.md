@@ -23,28 +23,40 @@ There is no single best choice for every robot. Try both with the same target, d
 
 1. Put the Mini Hunter on a secure stand with the wheels clear. Stop any Drive session.
 2. On the board, hold **SW1 and SW2 together** until **CAL MODE** appears. Release both.
-3. Tap **SW1** until you see **Enemy Detection** or **PID Tune**. The OLED name reflects the robot’s saved choice. Tap **SW2** once.
-4. On the connected phone, tap **☰ → Enemy Detection Tuning**. Wait for **Board ready** and numbers under **Sensor readings**.
-5. Choose **Classic** or **PID** in the app while stopped. When the board supports both, changing the tab selects what the next test will use.
+3. Tap **SW1** until you see the tool name for your saved setting.
 
-<div class="oled-preview-grid">
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/classic-menu.png"><img src="../assets/images/sinyas/oled/classic-menu.png" width="576" height="172" alt="Enemy Detection. SW2 to start." loading="lazy"></a>
-    <figcaption><strong>Classic is saved.</strong> Tap SW2 when the board shows Enemy Detection.</figcaption>
-  </figure>
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/pid-menu.png"><img src="../assets/images/sinyas/oled/pid-menu.png" width="576" height="172" alt="PID Tune. SW2 to start." loading="lazy"></a>
-    <figcaption><strong>PID is saved.</strong> Tap SW2 when the board shows PID Tune.</figcaption>
-  </figure>
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/classic-running.png"><img src="../assets/images/sinyas/oled/classic-running.png" width="576" height="172" alt="Enemy Detection. Hold SW2 to exit." loading="lazy"></a>
-    <figcaption><strong>The Classic tool is open.</strong> Open Enemy Detection Tuning on the phone.</figcaption>
-  </figure>
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/pid-running.png"><img src="../assets/images/sinyas/oled/pid-running.png" width="576" height="172" alt="PID Tune. Hold SW2 to exit." loading="lazy"></a>
-    <figcaption><strong>The PID tool is open.</strong> Open the same Enemy Detection Tuning page on the phone.</figcaption>
-  </figure>
-</div>
+    **If you saved Classic**, look for **Enemy Detection**.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/oled/classic-menu.png"><img src="../assets/images/sinyas/oled/classic-menu.png" width="576" height="172" alt="Enemy Detection. SW2 to start." loading="lazy"></a>
+      <figcaption>Enemy Detection is selected.</figcaption>
+    </figure>
+
+    **If you saved PID**, look for **PID Tune**.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/oled/pid-menu.png"><img src="../assets/images/sinyas/oled/pid-menu.png" width="576" height="172" alt="PID Tune. SW2 to start." loading="lazy"></a>
+      <figcaption>PID Tune is selected.</figcaption>
+    </figure>
+
+4. Tap **SW2** once to open the tool.
+
+    **When Classic is saved**, the board shows Enemy Detection with the exit instruction.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/oled/classic-running.png"><img src="../assets/images/sinyas/oled/classic-running.png" width="576" height="172" alt="Enemy Detection. Hold SW2 to exit." loading="lazy"></a>
+      <figcaption>The Classic tool is open.</figcaption>
+    </figure>
+
+    **When PID is saved**, the board shows PID Tune with the same exit instruction.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/oled/pid-running.png"><img src="../assets/images/sinyas/oled/pid-running.png" width="576" height="172" alt="PID Tune. Hold SW2 to exit." loading="lazy"></a>
+      <figcaption>The PID tool is open.</figcaption>
+    </figure>
+
+5. On the connected phone, tap **☰ → Enemy Detection Tuning**. Wait for **Board ready** and numbers under **Sensor readings**.
+6. Choose **Classic** or **PID** in the app while stopped. When the board supports both, changing the tab selects what the next test will use.
 
 The OLED follows the saved setting. You can try the other method in Sinyas first. The OLED name changes after the robot confirms **Save to robot**.
 
@@ -59,19 +71,14 @@ The OLED follows the saved setting. You can try the other method in Sinyas first
 
 **Check.** The readings follow the target before you test any motor settings. If they do not, check the individual sensors from the board’s distance screen first.
 
-<div class="oled-preview-grid">
-  <figure class="guide-figure">
-    <a href="../assets/images/sinyas/oled/distances.png"><img src="../assets/images/sinyas/oled/distances.png" width="576" height="172" alt="DISTANCES (cm). Front readings 36, 26, 33. Outer readings 51, 48." loading="lazy"></a>
-    <figcaption><strong>Optional distance check on the board.</strong> Tap SW1 twice from CAL MODE. The first row of numbers is the front left, center, and front right. The extra row appears on a five-sensor build. These are example readings.</figcaption>
-  </figure>
-</div>
+**Optional OLED check.** From CAL MODE, tap SW1 twice. Read the three front sensors left to right. A five-sensor build shows the two outer sensors on the next row.
+
+<figure class="guide-figure guide-figure--compact step-figure">
+  <a href="../assets/images/sinyas/oled/distances.png"><img src="../assets/images/sinyas/oled/distances.png" width="576" height="172" alt="DISTANCES (cm). Front readings 36, 26, 33. Outer readings 51, 48." loading="lazy"></a>
+  <figcaption>These distances are examples. The numbers change with the target.</figcaption>
+</figure>
 
 ## 3 Tune Classic
-
-<figure class="guide-figure">
-  <a href="../assets/images/sinyas/enemy-classic.webp"><img src="../assets/images/sinyas/enemy-classic.webp" width="800" height="400" alt="Classic selected with Turn power and Turn delay on the left and sensor readings on the right" loading="lazy"></a>
-  <figcaption><strong>Classic controls.</strong> Use Turn power to set the strength of the pivot. Use Turn delay to set how long the side must stay detected before the pivot starts. Screenshot from the Sinyas simulator.</figcaption>
-</figure>
 
 | Control | What to watch |
 | --- | --- |
@@ -80,6 +87,12 @@ The OLED follows the saved setting. You can try the other method in Sinyas first
 | **Forward speed** | The amount of forward power allowed when the center sees the target during the test. Keep it at **0%** for a pivot-only lesson. |
 
 1. Select **Classic**. Note the current turn power and delay so you can restore them.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/enemy-classic.webp"><img src="../assets/images/sinyas/enemy-classic.webp" width="800" height="400" alt="Classic selected with Turn power and Turn delay on the left and sensor readings on the right" loading="lazy"></a>
+      <figcaption>Classic shows Turn power and Turn delay. The simulator supplies the example readings.</figcaption>
+    </figure>
+
 2. Tap **Start tuning**. Keep **Forward speed** at **0%** and leave **Move forward while searching** off.
 3. Put the target on one side, then the other. Change **Turn power** one small step at a time. Repeat each test at the same distance.
 4. If needed, change **Turn delay** and repeat. If the robot waits too long to turn, shorten the delay.
@@ -88,11 +101,6 @@ The OLED follows the saved setting. You can try the other method in Sinyas first
 **Check.** Side detections turn the robot the correct way. A target seen straight ahead with **0%** forward produces no forward movement.
 
 ## 4 Tune PID Beta
-
-<figure class="guide-figure">
-  <a href="../assets/images/sinyas/enemy-pid.webp"><img src="../assets/images/sinyas/enemy-pid.webp" width="800" height="400" alt="PID selected with Kp, Kd, Turn limit, and sensor readings" loading="lazy"></a>
-  <figcaption><strong>PID Beta controls.</strong> Change Kp first, then Kd if needed. Turn limit caps steering power. Scroll down to find Forward speed on shorter phones. Screenshot from the Sinyas simulator.</figcaption>
-</figure>
 
 | Control | What it does | What to try |
 | --- | --- | --- |
@@ -104,6 +112,12 @@ The OLED follows the saved setting. You can try the other method in Sinyas first
 The app exposes Kp and Kd. It does not have a Ki slider. The matching firmware’s integral gain is set to zero by default.
 
 1. Switch to **PID** and note the numbers on screen. Sinyas starts at **Kp 0.600**, **Kd 0.010**, and **Turn limit 50%** in a fresh session.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/sinyas/enemy-pid.webp"><img src="../assets/images/sinyas/enemy-pid.webp" width="800" height="400" alt="PID selected with Kp, Kd, Turn limit, and sensor readings" loading="lazy"></a>
+      <figcaption>PID shows Kp, Kd, and Turn limit. Scroll down for Forward speed on shorter phones. The simulator supplies the example readings.</figcaption>
+    </figure>
+
 2. Tap **Start tuning**. Keep forward at **0%** and move the target from left to center, then right to center.
 3. Change **Kp** a little. Repeat the same target movement. Keep the change only if the robot responds more consistently.
 4. Adjust **Kd** only after you have a Kp you can repeat. Agree with your teacher on a turn limit that suits your surface and reaction speed.
