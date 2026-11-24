@@ -7,13 +7,22 @@ permalink: /
 
 <section class="home-hero">
   <span class="eyebrow">TWENTYNINE ROBOTICS SUPPORT</span>
-  <h1>Choose your kit</h1>
-  <p>Find setup instructions, controller guides, calibration steps, code references, and troubleshooting for your Twentynine Robotics kit.</p>
+  <h1>Choose your product</h1>
+  <p>Find setup instructions, controller guides, calibration steps, code references, and troubleshooting for your Twentynine Robotics product.</p>
 </section>
 
 <div class="note"><strong>The guide library is growing.</strong> <strong>In progress</strong> means useful written instructions are available but images or additional sections are still being added. <strong>Pending</strong> means the procedure is not yet ready to follow.</div>
 
 <div class="product-grid">
+  <a class="product-card product-card--ready" href="sinyas/">
+    <span class="product-card__mark" aria-hidden="true">SY</span>
+    <span class="product-card__content">
+      <span class="availability available">Ready</span>
+      <strong>Sinyas Bluetooth Controller</strong>
+      <span>Android setup, Mini Hunter and Hammerhead profiles, and a Generic UART example for your own robot.</span>
+      <span class="product-action">Open Sinyas guides <span aria-hidden="true">→</span></span>
+    </span>
+  </a>
   <a class="product-card product-card--ready" href="mini-hunter/">
     <span class="product-card__mark" aria-hidden="true">MH</span>
     <span class="product-card__content">

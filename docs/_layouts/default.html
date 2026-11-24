@@ -40,12 +40,21 @@
 
     <div id="sidebar-backdrop" class="sidebar-backdrop" hidden></div>
     <div class="docs-layout">
-      <aside id="docs-sidebar" class="docs-sidebar" aria-label="Kit guides" hidden>
+      <aside id="docs-sidebar" class="docs-sidebar" aria-label="Product guides" hidden>
         <div class="sidebar-product">
           <span class="product-mark" aria-hidden="true">K</span>
-          <span><small>GUIDE LIBRARY</small><strong>Kits</strong></span>
+          <span><small>GUIDE LIBRARY</small><strong>Products</strong></span>
         </div>
-        <nav class="chapter-nav kit-tree" aria-label="Kit guide tree">
+        <nav class="chapter-nav kit-tree" aria-label="Product guide tree">
+          <details class="kit-tree__kit" data-kit-path="/sinyas/">
+            <summary><span>Sinyas Bluetooth Controller</span><span class="tree-status ready">Ready</span></summary>
+            <div class="kit-tree__children">
+              <a class="nav-top-level" data-guide-path="/sinyas/" href="{{ '/sinyas/' | relative_url }}">Installation and setup</a>
+              <a data-guide-path="/sinyas/mini-hunter.html" href="{{ '/sinyas/mini-hunter.html' | relative_url }}">Mini Hunter profile</a>
+              <a data-guide-path="/sinyas/hammerhead.html" href="{{ '/sinyas/hammerhead.html' | relative_url }}">Hammerhead profile</a>
+              <a data-guide-path="/sinyas/generic.html" href="{{ '/sinyas/generic.html' | relative_url }}">Generic UART guide</a>
+            </div>
+          </details>
           <details class="kit-tree__kit" data-kit-path="/mini-hunter/" open>
             <summary><span>Hunter Series: Mini Hunter V2.7</span><span class="tree-status in-progress">In progress</span></summary>
             <div class="kit-tree__children">
@@ -134,6 +143,15 @@
         updateThemeButton();
 
         const guideSets = {
+          "/sinyas/": {
+            name: "Sinyas Bluetooth Controller",
+            guides: [
+              ["/sinyas/", "Installation and setup"],
+              ["/sinyas/mini-hunter.html", "Mini Hunter profile"],
+              ["/sinyas/hammerhead.html", "Hammerhead profile"],
+              ["/sinyas/generic.html", "Generic UART guide"]
+            ]
+          },
           "/mini-hunter/": {
             name: "Hunter Series: Mini Hunter V2.7",
             guides: [
@@ -171,7 +189,7 @@
             ]
           }
         };
-        const kitMarkers = ["/mini-hunter/", "/micro-hunter/", "/hammerhead/", "/blt-n20/"];
+        const kitMarkers = ["/sinyas/", "/mini-hunter/", "/micro-hunter/", "/hammerhead/", "/blt-n20/"];
         const activeKitMarker = kitMarkers.find(function (kit) { return location.pathname.indexOf(kit) >= 0; });
         const marker = activeKitMarker || "/mini-hunter/";
         const activeGuideSet = guideSets[activeKitMarker];
