@@ -15,9 +15,9 @@ permalink: /sinyas/
 Sinyas is a landscape Android controller from Twentynine Robotics. Pair an HC-05, drive with two thumbs, and use the controls your robot firmware supports.
 
 <div class="download-list">
-  <a class="download-item" href="../downloads/sinyas/sinyas-v1.0.0.apk" download>
+  <a class="download-item" href="../downloads/sinyas/sinyas-v1.0.0.apk?build=12" download>
     <strong>Sinyas V1.0 Initial Release</strong>
-    <span>Signed Android APK · 49.2 MiB</span>
+    <span>Signed Android APK · Build 12</span>
   </a>
 </div>
 
@@ -33,6 +33,8 @@ Sinyas is a landscape Android controller from Twentynine Robotics. Pair an HC-05
 </div>
 
 <div class="warning note"><strong>Before testing a robot:</strong> secure it on a stable stand with wheels and attachments clear. Verify Stop and link loss while the drive wheels are raised.</div>
+
+**Build 12 update.** The Android app is still V1.0. This build adds saving and loading custom Mini Hunter Auto modes with matching firmware. Install it over the first V1.0 build to keep your phone presets.
 
 [APK SHA-256 checksum](../downloads/sinyas/sinyas-v1.0.0.apk.sha256)
 

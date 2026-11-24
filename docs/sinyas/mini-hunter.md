@@ -122,7 +122,7 @@ The blue OLED illustrations below are simulations of the **MiniHunterV2.8_Advanc
 | What you want to try | OLED label | Phone menu |
 | --- | --- | --- |
 | Detect the white boundary | **Line Tune** | **Line Detection Tuning** |
-| Turn toward another robot | **Enemy Detection** or **PID Tune** | **Enemy Detection Tuning** |
+| Turn toward another robot | **Enemy Tune** or **PID Tune** | **Enemy Detection Tuning** |
 | Rehearse the first movements | **Auto Test** | **Auto modes → Opening** |
 | Check the flag by itself | **Auto Test** | **Auto modes → Flag servo** |
 
@@ -188,7 +188,7 @@ If the app reports the recovery limit, stop and check the placement and sensor r
 
 ## 7 Practice turning toward a target
 
-Open **CAL → Enemy Detection** or **PID Tune** on the board. Then open **Enemy Detection Tuning** in Sinyas. Choose **Classic** for fixed turn power and a turn delay you can set. Choose **PID** to try steering power that changes as the target moves. **PID is in beta.** Try both on your own robot and keep the one that behaves best for you.
+Open **CAL → Enemy Tune** or **PID Tune** on the board. Older firmware labels Classic **Enemy Detection**. Then open **Enemy Detection Tuning** in Sinyas. Choose **Classic** for fixed turn power and a turn delay you can set. Choose **PID** to try steering power that changes as the target moves. **PID is in beta.** Try both on your own robot and keep the one that behaves best for you.
 
 The [full enemy tuning lesson](enemy-tuning.html) explains how to read the sensors, adjust each method, compare the results, and save the supported settings.
 
@@ -221,9 +221,22 @@ An *opening* is a short list of moves that plays in order. The *base mode* is wh
 
 6. Check **After last step**. Leave **Include base mode in test** switched **off**. Tap **Test draft** and watch the short spin and pause. The wheels should then stay stopped.
 7. If you want to see a handoff later with your teacher, select a base mode, lower its no-target speed in **Base modes**, and turn the switch on. Tap **Stop test** to finish. A line hit or command loss can also end the test.
-8. Use **Save preset** to keep your draft on the phone. The robot uses it temporarily for testing. Its onboard competition modes remain separate.
+8. Use **Save preset** to keep a copy on the phone. On boards that support saving, find this under **Phone presets**. Follow the steps below to save a mode you want to run from the OLED.
 
 **Check:** With the switch off, **Opening complete. Robot stopped.** should appear after the last step.
+
+### Save an opening to the robot
+
+You need **Sinyas V1.0 build 12** and the matching **MiniHunterV2.8_Advance** firmware. Ask Twentynine Robotics for the firmware if your kit still has the earlier build.
+
+1. Leave the board in **CAL → Auto Test**. In Sinyas, stay on **Auto modes → Opening** and select the slot you want to change.
+2. Stop the draft test. Tap **Save to robot** and wait for **Mode 5 saved to robot**, or the number you selected.
+3. Tap **Load from robot** to check what the board saved. The app fills the opening steps, base mode and power, and flag angles from that slot.
+4. Hold **SW2** to leave the tool, then leave CAL. Select the saved number in the robot’s **AUTO** menu. The opening runs first, then the selected base mode takes over. Verify the sequence after restarting the board.
+
+Slots **5–7** use their built-in modes until you save a replacement. Slots **8–10** show **Empty - use Sinyas** until you program them. Names and descriptions stay on the phone. The OLED uses the mode number. The **Include base mode in test** switch is for draft testing. A saved opening hands off to its chosen base in normal Auto. A line hit interrupts the opening and starts the normal recovery.
+
+If the app only offers **Save preset**, check the app build and board firmware. The first V1.0 APK could save to the phone and test a draft in the robot’s short-term memory.
 
 ### Look up the Opening and Base modes controls
 
@@ -234,8 +247,8 @@ An *opening* is a short list of moves that plays in order. The *base mode* is wh
 | **Step card** | Tap it to edit. Use its three-dot menu to move it up, move it down, or remove it. |
 | **After last step** | Choose the base mode for the handoff. **Include base mode in test** decides whether the test actually uses it. |
 | **Base modes** | See what each numbered base does when no target is found. Set its draft power from 0% to 100%. Base 1 creeps forward, Base 2 spins left, Base 3 spins right, and Base 4 searches forward. |
-| **Reload** | Return to the phone’s saved preset values. Save anything you want to keep first. |
-| **Save preset** | Keep changes to this tab on the phone. The board’s competition modes remain separate. |
+| **Reload** | Return to the phone’s saved preset values. On boards that support saving, choose Reload phone preset in Phone presets. |
+| **Save preset** | Keep a copy on the phone. Use Save to robot to write the selected opening slot to a compatible board. |
 
 ## 9 Test the flag without driving
 
@@ -269,7 +282,7 @@ The OLED stays on **Auto Test** during the servo test. Look for **Servo test com
 | You cannot find Auto modes or the tuning pages | Wait for **MiniHunter** under the Sinyas logo and check that your board reports the matching features. |
 | A calibration button is gray | Open the matching tool on the OLED and wait for the app to confirm it. |
 | The test stops as soon as it starts | Check whether a line sensor is already seeing the boundary or the Bluetooth link dropped. |
-| The buttons still look right after changing a preset, but the robot acts differently | Check where it was saved. Auto presets live on the phone. Supported line and Classic/track selection settings use **Save to robot**. |
+| The buttons still look right after changing a preset, but the robot acts differently | Check where it was saved. Phone presets live on the phone. Compatible Auto slots, line settings, and tracker settings use **Save to robot** in their respective tools. |
 
 If the OLED says **SIGNAL LOST**, check the phone’s Bluetooth link before starting again.
 

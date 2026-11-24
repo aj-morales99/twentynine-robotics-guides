@@ -25,11 +25,11 @@ There is no single best choice for every robot. Try both with the same target, d
 2. On the board, hold **SW1 and SW2 together** until **CAL MODE** appears. Release both.
 3. Tap **SW1** until you see the tool name for your saved setting.
 
-    **If you saved Classic**, look for **Enemy Detection**.
+    **If you saved Classic**, look for **Enemy Tune**. Older firmware shows **Enemy Detection**.
 
     <figure class="guide-figure guide-figure--compact step-figure">
-      <a href="../assets/images/sinyas/oled/classic-menu.png"><img src="../assets/images/sinyas/oled/classic-menu.png" width="576" height="172" alt="Enemy Detection. SW2 to start." loading="lazy"></a>
-      <figcaption>Enemy Detection is selected.</figcaption>
+      <a href="../assets/images/sinyas/oled/classic-menu.png"><img src="../assets/images/sinyas/oled/classic-menu.png" width="576" height="172" alt="Enemy Tune. SW2 to start." loading="lazy"></a>
+      <figcaption>Enemy Tune is selected.</figcaption>
     </figure>
 
     **If you saved PID**, look for **PID Tune**.
@@ -41,10 +41,10 @@ There is no single best choice for every robot. Try both with the same target, d
 
 4. Tap **SW2** once to open the tool.
 
-    **When Classic is saved**, the board shows Enemy Detection with the exit instruction.
+    **When Classic is saved**, the board shows Enemy Tune with the exit instruction.
 
     <figure class="guide-figure guide-figure--compact step-figure">
-      <a href="../assets/images/sinyas/oled/classic-running.png"><img src="../assets/images/sinyas/oled/classic-running.png" width="576" height="172" alt="Enemy Detection. Hold SW2 to exit." loading="lazy"></a>
+      <a href="../assets/images/sinyas/oled/classic-running.png"><img src="../assets/images/sinyas/oled/classic-running.png" width="576" height="172" alt="Enemy Tune. Hold SW2 to exit." loading="lazy"></a>
       <figcaption>The Classic tool is open.</figcaption>
     </figure>
 
@@ -144,7 +144,7 @@ The app exposes Kp and Kd. It does not have a Ki slider. The matching firmwareâ€
 
 1. Tap **Stop tuning** and wait for the robot to stop.
 2. Choose the method you want the robot to keep. Tap **Save to robot** and wait for **Saved to robot**.
-3. Check the OLED. It shows **PID Tune** for saved PID or **Enemy Detection** for Classic when the matching firmware confirms the change.
+3. Check the OLED. It shows **PID Tune** for saved PID or **Enemy Tune** for Classic when the matching firmware confirms the change.
 4. To double-check, exit the tool, restart the board, and return to it. The app reads the saved choice and Classic values when it connects to the tool.
 
 If **Save to robot** is gray, stop the test and wait for the board to be ready. If it stays gray, check that the board reports support for saving. Ask your teacher to record any PID gain changes you want to keep and apply them in the firmware.
