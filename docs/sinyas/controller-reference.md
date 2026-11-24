@@ -83,7 +83,7 @@ Open **Setup** while Drive is stopped. Changes save to the phone as you make the
 
 | Screen | What you can test | How to keep it |
 | --- | --- | --- |
-| **Auto modes → Opening** | Arrange steps, run without a base mode, or include the base after the opening. | **Save to robot** writes slots 5–10 on compatible firmware with V1.0 build 12. **Save preset** keeps a separate phone copy. |
+| **Auto modes → Opening** | Arrange steps, run without a base mode, or include the base after the opening. | **Save to robot** writes slots 5–10 on compatible firmware with the corrected V1.0 APK. **Save preset** keeps a separate phone copy. |
 | **Auto modes → Base modes** | Change how quickly the draft’s selected base moves when there is no target. | **Save preset** keeps the draft base speeds on the phone. |
 | **Auto modes → Flag servo** | Check open and closed angles without moving the wheels. | **Save preset** keeps the test angles on the phone. |
 | **Line Detection Tuning** | Read each sensor, check its threshold, and try recovery moves. | **Save to robot** writes supported recovery settings. **Phone presets** saves copies on this phone. The physical pots are adjusted on the robot. |

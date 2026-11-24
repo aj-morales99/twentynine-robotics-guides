@@ -227,7 +227,7 @@ An *opening* is a short list of moves that plays in order. The *base mode* is wh
 
 ### Save an opening to the robot
 
-You need **Sinyas V1.0 build 12** and the matching **MiniHunterV2.8_Advance** firmware. Ask Twentynine Robotics for the firmware if your kit still has the earlier build.
+You need the corrected **Sinyas V1.0** APK and the matching **MiniHunterV2.8_Advance** firmware. Ask Twentynine Robotics for the firmware if your kit still has the earlier build.
 
 1. Leave the board in **CAL → Auto Test**. In Sinyas, stay on **Auto modes → Opening** and select the slot you want to change.
 2. Stop the draft test. Tap **Save to robot** and wait for **Mode 5 saved to robot**, or the number you selected.
@@ -236,7 +236,7 @@ You need **Sinyas V1.0 build 12** and the matching **MiniHunterV2.8_Advance** fi
 
 Slots **5–7** use their built-in modes until you save a replacement. Slots **8–10** show **Empty - use Sinyas** until you program them. Names and descriptions stay on the phone. The OLED uses the mode number. The **Include base mode in test** switch is for draft testing. A saved opening hands off to its chosen base in normal Auto. A line hit interrupts the opening and starts the normal recovery.
 
-If the app only offers **Save preset**, check the app build and board firmware. The first V1.0 APK could save to the phone and test a draft in the robot’s short-term memory.
+If the app only offers **Save preset**, download the current V1.0 APK and check the board firmware. The first V1.0 APK could save to the phone and test a draft in the robot’s short-term memory.
 
 ### Look up the Opening and Base modes controls
 
