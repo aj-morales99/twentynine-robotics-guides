@@ -5,6 +5,11 @@ description: Install Sinyas V1.0, connect an Android phone to your robot, and fi
 permalink: /sinyas/
 ---
 
+<span class="sinyas-logo sinyas-guide-logo" aria-hidden="true">
+      <img class="sinyas-logo__dark" src="../assets/images/sinyas/wordmark-dark.png" width="1224" height="373" alt="">
+      <img class="sinyas-logo__light" src="../assets/images/sinyas/wordmark-light.png" width="1224" height="373" alt="">
+    </span>
+
 # Sinyas Bluetooth Controller
 
 Sinyas is a landscape Android controller from Twentynine Robotics. Pair an HC-05, drive with two thumbs, and use the controls your robot firmware supports.

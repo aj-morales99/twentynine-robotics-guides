@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=0.4.6">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=0.4.7">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -239,7 +239,7 @@
 
           if (markerIndex >= 0 && currentIndex >= 0) {
             const breadcrumbs = document.getElementById("breadcrumbs");
-            breadcrumbs.innerHTML = '<a href="' + basePrefix + '/">All robots</a><span aria-hidden="true">/</span><a href="' + basePrefix + activeKitMarker + '">' + activeGuideSet.name + '</a><span aria-hidden="true">/</span><span aria-current="page">' + guides[currentIndex][1] + '</span>';
+            breadcrumbs.innerHTML = '<a href="' + basePrefix + '/">All products</a><span aria-hidden="true">/</span><a href="' + basePrefix + activeKitMarker + '">' + activeGuideSet.name + '</a><span aria-hidden="true">/</span><span aria-current="page">' + guides[currentIndex][1] + '</span>';
             breadcrumbs.hidden = false;
             const sequence = document.getElementById("page-sequence");
             const previous = guides[currentIndex - 1];

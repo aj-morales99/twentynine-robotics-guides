@@ -14,15 +14,6 @@ permalink: /
 <div class="note"><strong>The guide library is growing.</strong> <strong>In progress</strong> means useful written instructions are available but images or additional sections are still being added. <strong>Pending</strong> means the procedure is not yet ready to follow.</div>
 
 <div class="product-grid">
-  <a class="product-card product-card--ready" href="sinyas/">
-    <span class="product-card__mark" aria-hidden="true">SY</span>
-    <span class="product-card__content">
-      <span class="availability available">Ready</span>
-      <strong>Sinyas Bluetooth Controller</strong>
-      <span>Android setup, Mini Hunter and Hammerhead profiles, and a Generic UART example for your own robot.</span>
-      <span class="product-action">Open Sinyas guides <span aria-hidden="true">→</span></span>
-    </span>
-  </a>
   <a class="product-card product-card--ready" href="mini-hunter/">
     <span class="product-card__mark" aria-hidden="true">MH</span>
     <span class="product-card__content">
@@ -57,6 +48,18 @@ permalink: /
       <strong>BLT-N20 Beta Basic Line Tracing Kit</strong>
       <span>Build, wiring, calibration, and programming documentation is being prepared.</span>
       <span class="product-action">View guide status <span aria-hidden="true">→</span></span>
+    </span>
+  </a>
+  <a class="product-card product-card--ready product-card--sinyas" href="sinyas/">
+    <span class="sinyas-logo product-card__sinyas-logo" aria-hidden="true">
+      <img class="sinyas-logo__dark" src="assets/images/sinyas/wordmark-dark.png" width="1224" height="373" alt="">
+      <img class="sinyas-logo__light" src="assets/images/sinyas/wordmark-light.png" width="1224" height="373" alt="">
+    </span>
+    <span class="product-card__content">
+      <span class="availability available">Ready</span>
+      <strong>Sinyas Bluetooth Controller</strong>
+      <span>Android setup, Mini Hunter and Hammerhead profiles, and a Generic UART example for your own robot.</span>
+      <span class="product-action">Open Sinyas guides <span aria-hidden="true">→</span></span>
     </span>
   </a>
 </div>
