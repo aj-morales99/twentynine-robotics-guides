@@ -62,6 +62,8 @@ Ask your teacher to check two details on the HC-05 carrier before you wire it: t
 
 **Check:** The monitor should say **Sinyas Arduino bench ready. A controls the onboard LED.** The monitor and the HC-05 use separate connections. Set the monitor to **115200** and the HC-05 data connection to **38400** for the supplied sketch.
 
+**Why D10 and D11?** On an Uno R3 or classic Nano, the hardware serial port on D0 and D1 is shared with USB. This lesson uses software serial on D10 and D11 so you can leave the HC-05 wired while uploading and watching Serial Monitor. If your project board has a spare hardware port such as **Serial1**, use it for the HC-05 and keep the USB monitor separate. Hardware serial is better for receiving commands while sending replies. Check your board’s pinout before moving the wires. [Arduino SoftwareSerial reference](https://docs.arduino.cc/learn/built-in-libraries/software-serial/)
+
 [Arduino’s upload walkthrough](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-uploading-a-sketch/) · [Arduino’s Serial Monitor walkthrough](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-monitor)
 
 ## 4 Pair the phone and turn on the LED

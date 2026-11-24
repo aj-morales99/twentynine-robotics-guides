@@ -24,7 +24,9 @@ Sinyas is a landscape Android controller from Twentynine Robotics. Pair an HC-05
 <div class="guide-directory">
   <section>
     <h2>Choose your setup</h2>
+    <a class="directory-link" href="controller-reference.html"><span><strong>Controller screen reference</strong><small>Every phone screen, setting, status, backup, and diagnostic control.</small></span><span aria-hidden="true">→</span></a>
     <a class="directory-link" href="mini-hunter.html"><span><strong>Mini Hunter</strong><small>Drive, sensor tuning, opening drafts, and flag servo tests.</small></span><span aria-hidden="true">→</span></a>
+    <a class="directory-link" href="enemy-tuning.html"><span><strong>Enemy Detection Tuning</strong><small>Choose between Classic and PID Beta, test the controls, and save supported settings.</small></span><span aria-hidden="true">→</span></a>
     <a class="directory-link" href="hammerhead.html"><span><strong>Hammerhead</strong><small>Connect a Bluetooth-capable Hammerhead and use Drive.</small></span><span aria-hidden="true">→</span></a>
     <a class="directory-link" href="generic.html"><span><strong>Generic and custom projects</strong><small>Wire an HC-05 to an Arduino Uno or classic Nano and control its LED.</small></span><span aria-hidden="true">→</span></a>
   </section>
@@ -48,7 +50,7 @@ You need **Android 7.0 or later** and a compatible Bluetooth Classic serial modu
 1. Power the robot and open the robot-side Bluetooth Drive mode. Turn on Bluetooth on Android.
 2. In Sinyas, open **Menu → Bluetooth → Open Android settings**. Pair with the HC-05 there using the PIN configured on your module.
 3. Return to Sinyas. Refresh **Paired devices** if the module is missing, then choose **Connect** beside the correct device.
-4. Wait for the profile shown under **Connected**. The Bluetooth socket and the board's own reply are shown separately. The module's name identifies the paired device. The firmware reply identifies the robot.
+4. Wait for the profile shown under the Sinyas logo. The Bluetooth socket and the board's own reply are shown separately. The module's name identifies the paired device. The firmware reply identifies the robot.
 
 <ol>
   <li><strong>Pair in Android settings</strong> → the module appears under Paired devices.</li>
@@ -59,7 +61,7 @@ You need **Android 7.0 or later** and a compatible Bluetooth Classic serial modu
 
 <figure class="guide-figure">
   <a href="../assets/images/sinyas/bluetooth.webp"><img src="../assets/images/sinyas/bluetooth.webp" width="800" height="400" alt="Sinyas Bluetooth page with a paired HC-05 and a confirmed Mini Hunter profile" loading="lazy"></a>
-  <figcaption><strong>Bluetooth connection.</strong> ① opens Android settings. ② is your paired module. ③ shows the identified robot. App screenshots in this guide use simulated robot data.</figcaption>
+  <figcaption><strong>Bluetooth connection.</strong> Use Open Android settings to pair. Find the paired module on the right. The profile appears under the Sinyas logo. App screenshots in this guide use simulated robot data.</figcaption>
 </figure>
 
 ## 3 Drive and stop
@@ -71,7 +73,7 @@ You need **Android 7.0 or later** and a compatible Bluetooth Classic serial modu
 
 <figure class="guide-figure">
   <a href="../assets/images/sinyas/drive.webp"><img src="../assets/images/sinyas/drive.webp" width="800" height="400" alt="Sinyas Drive in landscape with two joysticks, accessory toggles, speed presets, and Stop" loading="lazy"></a>
-  <figcaption><strong>Drive controls.</strong> ① shows the joystick area. ② marks the center controls. ③ marks the hold-to-stop button.</figcaption>
+  <figcaption><strong>Drive controls.</strong> The sticks sit on either side. Speed presets, accessory buttons, and Stop sit between them.</figcaption>
 </figure>
 
 ## 4 Customize the controller
