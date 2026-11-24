@@ -26,7 +26,7 @@ Sinyas is a landscape Android controller from Twentynine Robotics. Pair an HC-05
     <h2>Choose your setup</h2>
     <a class="directory-link" href="mini-hunter.html"><span><strong>Mini Hunter</strong><small>Drive, sensor tuning, opening drafts, and flag servo tests.</small></span><span aria-hidden="true">→</span></a>
     <a class="directory-link" href="hammerhead.html"><span><strong>Hammerhead</strong><small>Connect a Bluetooth-capable Hammerhead and use Drive.</small></span><span aria-hidden="true">→</span></a>
-    <a class="directory-link" href="generic.html"><span><strong>Generic and custom projects</strong><small>Wire an HC-05, read the UART frames, and send replies.</small></span><span aria-hidden="true">→</span></a>
+    <a class="directory-link" href="generic.html"><span><strong>Generic and custom projects</strong><small>Wire an HC-05 to an Arduino Uno or classic Nano and control its LED.</small></span><span aria-hidden="true">→</span></a>
   </section>
 </div>
 
@@ -95,4 +95,4 @@ From **Menu → Configuration**, use **Export configuration** to create a JSON b
 | A–C change in the app but nothing happens on the robot | Verify that your firmware maps the corresponding bits to an accessory. |
 | Drive or testing stops unexpectedly | Check power, serial timing, and calibration safeguards. Open **About → Diagnostics** to review or copy a local log. |
 
-Use **Menu → Guide** for a quick protocol reference. The [Generic developer guide](generic.html) includes the full bench procedure and a downloadable sketch.
+Use **Menu → Guide** for a quick protocol reference. The [Arduino and Generic guide](generic.html) starts with an LED lesson, then explains the messages behind it.

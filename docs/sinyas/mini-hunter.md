@@ -1,75 +1,172 @@
 ---
 layout: default
 title: Sinyas for Mini Hunter
-description: Connect a Mini Hunter, tune its line and enemy detection, and test openings and flag servo angles in Sinyas.
+description: A beginner's walkthrough for driving a Mini Hunter and using the Sinyas calibration tools.
 ---
 
-# Mini Hunter profile
+# Use Sinyas with Mini Hunter
 
-Use Sinyas V1.0 with the matching **MiniHunterV2.8_Advance** firmware on your FullVision-STM32 board. Contact Twentynine Robotics if you need the firmware for your kit. Start with [Android installation and pairing](./#1-install-sinyas).
+Start with the driving lesson. Once you can connect, drive, and stop, try the calibration lessons one at a time.
 
-## 1 Confirm Mini Hunter and Drive
+## 1 Get your equipment ready
 
-Select the robot’s Bluetooth mode before starting Drive. The app starts on **Generic**, then shows **Mini Hunter** under the connection status after the firmware identifies itself. Open the menu to find **Auto modes**, **Line Detection Tuning**, and **Enemy Detection Tuning** when supported by the board. A paired HC-05 alone cannot identify the kit.
+- **Phone:** Android with [Sinyas V1.0 installed](./#1-install-sinyas).
+- **Robot:** Mini Hunter with an HC-05 and the matching **MiniHunterV2.8_Advance** program on its FullVision board. The program inside the board is called *firmware*. Ask your teacher or Twentynine Robotics which firmware your kit has.
+- **Test stand:** A stable support that keeps both wheels and attachments clear. Have a teacher help with the first powered test.
 
-On the robot, **SW1 + SW2** enters **CAL MODE** from the mode selector. Scroll to the named tool with **SW1** and tap **SW2** to enter. Hold **SW2** for two seconds to leave a tool. CAL returns to the tool’s menu entry. A released hold resets the exit progress.
+| What you see | What it means |
+| --- | --- |
+| OLED | The little screen on the robot. |
+| MODE | The switch that chooses between Remote and Auto. |
+| SW1 | The board button that moves to the next menu choice. |
+| SW2 | The board button that opens a choice. During a tool, hold it for two seconds to exit. |
 
-| Goal | Robot OLED | Sinyas |
+<div class="warning note"><strong>Set the robot on its stand before connecting.</strong> Keep fingers, cables, and loose clothing clear. In a tuning test, even 0% forward speed can allow the wheels to turn in place.</div>
+
+## 2 Put the robot in Bluetooth Drive
+
+1. Switch the robot on while it is on the stand.
+2. Move the **MODE** switch until the OLED shows **REMOTE**.
+3. Tap and release **SW1** until you see **BT MODE**.
+4. Tap and release **SW2**. The OLED should say **Waiting for Sinyas**.
+
+**Check:** When the robot says **Waiting for Sinyas**, it is ready for the phone. If you see **AUTO** or a numbered mode, return the MODE switch to **REMOTE**.
+
+## 3 Pair the phone, then connect in Sinyas
+
+1. In Sinyas, tap **☰ → Bluetooth → Open Android settings**.
+2. Turn Bluetooth on. Pick the HC-05 from the list of nearby devices and enter the PIN configured for your robot if asked. This pairing step is normally needed once.
+3. Return to Sinyas. If the module does not appear under **Paired devices**, tap the refresh icon.
+4. Tap **Connect** beside your HC-05.
+5. Check the upper-right corner. **Connected** means the phone has reached the Bluetooth module. **Mini Hunter**, just below it, means the robot’s program has also identified itself.
+
+<figure class="guide-figure">
+  <a href="../assets/images/sinyas/bluetooth.webp"><img src="../assets/images/sinyas/bluetooth.webp" width="800" height="400" alt="The Bluetooth page showing a connected HC-05 and Mini Hunter identification" loading="lazy"></a>
+  <figcaption>① Open Android settings. ② Pick the HC-05. ③ Confirm Mini Hunter.</figcaption>
+</figure>
+
+**Check:** Wait for **Mini Hunter** before looking for the tuning tools. If the screen stays on **Generic**, check the OLED, confirm the firmware, then disconnect and reconnect. The HC-05 name alone does not tell Sinyas which robot is connected.
+
+## 4 Learn the controls on the stand
+
+1. Tap **☰ → Drive**. Wait for **Start** to turn on.
+2. Choose speed button **1**. If its limit is higher than your teacher wants, change it under **Setup → Speed presets** while Drive is stopped.
+3. Tap **Start**. Wait until the app says the robot accepted the run.
+4. Move the **throttle** stick a little forward, then release it. Check that the wheels turn in the correct direction and stop when the stick centers.
+5. Move the **steering** stick slightly left, then right. Release it after each check. Try both sticks together once you know what each one does.
+6. Press and hold **Stop** for **2 seconds**, until the bar fills. The app sends the stop when the hold starts. Finish the hold so the app unlocks its menu and the robot can return to its board menu.
+
+<figure class="guide-figure">
+  <a href="../assets/images/sinyas/drive.webp"><img src="../assets/images/sinyas/drive.webp" width="800" height="400" alt="Two joystick pads, speed presets and Stop in Sinyas" loading="lazy"></a>
+  <figcaption>① Sticks move the robot. ② Select a speed limit. ③ Hold Stop.</figcaption>
+</figure>
+
+**Check:** The wheels stop, **Start** returns on the app, and the Mini Hunter returns to its menu after confirming the exit. Open **BT MODE** again with SW2 before the next Drive session. Buttons **A**, **B**, and **C** only operate an accessory if your robot's program assigns something to them.
+
+## 5 Open a calibration tool
+
+*Calibration* means checking a sensor or adjusting how the robot reacts. Stop Drive first. At the board’s normal menu:
+
+1. Press **SW1 and SW2 together**. Keep them pressed until the calibration screen appears, then release both.
+2. From **CAL MODE**, tap **SW1** until the OLED shows the tool name in the table below.
+3. Tap **SW2** to enter the tool. Leave the phone connected and open the matching Sinyas screen.
+4. Wait for the app’s board-ready message or live readings. To leave the board tool, hold **SW2 for 2 seconds**. Releasing early cancels the exit hold.
+
+| What you want to try | OLED label | Phone menu |
 | --- | --- | --- |
-| Drive | Bluetooth mode | **Drive** |
-| Read line sensors and tune recovery | **CAL → Line Tune** | **Line Detection Tuning** |
-| Test Classic or PID tracking | **CAL → Enemy Detection** or **PID Tune** | **Enemy Detection Tuning** |
-| Test an opening or the flag servo | **CAL → Auto Test** | **Auto modes** |
+| Detect the white boundary | **Line Tune** | **Line Detection Tuning** |
+| Turn toward another robot | **Enemy Detection** or **PID Tune** | **Enemy Detection Tuning** |
+| Rehearse the first movements | **Auto Test** | **Auto modes → Opening** |
+| Check the flag by itself | **Auto Test** | **Auto modes → Flag servo** |
 
-<div class="warning note"><strong>Start with the wheels clear.</strong> A tuning run at 0% forward can still turn the wheels. Use a controlled test area for floor tests and keep the robot's power control accessible.</div>
+## 6 Check the line sensors before changing movement
 
-## 2 Read and tune line detection
+A line sensor measures the surface underneath it. The **Pot** value comes from the small adjustment screw on the board, called a potentiometer. It sets the number that separates the floor from the line.
 
-1. Open **CAL → Line Tune** on the board. In Sinyas, open **Line Detection Tuning**.
-2. Wait for **Live sensor readings**. Compare each side’s **Sensor** value to its **Pot** value. Adjust the matching physical potentiometer and verify the status over both the arena floor and the boundary. The board treats a sensor value below its pot as a line hit.
-3. Open **Left**, **Right**, or **Both** to adjust the response for those hits. **Reverse power** and **Turn power** are percentages. **Minimum reverse** and **Turn time** are in milliseconds. **Shared** contains ramp and recovery timings, including the limits that govern clearing the line.
-4. Start the line test at 0% forward, then raise it gradually when ready. This test uses the line sensors without enemy tracking. Valid changes apply to the next recovery.
-5. Stop the test before saving. **Save to robot** writes the supported line recovery settings to the robot. **Load from robot** reads the robot’s stored values. **Phone presets** keeps named copies that can be reused on a different robot.
+1. Enter **CAL → Line Tune** on the board and open **Line Detection Tuning** on the phone.
+2. Leave the test stopped. Put a piece of the normal arena surface under the left sensor and observe **Sensor**, **Pot**, and the status. Then show it the white line.
+3. With your teacher, adjust the left pot so the floor reads **Clear** and the white line shows a hit. On this firmware, a sensor number lower than the pot number counts as a hit. Repeat on the right.
+4. Test one side at a time, then both, to check the app reacts to the correct sensor.
 
 <figure class="guide-figure">
   <a href="../assets/images/sinyas/line.webp"><img src="../assets/images/sinyas/line.webp" width="800" height="400" alt="Live readings and recovery fields in Sinyas Line Detection Tuning" loading="lazy"></a>
   <figcaption><strong>Calibrate in this order.</strong> ① compare live readings. ② choose the hit condition. ③ adjust its power and timing.</figcaption>
 </figure>
 
-## 3 Tune enemy detection
+### Adjust the robot’s response to the line
 
-1. Open **CAL → Enemy Detection** or **PID Tune**, depending on the board’s saved tracker. Open **Enemy Detection Tuning** in Sinyas and wait for the board.
-2. Choose **Classic** for fixed turning power and optional turn delay, or **PID** for steering based on the sensor error. The board shows the front sensor readings and can report the outer pair on supported five-sensor builds.
-3. Press **Start tuning**. The default 0% forward leaves tracking free to pivot. Start gently, consider changing one setting at a time, and watch how consistently the robot centers a target. **Move forward while searching**, when supported, uses the selected forward power when the target disappears.
-4. Stop the test, then use **Save to robot** for the tracker choice and Classic settings supported by the firmware. PID live gains are session values. Auto uses the gains compiled in the firmware. Use the board’s calibration pages to check raw distance readings if tracking begins closer than expected.
+1. Open **Left**, **Right**, or **Both**. Pick the tab for the sensor condition you want to tune.
+2. Change one field at a time. **Reverse power** controls how hard it backs away. **Minimum reverse** controls the minimum backing time. **Turn power** and **Turn time** control the turn that follows. **1000 ms** is one second.
+3. Leave **Shared** alone on your first run. Those settings affect all three tabs, including how quickly reverse power rises and how long the robot waits for the line to clear.
+4. Start on the stand with **Forward speed** at **0%** and trigger each sensor with a sample of the line. When supervised on the test surface, increase forward speed gradually. Use **Stop test** before picking up the robot or saving.
+5. Choose **Save to robot** to write the line-recovery settings to the board. **Load from robot** reads its saved values. **Phone presets** lets you keep a named copy on your phone.
+
+**Check:** A left hit and a right hit should produce different escape turns. Each sensor should still report floor and line correctly. This tool uses the line sensors without target tracking.
+
+## 7 Practice turning toward a target
+
+1. Keep the wheels clear. Open **CAL → Enemy Detection** or **PID Tune**, whichever appears on the OLED.
+2. Open **Enemy Detection Tuning** on the phone. Wait for **Board ready**. Keep forward speed at **0%**.
+3. Hold a cardboard target in front of the robot from a safe position. Move it left, center, then right and watch the reported distances.
+4. Tap **Start tuning**. In **Classic**, try changing the fixed turn power a little. In **PID**, **Kp** controls how strongly it turns toward an off-center target. **Kd** helps reduce overshoot. Change one value at a time and compare.
+5. Leave **Move forward while searching** off for the first test. On supported boards it lets the test move forward at the selected speed when it loses the target.
+6. Tap **Stop tuning**. Use **Save to robot** where supported to keep the tracker choice and Classic settings. PID gains adjusted during this test are temporary. Saved competition gains come from the board’s firmware.
 
 <figure class="guide-figure">
   <a href="../assets/images/sinyas/enemy.webp"><img src="../assets/images/sinyas/enemy.webp" width="800" height="400" alt="Sinyas Enemy Detection Tuning with PID tuning controls and board status" loading="lazy"></a>
   <figcaption><strong>Enemy Detection Tuning.</strong> Begin with forward speed at 0% and use the sensor readings to interpret the response.</figcaption>
 </figure>
 
-## 4 Build and test an opening
+**Check:** The robot turns toward the target and settles near the center. If the target appears too close before it is detected, use the board’s distance screen and a ruler to compare the readings. Ask your teacher before changing firmware settings.
 
-1. On the robot, open **CAL → Auto Test**. In Sinyas, open **Auto modes → Opening**.
-2. Choose a phone slot from **5–10**. Slots 5–7 have example presets. Empty slots display **Needs setup**. Use **Mode details** to edit the name and phone description.
-3. Use **Add step** to pick a movement, a flag drop, or a wait. Power is 0–100%. Duration uses milliseconds, so **1000 ms = 1 second**. A **Drive curve** needs different left and right power values. Drag the handle next to a step to reorder it.
-4. Choose the base mode under **After last step**. Leave **Include base mode in test** off to run the opening only. Turn it on when you intentionally want the robot to continue into the selected base mode.
-5. Tap **Test draft**. The draft runs from RAM. **Stop test**, a line hit, or loss of commands also ends the test. Save with **Save preset** if you want to keep it on the phone.
+## 8 Build and test your first opening
 
-**Base modes** adjusts the no-target speeds used during a draft's base handoff. **Flag servo** supplies the angles for the draft. Phone presets and test settings do not install new opening slots or replace the robot’s existing competition modes.
+An *opening* is a short list of moves that plays in order. The *base mode* is what the robot can do after the last move.
+
+1. Open **CAL → Auto Test** on the board and **Auto modes → Opening** in Sinyas.
+2. Pick slot **8** if it is empty, or select any slot marked **Needs setup**. Slots 5–7 contain example presets. Use **Mode details** to enter a short name such as **First turn**.
+3. Tap **Add step**. Choose **Spin left**, enter **20%** power and **200 ms**, then tap **Apply step**.
+4. Add **Wait** for **500 ms**. The drag handle lets you move a step up or down. If you try **Drive curve** later, give the left and right wheels different power values.
+5. Check **After last step**. Leave **Include base mode in test** switched **off**. Tap **Test draft** and watch the short spin and pause. The wheels should then stay stopped.
+6. If you want to see a handoff later with your teacher, select a base mode, lower its no-target speed in **Base modes**, and turn the switch on. Tap **Stop test** to finish. A line hit or command loss can also end the test.
+7. Use **Save preset** to keep your draft on the phone. The robot uses it temporarily for testing. Its onboard competition modes remain separate.
 
 <figure class="guide-figure">
   <a href="../assets/images/sinyas/opening.webp"><img src="../assets/images/sinyas/opening.webp" width="800" height="400" alt="Opening editor showing steps, the base mode selector, the Include base mode in test switch, and Test draft" loading="lazy"></a>
   <figcaption><strong>Opening test sequence.</strong> ① arrange steps. ② choose whether the test continues into the base mode. ③ run the draft.</figcaption>
 </figure>
 
-## 5 Check flag servo angles
+**Check:** With the switch off, **Opening complete. Robot stopped.** should appear after the last step.
 
-Keep the board in **CAL → Auto Test**, then open **Auto modes → Flag servo**. Enter the **Closed angle** and **Open angle** in degrees. Tap **Test servo** to open then return to the closed angle with the wheels stopped. It uses the values currently on screen. Use **Save preset** to keep the angles on the phone.
+## 9 Test the flag without driving
+
+1. Keep the robot in **CAL → Auto Test** and change to **Auto modes → Flag servo** in Sinyas.
+2. Enter the **Closed angle** and **Open angle** in degrees. Start from the kit’s known angles. Change one angle in small steps so the flag does not hit its mount.
+3. Tap **Test servo**. The flag opens and returns to the closed angle. The drive wheels stay stopped.
+4. Use **Save preset** to remember the angles on this phone.
 
 <figure class="guide-figure">
   <a href="../assets/images/sinyas/servo.webp"><img src="../assets/images/sinyas/servo.webp" width="800" height="400" alt="Flag servo tab with closed angle, open angle, and a Test servo button" loading="lazy"></a>
   <figcaption><strong>Test the flag on its own.</strong> ① set the angles. ② tap Test servo and confirm that the mechanism has clearance.</figcaption>
 </figure>
+
+**Check:** The flag moves freely in both directions. **Servo test complete.** means the board finished the test.
+
+## Keep the robot ready for the next student
+
+<div class="do-dont">
+  <div><h3>Do</h3><ul><li>Start on a stand and test Stop early.</li><li>Change one tuning value at a time.</li><li>Record or load the original values before saving a change.</li></ul></div>
+  <div><h3>Avoid</h3><ul><li>Lifting the robot during a test.</li><li>Starting an opening with the base-mode switch on for the first rehearsal.</li><li>Assuming a phone preset changes the robot’s onboard modes.</li></ul></div>
+</div>
+
+## If a step does not work
+
+| Symptom | What to check first |
+| --- | --- |
+| **Connected** but **Start** is gray | Make sure SW2 opened **BT MODE**, then check the Robot replies indicator on the Bluetooth screen. |
+| You cannot find Auto modes or the tuning pages | Wait for **Mini Hunter** under **Connected** and check that your board reports the matching features. |
+| A calibration button is gray | Open the matching tool on the OLED and wait for the app to confirm it. |
+| The test stops as soon as it starts | Check whether a line sensor is already seeing the boundary or the Bluetooth link dropped. |
+| The buttons still look right after changing a preset, but the robot acts differently | Check where it was saved. Auto presets live on the phone. Supported line and Classic/track selection settings use **Save to robot**. |
 
 [Back to Sinyas setup](./)

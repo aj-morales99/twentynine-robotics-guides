@@ -1,93 +1,145 @@
 ---
 layout: default
-title: Sinyas Generic UART guide
-description: Build a Generic Sinyas receiver, parse drive commands, acknowledge runs, and add telemetry.
+title: Use Sinyas with Arduino
+description: Wire an HC-05 to an Arduino Uno or classic Nano, upload a starter sketch, and turn on the Arduino LED from Sinyas.
 ---
 
-# Generic UART guide
+# Use Sinyas with your own Arduino
 
-Use Generic for classroom builds and robots with a compatible Bluetooth Classic serial link. This chapter uses an **HC-05** with an Arduino-compatible board. Use Sinyas V1.0 on Android and follow the [pairing guide](./#2-pair-the-hc-05-and-connect) first.
+In this lesson you will turn the Arduino’s built-in light on and off with **A** in Sinyas. Then you will see the stick numbers on your computer. The lesson uses **Generic**, the profile for a project that sends the standard Sinyas replies.
 
-## 1 Wire a bench receiver
+## 1 Gather your parts
 
-Power off the board while wiring. The module data pins connect to the board’s UART. Cross **TX → RX** and **RX ← TX**, and share **GND**. Verify the allowable supply voltage and UART logic levels for your specific HC-05 carrier. Use a suitable level shifter if a 5 V microcontroller’s TX would exceed the module’s RX rating.
+| You need | What to look for |
+| --- | --- |
+| Arduino | **Uno R3** or **classic Nano** with an ATmega328P. The steps use Arduino pin labels **D10** and **D11**. An Uno R4 or Nano Every needs its own setup. |
+| Bluetooth module | An **HC-05 Bluetooth Classic serial breakout**. Choose a carrier with labeled **TXD**, **RXD**, **GND**, and **VCC** pins and a wiring sheet from the seller. |
+| Two resistors | **1 kΩ** and **2 kΩ**, for the Arduino’s signal into the HC-05. A suitable 5 V to 3.3 V serial level shifter also works. |
+| Other parts | Jumper wires, a breadboard, and a USB **data** cable. |
+| Phone and computer | Android with [Sinyas installed](./#1-install-sinyas), plus a computer with [Arduino IDE 2](https://www.arduino.cc/en/software). |
 
-| HC-05 | FullVision-STM32 V1.5 bench sketch | Other board |
-| --- | --- | --- |
-| TX | PB15 | UART RX |
-| RX | PA8 | UART TX at compatible logic levels |
-| GND | GND | Common ground |
-| VCC | Per module carrier specification | Supported supply |
+Use the **HC-05** for this lesson. Sinyas V1.0 talks to compatible Bluetooth Classic serial devices. An **HM-10** is a Bluetooth Low Energy module and uses a different connection. An **HC-12** is a radio module and does not pair with the phone over Bluetooth.
 
-The supplied bench example uses **38400 baud** for the HC-05 data UART and **115200 baud** on **Serial1** for the monitor. Match the module’s configured data rate. For another microcontroller, replace the FullVision pin definitions and select a UART available on that board. Keep the Bluetooth UART separate from diagnostic prints.
+Ask your teacher to check two details on the HC-05 carrier before you wire it: the voltage allowed on **VCC** and the module’s **data baud rate**, which is the speed it uses to talk to the Arduino. Use a module configured for **38400 baud** to match the sketch. Look up the actual data setting for your module. The speed used in its AT setup mode can be different.
+
+## 2 Wire the module with the power off
+
+**TX** means *send*. **RX** means *receive*. The sender on either board connects to the receiver on the other board. **GND** gives both boards a shared electrical reference.
+
+1. Unplug the Arduino’s USB cable.
+2. Connect **HC-05 GND → Arduino GND**.
+3. Connect **HC-05 TXD → Arduino D10**. D10 is the Arduino’s receive pin for this sketch.
+4. Connect **Arduino D11 → 1 kΩ resistor → HC-05 RXD**. From the **RXD end** of the 1 kΩ resistor, connect the **2 kΩ resistor → GND**. The two resistors lower the Arduino’s 5 V signal to about 3.3 V before it enters RXD.
+5. Connect **VCC** only to the supply allowed by your module’s wiring sheet. Use the Arduino’s **5V** pin only when your HC-05 carrier explicitly supports 5 V at VCC.
+6. Have your teacher check the wiring before you reconnect USB.
+
+<figure class="guide-figure">
+  <a href="../assets/images/sinyas/arduino-hc05-wiring.png"><img src="../assets/images/sinyas/arduino-hc05-wiring.png" width="1000" height="595" alt="HC-05 TXD connects to Arduino D10. Arduino D11 connects through a 1 kiloohm resistor to HC-05 RXD, with a 2 kiloohm resistor from RXD to common ground. VCC goes to 5 volts only for a 5-volt-rated carrier." loading="lazy"></a>
+  <figcaption><strong>Follow each wire from one end to the other.</strong> The gold joint is where the HC-05 RXD wire and the two resistors meet.</figcaption>
+</figure>
+
+<div class="do-dont">
+  <div><h3>Do</h3><ul><li>Cross the send and receive wires.</li><li>Use a shared ground.</li><li>Keep the resistors on the D11-to-RXD wire.</li></ul></div>
+  <div><h3>Avoid</h3><ul><li>Changing wires while powered.</li><li>Connecting Arduino D11 straight to a 3.3 V RXD input.</li><li>Connecting motors for the first lesson.</li></ul></div>
+</div>
+
+**Check:** The HC-05 should power up. Its indicator pattern depends on the carrier. If the board or module gets hot, unplug USB and have the wiring checked.
+
+## 3 Upload the starter sketch
 
 <div class="download-list">
-  <a class="download-item" href="../downloads/sinyas/SinyasSerialBench.ino" download>
-    <strong>Download SinyasSerialBench.ino</strong><span>FullVision STM32 starter sketch · no motor outputs</span>
+  <a class="download-item" href="../downloads/sinyas/SinyasArduinoBench/SinyasArduinoBench.ino" download>
+    <strong>Download SinyasArduinoBench.ino</strong><span>Arduino Uno R3 and classic Nano · onboard LED and Serial Monitor</span>
   </a>
 </div>
 
-Create a folder named **SinyasSerialBench**, save the sketch inside, and upload it to the test board. Pair the HC-05, connect from Sinyas, and open Drive. The sketch has no profile advertisement, so the app shows **Generic**. Check **Serial1** while moving each stick and toggling A–C.
+1. Save the file in a folder named **SinyasArduinoBench**. Keep the file name **SinyasArduinoBench.ino**.
+2. Open the file in **Arduino IDE**. A program you upload to an Arduino is called a *sketch*.
+3. Plug in the Arduino with the USB data cable. In the IDE, choose **Tools → Board → Arduino AVR Boards**, then choose **Arduino Uno** or **Arduino Nano** as appropriate. Install **Arduino AVR Boards** from Boards Manager if the menu is missing.
+4. Choose the Arduino’s port under **Tools → Port**. If several ports appear, unplug and reconnect the Arduino to see which port changes.
+5. Click **Verify**, then **Upload**. If a classic Nano fails to upload, check its **Tools → Processor** setting against the board maker’s instructions. Some use **ATmega328P (Old Bootloader)**.
+6. Open **Tools → Serial Monitor**. Choose **115200 baud**. Press the Arduino’s Reset button once if you opened the monitor too late to see the startup message.
+
+**Check:** The monitor should say **Sinyas Arduino bench ready. A controls the onboard LED.** The monitor and the HC-05 use separate connections. Set the monitor to **115200** and the HC-05 data connection to **38400** for the supplied sketch.
+
+[Arduino’s upload walkthrough](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-uploading-a-sketch/) · [Arduino’s Serial Monitor walkthrough](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-monitor)
+
+## 4 Pair the phone and turn on the LED
+
+1. Open Sinyas. Tap **☰ → Bluetooth → Open Android settings**.
+2. Find your **HC-05** in Android Bluetooth settings. Pair it using the PIN for your module if Android asks.
+3. Return to Sinyas. Tap **Connect** beside the HC-05. Refresh **Paired devices** if you do not see it.
+4. Wait for **Connected** and **Robot replies · Receiving** on the Bluetooth screen. **Generic** is the correct profile for this lesson.
+5. Open **Drive** and tap **Start**. After the Arduino answers, tap **A** once. The Arduino’s built-in LED, usually labeled **L**, should turn on. Tap **A** again to turn it off.
+6. Turn A on again. Hold **Stop** for **2 seconds**. The LED should go out and **Start** should return.
 
 <figure class="guide-figure">
-  <a href="../assets/images/sinyas/generic.webp"><img src="../assets/images/sinyas/generic.webp" width="800" height="400" alt="Sinyas connected in the Generic profile with the paired HC-05 and robot link indicators" loading="lazy"></a>
-  <figcaption><strong>Generic profile.</strong> The link can be ready for Drive even when the board does not advertise a named robot.</figcaption>
+  <a href="../assets/images/sinyas/generic.webp"><img src="../assets/images/sinyas/generic.webp" width="800" height="400" alt="A connected HC-05, a green Robot replies indicator, and the Generic profile label" loading="lazy"></a>
+  <figcaption><strong>Look for both signals.</strong> Connected confirms the phone reached the HC-05. Robot replies confirms the Arduino sketch heard the phone.</figcaption>
 </figure>
 
-## 2 Read and validate a complete frame
+**Check:** You can turn the LED on, off, and stop it from the phone. Next, start the lesson again and disconnect Bluetooth while the light is on. The sketch should turn it off automatically after commands stop arriving.
 
-Sinyas sends ASCII. A frame ends at an asterisk, and the board may receive it in chunks or receive several frames in one read. Collect bytes in a fixed buffer, parse only at the delimiter, and discard malformed or oversized frames through the next delimiter.
+## 5 Read the signal on your computer
+
+Leave Serial Monitor open at **115200**. Press **Start** in Sinyas, then perform one action at a time and hold it until the next monitor line appears.
+
+| Try this on the phone | Look for this in the monitor |
+| --- | --- |
+| Release both sticks | **1500/1500** under sticks. |
+| Push throttle forward | The first number drops below **1500**. |
+| Move steering to the right | The second number rises above **1500**. |
+| Tap speed preset 1, 2, or 3 | The **limit** changes to the percentage shown under that button. |
+| Turn only A and C on | The **mask** is **5** because A is 1 and C is 4. |
+| Hold Stop | The run number becomes **0** while the phone sends idle commands. |
+
+The last values in the monitor show how many valid messages arrived and the longest gap between them. The calculated wheel percentages are practice numbers. This sketch drives the onboard LED only.
+
+## 6 Fix the first thing that fails
+
+| What you see | Try this first |
+| --- | --- |
+| The Arduino port is missing | Try a known USB data cable and check **Tools → Port** again. |
+| Serial Monitor shows strange characters | Set the monitor to **115200**. |
+| The HC-05 is missing in the app | Pair it in **Android Bluetooth settings**, grant **Nearby devices** if requested, then refresh the Sinyas device list. |
+| Android says Connected but Start stays gray | Check **D10 ← TXD**, **D11 → divider → RXD**, common ground, and the module’s data baud. The Arduino must send its link reply. |
+| The LED never changes | Confirm you tapped Start, then **A**, and look for **mask 1** with B and C off. Check the **L** LED, which is separate from the power LED. |
+| The link drops and the light turns off | This is also the sketch’s timeout behavior. Check wiring and power if it happens during normal use. |
+
+## 7 Read the messages in your own code
+
+A **frame** is one complete message. Sinyas sends plain text with commas between fields and an asterisk at the end. Read characters into a fixed-size buffer. At each asterisk, check that the frame has the right fields and ranges before using it. A read might contain part of a message or several complete messages.
 
     DRV,1200,1700,40,5,1*
 
-| Field | Range | In this example |
+| Field | Meaning | Example |
 | --- | --- | --- |
-| Throttle | 1000–2000, centered at 1500 | 1200. Values below center represent forward. |
-| Steering | 1000–2000, centered at 1500 | 1700. Values above center represent right. |
-| Speed limit | 0–100% | 40%. |
-| Button mask | 0–7 | 5. A and C are on. |
-| Run ID | 0–2147483647 | 1. A positive run ID identifies this drive session. |
+| Throttle | 1000–2000. Center is 1500. Below center means forward. | 1200 |
+| Steering | 1000–2000. Center is 1500. Above center means right. | 1700 |
+| Speed limit | 0–100 percent. | 40 |
+| Button mask | Add A = 1, B = 2, and C = 4 when they are on. | 5 means A and C. |
+| Run ID | 0 means stop. A positive number identifies the current drive session. | 1 |
 
-A, B, and C have bit values **1**, **2**, and **4**. Read bit 1 with **(buttons & 1) != 0**. For a one-time event, compare against the previous mask and act on the off-to-on transition. Clear the previous mask alongside your other outputs when stopped.
+Use the code as a map. **readCommand()** reads a message. **receiveCommand()** handles Start and Stop. **applyDrive()** updates the LED and the monitor values. **stopOutputs()** turns the LED off and clears the active run.
 
-## 3 Acknowledge Start and handle Stop
+| What just happened | What the Arduino must do |
+| --- | --- |
+| A valid idle frame arrives | Stop outputs. Reply with `TEL,LINK,OK*` to tell the phone that the board received a command. |
+| A new positive run ID arrives | Start only if the sticks are centered and the buttons are off. Echo the accepted number, for example `TEL,RUN,1*`. |
+| Matching drive commands keep coming | Update outputs for that run. Refresh link and run replies about every 250 ms. |
+| A valid frame with run ID 0 arrives | Stop immediately. |
+| No valid command for 250 ms | Stop outputs, clear the run, and wait for a fresh centered Start. |
 
-| Sequence | Phone → board | Board action and reply |
-| --- | --- | --- |
-| Idle | `DRV,1500,1500,40,0,0*` | Clear outputs. Reply `TEL,LINK,OK*` to confirm the board received valid serial data. |
-| Start | `DRV,1500,1500,40,0,1*` | Accept a new positive ID only with centered sticks and auxiliary bits clear. Reply `TEL,RUN,1*` with the actual ID. |
-| Drive | `DRV,1200,1700,40,5,1*` | Apply values only for the accepted ID. Refresh link and matching run replies about every 250 ms. |
-| Stop | Any valid frame with run ID 0 | Clear the active run, motor outputs, and accessories immediately. |
-| Lost commands | No valid command for 250 ms in the example | Clear the active run and outputs. Require a neutral handshake before motion resumes. |
+### Try a small code change
 
-On a valid first frame or run transition, respond immediately. Send periodic replies while commands arrive. The app waits for its matching run acknowledgment before sending active controls. A new run ID can follow reconnect, Stop, or cancellation of a Stop hold. Use unsigned elapsed-time comparisons for your board timeout and refresh it only on valid input.
+To make **B** control the light, find the line with **digitalWrite(LED_BUILTIN, buttonA ? HIGH : LOW)** inside **applyDrive()**. Change **buttonA** to **buttonB**, upload the sketch again, reconnect, and try B. Keep **stopOutputs()** as it is so the light still turns off on Stop and timeout.
 
-## 4 Use the parsed values
+### Send a value back to the phone
 
-For a two-wheel project, the sample computes signed left and right output percentages. Positive and negative values command opposite directions.
+*Telemetry* means a reading sent back to the phone. Optional readings such as `TEL,DIST_CM,23*` or `TEL,BAT,7.40*` can appear on Drive. Send the reading separately from the link and run replies. A custom name uses up to 20 uppercase letters, digits, or underscores. Keep its value under or equal to 96 characters, with no commas or asterisks.
 
-```cpp
-const int forward = 1500 - cmd.throttle;
-const int turn = cmd.steering - 1500;
-const int left = constrain(forward + turn, -500, 500) * cmd.limit / 500;
-const int right = constrain(forward - turn, -500, 500) * cmd.limit / 500;
-```
+### Move on to your own hardware
 
-The example frame produces **40% left** and **8% right**. The bench sketch prints results only. For a moving project, implement the output mapping for your motor driver and write its safe stop state in **stopOutputs()**. Verify neutral, both directions, and unplugging or disconnecting Bluetooth with the wheels clear.
-
-## 5 Send telemetry back to Sinyas
-
-Keep telemetry on a separate cadence from the link and run replies. A measured battery value can be sent as `TEL,BAT,7.40*`. A custom measurement such as `TEL,DIST_CM,23*` can appear on Drive. Custom keys use at most 20 uppercase letters, digits, or underscores. Values may be up to 96 characters and must be nonempty, without commas or asterisks.
-
-Mini Hunter and Hammerhead reply with a known identity when they support their profiles. Generic firmware can omit that reply and use the normal Drive handshake. A silent device may show a Bluetooth connection, but **Start** stays disabled until the board acknowledges the link.
-
-## 6 Troubleshoot on the bench
-
-- **No bytes** → check TX/RX crossing, common ground, Android pairing, and UART pin selection.
-- **Garbled bytes** → match the module’s data baud to the sketch and check logic levels.
-- **Connected with Start disabled** → confirm the first valid frame is acknowledged with `TEL,LINK,OK*`.
-- **Start waits or returns to Start** → echo the exact run ID and refresh the reply while it is active.
-- **Accessory repeats** → the mask is a state snapshot. For one-shot actions, detect a transition.
-- **Need actual timing** → use the sketch’s frame count and maximum receive gap. Sinyas targets 16 ms dispatch. Receive timing depends on the link, UART, and firmware. The app’s dispatch interval does not measure motor response.
+After the LED lesson works, use a motor driver appropriate for your project. The sketch’s **leftPower** and **rightPower** are signed percentages. Use them within the driver’s limits. Add the driver’s safe stop behavior to **stopOutputs()**, and test loss of Bluetooth with the wheels raised. For a board with a spare hardware serial port, use that port for the HC-05 so the USB monitor can stay separate. FullVision users can start with the [separate STM32 bench sketch](../downloads/sinyas/SinyasSerialBench.ino).
 
 [Back to Sinyas setup](./)
