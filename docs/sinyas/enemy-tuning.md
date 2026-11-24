@@ -27,6 +27,27 @@ There is no single best choice for every robot. Try both with the same target, d
 4. On the connected phone, tap **☰ → Enemy Detection Tuning**. Wait for **Board ready** and numbers under **Sensor readings**.
 5. Choose **Classic** or **PID** in the app while stopped. When the board supports both, changing the tab selects what the next test will use.
 
+<div class="oled-preview-grid">
+  <figure class="guide-figure">
+    <a href="../assets/images/sinyas/oled/classic-menu.png"><img src="../assets/images/sinyas/oled/classic-menu.png" width="576" height="172" alt="Enemy Detection. SW2 to start." loading="lazy"></a>
+    <figcaption><strong>Classic is saved.</strong> Tap SW2 when the board shows Enemy Detection.</figcaption>
+  </figure>
+  <figure class="guide-figure">
+    <a href="../assets/images/sinyas/oled/pid-menu.png"><img src="../assets/images/sinyas/oled/pid-menu.png" width="576" height="172" alt="PID Tune. SW2 to start." loading="lazy"></a>
+    <figcaption><strong>PID is saved.</strong> Tap SW2 when the board shows PID Tune.</figcaption>
+  </figure>
+  <figure class="guide-figure">
+    <a href="../assets/images/sinyas/oled/classic-running.png"><img src="../assets/images/sinyas/oled/classic-running.png" width="576" height="172" alt="Enemy Detection. Hold SW2 to exit." loading="lazy"></a>
+    <figcaption><strong>The Classic tool is open.</strong> Open Enemy Detection Tuning on the phone.</figcaption>
+  </figure>
+  <figure class="guide-figure">
+    <a href="../assets/images/sinyas/oled/pid-running.png"><img src="../assets/images/sinyas/oled/pid-running.png" width="576" height="172" alt="PID Tune. Hold SW2 to exit." loading="lazy"></a>
+    <figcaption><strong>The PID tool is open.</strong> Open the same Enemy Detection Tuning page on the phone.</figcaption>
+  </figure>
+</div>
+
+The OLED follows the saved setting. You can try the other method in Sinyas first. The OLED name changes after the robot confirms **Save to robot**.
+
 **Check.** If the app keeps showing a waiting message, confirm the board is inside the tool and the header says **MiniHunter**. If only PID controls appear, the board has not reported its Classic settings. Check the matching firmware before trying to save.
 
 ## 2 Read the sensors before moving
@@ -37,6 +58,13 @@ There is no single best choice for every robot. Try both with the same target, d
 4. Use a ruler to repeat the test at the same distance. Start within the robot’s range. The V2.8 baseline uses a **50 cm** scan setting, but your firmware and real sensor readings may differ.
 
 **Check.** The readings follow the target before you test any motor settings. If they do not, check the individual sensors from the board’s distance screen first.
+
+<div class="oled-preview-grid">
+  <figure class="guide-figure">
+    <a href="../assets/images/sinyas/oled/distances.png"><img src="../assets/images/sinyas/oled/distances.png" width="576" height="172" alt="DISTANCES (cm). Front readings 36, 26, 33. Outer readings 51, 48." loading="lazy"></a>
+    <figcaption><strong>Optional distance check on the board.</strong> Tap SW1 twice from CAL MODE. The first row of numbers is the front left, center, and front right. The extra row appears on a five-sensor build. These are example readings.</figcaption>
+  </figure>
+</div>
 
 ## 3 Tune Classic
 
