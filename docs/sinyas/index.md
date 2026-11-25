@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sinyas Bluetooth Controller
-description: Install Sinyas V1.0, connect an Android phone to your robot, and find the right guide for Mini Hunter, Hammerhead, or your own project.
+description: Install Sinyas, connect an Android phone to your robot, and find the right guide for Mini Hunter, Hammerhead, or your own project.
 permalink: /sinyas/
 ---
 
@@ -14,12 +14,7 @@ permalink: /sinyas/
 
 Sinyas is a landscape Android controller from Twentynine Robotics. Pair an HC-05, drive with two thumbs, and use the controls your robot firmware supports.
 
-<div class="download-list">
-  <a class="download-item" href="../downloads/sinyas/sinyas-v1.0.0.apk?rev=auto-save" download>
-    <strong>Sinyas V1.0 Initial Release</strong>
-    <span>Signed Android APK</span>
-  </a>
-</div>
+[View Sinyas releases and downloads](releases.html)
 
 <div class="guide-directory">
   <section>
@@ -34,18 +29,14 @@ Sinyas is a landscape Android controller from Twentynine Robotics. Pair an HC-05
 
 <div class="warning note"><strong>Before testing a robot:</strong> secure it on a stable stand with wheels and attachments clear. Verify Stop and link loss while the drive wheels are raised.</div>
 
-**V1.0 update.** This APK adds saving and loading custom Mini Hunter Auto modes with matching firmware. Install it over the first V1.0 APK to keep your phone presets.
-
-[APK SHA-256 checksum](../downloads/sinyas/sinyas-v1.0.0.apk.sha256)
-
 ## 1 Install Sinyas
 
-You need **Android 7.0 or later** and a compatible Bluetooth Classic serial module. V1.0 uses the HC-05.
+You need **Android 7.0 or later** and a compatible Bluetooth Classic serial module such as the HC-05.
 
-1. Download the signed APK above or use the official copy supplied by Twentynine Robotics.
+1. Open [Sinyas releases](releases.html) and download the signed APK for your version.
 2. Open it in Android and follow the installation prompts. If Android asks to allow installs from the app that opened the file, enable it for that source.
 3. Open Sinyas and allow **Nearby devices** if Android prompts. The app opens in landscape.
-4. If you already used Sinyas beta, install over it so Android can keep your existing settings. You can also export a backup first.
+4. If you already have Sinyas, install the update over it to keep your existing settings. You can also export a backup first.
 
 ## 2 Pair the HC-05 and connect
 
@@ -80,7 +71,7 @@ You need **Android 7.0 or later** and a compatible Bluetooth Classic serial modu
 
 ## 4 Customize the controller
 
-Stop Drive before opening **Menu → Setup**. Set your throttle side, pad size, speed-button position, and independent throttle and steering curves or sensitivity. Edit presets **1–3** as 0–100% limits. Rename **A–C** to match your robot. Each renamed button keeps its original signal bit. Under **Theme**, choose the appearance and highlight color. Settings stay on this phone.
+Stop Drive before opening **Menu → Setup**. Set your throttle side, pad size, and independent throttle and steering curves or sensitivity. Edit presets **1–3** as 0–100% limits. Rename **A–C** to match your robot. Each renamed button keeps its original signal bit. Under **Theme**, choose the appearance and highlight color. Settings stay on this phone.
 
 From **Menu → Configuration**, use **Export configuration** to create a JSON backup. **Import configuration** asks before replacing the settings on this phone. The backup includes controller settings and supported phone presets. Settings already stored on the robot must be read or saved through the matching tuning tool.
 

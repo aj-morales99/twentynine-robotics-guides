@@ -10,7 +10,7 @@ Start with the driving lesson. Once you can connect, drive, and stop, try the ca
 
 ## 1 Get your equipment ready
 
-- **Phone:** Android with [Sinyas V1.0 installed](./#1-install-sinyas).
+- **Phone:** Android with [Sinyas installed](./#1-install-sinyas).
 - **Robot:** Mini Hunter with an HC-05 and the matching **MiniHunterV2.8_Advance** program on its FullVision board. The program inside the board is called *firmware*. Ask your teacher or Twentynine Robotics which firmware your kit has.
 - **Test stand:** A stable support that keeps both wheels and attachments clear. Have a teacher help with the first powered test.
 
@@ -227,7 +227,7 @@ An *opening* is a short list of moves that plays in order. The *base mode* is wh
 
 ### Save an opening to the robot
 
-You need the corrected **Sinyas V1.0** APK and the matching **MiniHunterV2.8_Advance** firmware. Ask Twentynine Robotics for the firmware if your kit still has the earlier build.
+Use the current Sinyas APK and matching **MiniHunterV2.8_Advance** firmware. Check [Sinyas releases](releases.html) for app versions. Ask Twentynine Robotics for the firmware if your kit still has an earlier build.
 
 1. Leave the board in **CAL → Auto Test**. In Sinyas, stay on **Auto modes → Opening** and select the slot you want to change.
 2. Stop the draft test. Tap **Save to robot** and wait for **Mode 5 saved to robot**, or the number you selected.
@@ -236,7 +236,7 @@ You need the corrected **Sinyas V1.0** APK and the matching **MiniHunterV2.8_Adv
 
 Slots **5–7** use their built-in modes until you save a replacement. Slots **8–10** show **Empty - use Sinyas** until you program them. Names and descriptions stay on the phone. The OLED uses the mode number. The **Include base mode in test** switch is for draft testing. A saved opening hands off to its chosen base in normal Auto. A line hit interrupts the opening and starts the normal recovery.
 
-If the app only offers **Save preset**, download the current V1.0 APK and check the board firmware. The first V1.0 APK could save to the phone and test a draft in the robot’s short-term memory.
+If the app only offers **Save preset**, check [Sinyas releases](releases.html) for the current app version and confirm that the board has compatible firmware.
 
 ### Look up the Opening and Base modes controls
 
