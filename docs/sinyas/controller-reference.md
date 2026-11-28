@@ -18,6 +18,7 @@ Open the **☰** menu beside the Sinyas logo. Stop Drive or the current test bef
 | **Auto modes** | Edit and rehearse openings, set draft base speeds, or test the flag servo on a compatible Mini Hunter. |
 | **Enemy Detection Tuning** | Compare Classic and PID Beta target tracking on a compatible Mini Hunter. |
 | **Line Detection Tuning** | See readings and tune what the Mini Hunter does when it touches the boundary. |
+| **Wheel Alignment** | Check whether the Mini Hunter drives straight and adjust the wheel power balance. |
 | **Guide** | Read the quick connection and message-format notes inside the app. |
 | **Configuration** | Export or import phone settings and presets as a JSON file. |
 | **About** | Check the app version, replay the boot screen, and open **Diagnostics**. |
@@ -86,7 +87,8 @@ Open **Setup** while Drive is stopped. Changes save to the phone as you make the
 | **Auto modes → Opening** | Arrange steps, run without a base mode, or include the base after the opening. | **Save to robot** writes slots 5–10 on compatible firmware with the corrected V1.0 APK. **Save preset** keeps a separate phone copy. |
 | **Auto modes → Base modes** | Change how quickly the draft’s selected base moves when there is no target. | **Save preset** keeps the draft base speeds on the phone. |
 | **Auto modes → Flag servo** | Check open and closed angles without moving the wheels. | **Save preset** keeps the test angles on the phone. |
-| **Line Detection Tuning** | Read each sensor, check its threshold, and try recovery moves. | **Save to robot** writes supported recovery settings. **Phone presets** saves copies on this phone. The physical pots are adjusted on the robot. |
+| **Line Detection Tuning** | Read each sensor, check its threshold, and choose a recovery profile. | **Save to robot** writes recovery settings. The pencil next to a Custom profile saves a named copy on the phone. Adjust the physical pots on the robot. |
+| **Wheel Alignment** | Run a straight test and adjust the trim at 25%, 50%, or 80% power. | **Save to robot** applies the three trims to forward RC and Auto driving. See [Wheel alignment](mini-hunter.html#wheel-alignment). |
 | **Enemy Detection Tuning** | Compare Classic and PID Beta while pivoting or approaching a target. | **Save to robot** writes the tracker choice and Classic settings on compatible boards. PID gains and the live forward and search controls are for testing. |
 
 Use the [Mini Hunter lessons](mini-hunter.html) for Auto, line, and flag tests. Use the [enemy tuning lesson](enemy-tuning.html) for step-by-step Classic and PID Beta tests.

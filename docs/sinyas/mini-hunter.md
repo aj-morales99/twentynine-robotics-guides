@@ -122,6 +122,7 @@ The blue OLED illustrations below are simulations of the **MiniHunterV2.8_Advanc
 | What you want to try | OLED label | Phone menu |
 | --- | --- | --- |
 | Detect the white boundary | **Line Tune** | **Line Detection Tuning** |
+| Make the robot drive straight | **Modes Tune** | **Wheel Alignment** |
 | Turn toward another robot | **Enemy Tune** or **PID Tune** | **Enemy Detection Tuning** |
 | Rehearse the first movements | **Auto Test** | **Auto modes → Opening** |
 | Check the flag by itself | **Auto Test** | **Auto modes → Flag servo** |
@@ -163,11 +164,12 @@ A line sensor measures the surface underneath it. The **Pot** value comes from t
 
 ### Adjust the robot’s response to the line
 
-1. Open **Left**, **Right**, or **Both**. Pick the tab for the sensor condition you want to tune.
-2. Change one field at a time. **Reverse power** controls how hard it backs away. **Minimum reverse** controls the minimum backing time. **Turn power** and **Turn time** control the turn that follows. **1000 ms** is one second.
-3. Leave **Shared** alone on your first run. Those settings affect all three tabs, including how quickly reverse power rises and how long the robot waits for the line to clear.
-4. Start on the stand with **Forward speed** at **0%** and trigger each sensor with a sample of the line. When supervised on the test surface, increase forward speed gradually. Use **Stop test** before picking up the robot or saving.
-5. Choose **Save to robot** to write the line-recovery settings to the board. **Load from robot** reads its saved values. **Phone presets** lets you keep a named copy on your phone.
+1. Pick **1 kg** or **3 kg** from the **Line profile** dropdown at the bottom. The profile loads recovery settings across all four tabs. To store your own settings on the phone, pick one of the three **Custom** slots, edit the settings, then use the pencil beside the dropdown to name and save the slot.
+2. Open **Left**, **Right**, or **Both**. Pick the tab for the sensor condition you want to tune.
+3. Change one field at a time. **Reverse power** controls how hard it backs away. **Minimum reverse** controls the minimum backing time. **Turn power** and **Turn time** control the turn that follows. **1000 ms** is one second.
+4. Leave **Shared** alone on your first run. Those settings affect all three recovery tabs, including how quickly reverse power rises and how long the robot waits for the line to clear.
+5. Start on the stand with **Forward speed** at **0%** and trigger each sensor with a sample of the line. When supervised on the test surface, increase forward speed gradually. Use **Stop test** before picking up the robot or saving.
+6. Choose **Save to robot** to write the displayed settings to the board. **Load from robot** reads the board's saved values.
 
 **Check:** A left hit and a right hit should produce different escape turns. Each sensor should still report floor and line correctly. This tool uses the line sensors without target tracking.
 
@@ -266,6 +268,16 @@ If the app only offers **Save preset**, check [Sinyas releases](releases.html) f
 **Check:** The flag moves freely in both directions. **Servo test complete.** means the board finished the test.
 
 The OLED stays on **Auto Test** during the servo test. Look for **Servo test complete** on the phone.
+
+## Wheel alignment
+
+Use Wheel Alignment if the robot pulls to one side when you tell it to drive straight. The robot can remember a different correction for each test speed.
+
+1. Connect Sinyas to a Mini Hunter with the matching firmware. On the board, open **CAL → Modes Tune**. On the phone, open **Wheel Alignment** and tap **Load from robot**.
+2. Put the robot on a clear, flat test surface with room to stop. Pick **Low · 25%**, then tap **Start**. Watch which way the robot drifts and tap **Stop**.
+3. If the robot drifts left, use **+** to slow the right wheel. If it drifts right, use **−** to slow the left wheel. Each tap changes the trim by 0.5 percentage points. You can also type a value such as `+1.5` or `-1.5`. Use `0.0` for equal power.
+4. Repeat until it drives straight. Then test **Medium · 50%** and **High · 80%** if you have room to run at those speeds.
+5. Tap **Stop**, then **Save to robot**. The saved trim applies to forward driving in RC and Auto. The robot also stops the test if it sees a line or loses commands from the phone.
 
 ## Keep the robot ready for the next student
 

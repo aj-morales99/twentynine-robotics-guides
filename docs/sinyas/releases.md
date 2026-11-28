@@ -9,9 +9,32 @@ permalink: /sinyas/releases.html
 
 Download a signed Android APK and see what changed in each version. Sinyas requires Android 7.0 or later. For pairing and installation steps, see the [Sinyas setup guide](./#1-install-sinyas).
 
+## V1.1.1
+
+**Latest release** · November 28, 2026
+
+- **Line Detection** puts the **1 kg**, **3 kg**, and three renameable custom profiles in one dropdown. Pick a profile to load its recovery settings, then use **Save to robot** to apply them.
+- **Wheel Alignment** adds separate trims for **25%**, **50%**, and **80%** forward power. Use **−** and **+** to make 0.5-point adjustments, or type a value. Saved trims apply to forward driving in RC and Auto.
+- **Start** and **Stop** control the wheel test directly. The robot also stops if it detects a line or loses the control signal.
+
+Wheel Alignment requires the matching **MiniHunterV2.8_Advance** firmware from Twentynine Robotics. Follow the [Mini Hunter wheel alignment guide](mini-hunter.html#wheel-alignment) to run a test.
+
+### Assets
+
+<div class="download-list">
+  <a class="download-item" href="../downloads/sinyas/sinyas-v1.1.1.apk" download>
+    <strong>Download Sinyas V1.1.1</strong>
+    <span>Signed Android APK · 1.1.1</span>
+  </a>
+</div>
+
+[SHA-256 checksum for V1.1.1](../downloads/sinyas/sinyas-v1.1.1.apk.sha256)
+
+---
+
 ## V1.1
 
-**Latest release** · November 25, 2026
+November 25, 2026
 
 ### Drive and layout
 
