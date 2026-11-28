@@ -179,7 +179,7 @@ Center the transmitter before allowing the wheels to touch a surface.
 
 ### CT-6A trim controls
 
-The CT-6A manual identifies dedicated **TH TRIM** controls for throttle and **SH TRIM** controls for steering. It does not provide the same CH1/CH2 numeric home-screen view as the HT-10A, so use the Mini Hunter OLED for the final zero check.
+The CT-6A has dedicated **TH TRIM** controls for throttle and **SH TRIM** controls for steering. Use the robot-side neutral check below after adjusting either trim.
 
 <figure class="guide-figure step-figure">
   <img src="../assets/images/mini-hunter/rc/manuals/hotrc-ct6a-trim-controls-manual-en.svg" alt="English CT-6A manual reference identifying throttle and steering trim controls" loading="lazy">
@@ -187,10 +187,9 @@ The CT-6A manual identifies dedicated **TH TRIM** controls for throttle and **SH
 </figure>
 
 1. Release the trigger and steering wheel so both return naturally to center.
-2. Continue to RC Mode below and observe the robot OLED.
-3. If <code>Trig</code> is not zero, tap the appropriate **TH TRIM** direction once, then recheck.
-4. If <code>Turn</code> is not zero, tap the appropriate **SH TRIM** direction once, then recheck.
-5. Stop as soon as the OLED settles at <code>Trig:0</code> and <code>Turn:0</code>. Do not hold a trim button or make large adjustments.
+2. Follow [Select RC Mode](#6-select-rc-mode) with the wheels raised.
+3. On **V2.7**, use **TH TRIM** to bring `Trig` to zero and **SH TRIM** to bring `Turn` to zero. Make one click at a time and recheck after each click.
+4. On **V2.8**, check that both wheels stay stopped at neutral. If a wheel moves, follow [If the robot moves at neutral](#if-the-robot-moves-at-neutral).
 
 ## 6. Select RC Mode
 
@@ -199,16 +198,30 @@ The CT-6A manual identifies dedicated **TH TRIM** controls for throttle and **SH
 3. Select RC Mode.
 4. Leave both transmitter controls centered and watch the OLED and wheels.
 
-The OLED should show <code>Trig:0</code> and <code>Turn:0</code>, and both wheels should remain stopped. If a value does not settle near zero or either wheel moves, turn off the robot immediately and see [If the robot moves at neutral](#if-the-robot-moves-at-neutral).
+**V2.7.** With the transmitter centered, the OLED should settle near <code>Trig:0</code> and <code>Turn:0</code>.
+
+<figure class="guide-figure guide-figure--compact step-figure">
+  <a href="../assets/images/mini-hunter/oled/v27-rc-neutral.png"><img src="../assets/images/mini-hunter/oled/v27-rc-neutral.png" width="576" height="172" alt="V2.7 OLED showing Trig:0 and Turn:0" loading="lazy"></a>
+  <figcaption><strong>V2.7 neutral check.</strong> Both readings are centered. Both wheels should stay stopped.</figcaption>
+</figure>
+
+**V2.8.** The OLED changes from **Waiting for signal** to **Running** when RC signals arrive. Confirm both wheels stay stopped with the transmitter centered.
+
+<figure class="guide-figure guide-figure--compact step-figure">
+  <a href="../assets/images/mini-hunter/oled/v28-rc-running.png"><img src="../assets/images/mini-hunter/oled/v28-rc-running.png" width="576" height="172" alt="V2.8 OLED showing RC Mode and Running" loading="lazy"></a>
+  <figcaption><strong>V2.8 RC connection.</strong> Running confirms the receiver is sending a signal. Check the wheels to verify neutral.</figcaption>
+</figure>
+
+If a V2.7 value stays away from zero or either wheel moves at neutral, turn off the robot and see [If the robot moves at neutral](#if-the-robot-moves-at-neutral).
 
 ## 7. Test and correct the controls
 
-Use small control movements during the first test. Values can run from <code>-100</code> to <code>100</code>; the sign may reverse if a transmitter channel is reversed.
+Use small control movements during the first test with the wheels raised. On **V2.7**, `Trig` and `Turn` can range from −100 to 100. On **V2.8**, watch the wheels while the OLED shows **Running**.
 
-1. Move the forward/reverse control slightly: HT-10A left stick vertically, or CT-6A trigger pull/push. Only <code>Trig</code> should change.
-2. Return the control to center. <code>Trig</code> should return to <code>0</code> and the wheels should stop.
-3. Move the turning control slightly: HT-10A right stick horizontally, or CT-6A steering wheel left/right. Only <code>Turn</code> should change.
-4. Return the control to center. <code>Turn</code> should return to <code>0</code> and the wheels should stop.
+1. Move the forward/reverse control slightly: HT-10A left stick vertically, or CT-6A trigger pull/push. Check that the wheels respond in the expected direction. On V2.7, only `Trig` should change.
+2. Return the control to center. The wheels should stop. On V2.7, `Trig` returns to `0`.
+3. Move the turning control slightly: HT-10A right stick horizontally, or CT-6A steering wheel left/right. Check that the wheel movement matches the intended turn. On V2.7, only `Turn` should change.
+4. Return the control to center. The wheels should stop. On V2.7, `Turn` returns to `0`.
 5. Repeat with small movements while confirming the robot responds in the expected direction.
 
 ### If forward/reverse and turning use the wrong sticks
@@ -239,9 +252,9 @@ Do not place the robot on the arena until all four commands work correctly and b
 - [ ] The Bluetooth module has been removed from the shared board header.
 - [ ] The receiver LED remains steadily lit.
 - [ ] RC Mode is selected on the robot.
-- [ ] The correct control changes <code>Trig</code>: HT-10A CH3 stick or CT-6A CH2 trigger.
-- [ ] The correct control changes <code>Turn</code>: HT-10A CH1 stick or CT-6A CH1 wheel.
-- [ ] The OLED returns to <code>Trig:0</code> and <code>Turn:0</code> at neutral.
+- [ ] Forward/reverse responds to the HT-10A CH3 stick or the CT-6A CH2 trigger.
+- [ ] Steering responds to the HT-10A CH1 stick or the CT-6A CH1 wheel.
+- [ ] The wheels stay stopped at neutral. On V2.7, the OLED shows <code>Trig:0</code> and <code>Turn:0</code>. On V2.8, it shows **Running** when a signal is present.
 - [ ] The wheels stop when the transmitter controls are centered.
 - [ ] The first complete test was performed with the wheels raised.
 

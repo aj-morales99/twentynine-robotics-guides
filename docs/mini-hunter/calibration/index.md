@@ -5,38 +5,72 @@ description: Choose the Mini Hunter V2.8 Sinyas calibration guide or the origina
 permalink: /mini-hunter/calibration/
 ---
 
-# Calibration setup
+<div class="calibration-overview">
+  <h1>Calibrate your Mini Hunter</h1>
+  <p class="calibration-lead">Check that your robot can tell the white boundary from the dark floor and read distances before you run it.</p>
 
-Calibration makes the sensor readings match the robot's real surroundings. Work on one sensor group at a time, support the robot securely, and keep the blade and wheels clear.
+  <aside class="calibration-safety" aria-label="Before you start">
+    <strong>Before you start</strong>
+    <p>Put the robot on a secure stand. Keep the blade and the wheels clear.</p>
+  </aside>
 
-Choose the guide for the **firmware uploaded to your robot**. If you are unsure, check the sketch name used for the last upload.
+  <section aria-labelledby="choose-your-guide">
+    <h2 id="choose-your-guide">Choose your firmware guide</h2>
+    <p>Use the version you last uploaded to your robot.</p>
+    <nav class="calibration-jump" aria-label="Jump to a firmware version">
+      <a href="#new-guide--v28">V2.8 · Sinyas</a>
+      <a href="#v27-guides">V2.7 · OLED</a>
+    </nav>
 
-{% include mini-hunter-firmware-note.html %}
+    <div class="calibration-paths">
+      <section class="calibration-path calibration-path--sinyas" id="new-guide--v28" aria-labelledby="calibration-v28">
+        <h3 id="calibration-v28">V2.8 <span>with Sinyas</span></h3>
+        <figure>
+          <a href="../../assets/images/sinyas/calibration-line.png"><img src="../../assets/images/sinyas/calibration-line.png" width="1170" height="520" alt="Sinyas Line Detection showing live readings and the Line profile menu"></a>
+          <figcaption>On the robot, look for <a href="../../assets/images/mini-hunter/calibration/mh-cal-v28-sensor-menu.png">Sensor Check</a> in CAL Mode. On the phone, this is <strong>Line Detection</strong>.</figcaption>
+        </figure>
+        <p>Check live readings, tune line recovery and steering, and balance the wheels.</p>
+        <a class="primary-action" href="sinyas-v2-8.html">Open the Sinyas calibration guide</a>
+      </section>
 
-## New guide · V2.8
+      <section class="calibration-path" id="v27-guides" aria-labelledby="calibration-v27">
+        <h3 id="calibration-v27">V2.7 <span>with the OLED</span></h3>
+        <figure>
+          <img src="../../assets/images/sinyas/oled/line-adjust.png" width="576" height="172" alt="Simulated V2.7 OLED showing Line Sensor Adjust">
+          <figcaption>In CAL MODE, tap <strong>SW1</strong> for Line Sensor Adjust.</figcaption>
+        </figure>
+        <p>Use the board’s screen and buttons to check the sensors.</p>
+        <div class="calibration-links">
+          <a href="line-sensors.html">Adjust the line sensors</a>
+          <a href="enemy-detection.html">Check the distance sensors</a>
+        </div>
+      </section>
+    </div>
+  </section>
 
-Use this guide if your sketch is **MiniHunterV2.8_Advance**. Its calibration menu starts at **Sensor Check**. Sinyas can read line sensors, test adjustments, and save supported settings to the board.
+  <section class="calibration-reference" aria-labelledby="firmware-help">
+    <h2 id="firmware-help">Firmware and menu help</h2>
+    <p><strong>Using Sinyas?</strong> Update Mini Hunter V2.7 or earlier to Sinyas-compatible V2.8 firmware first.</p>
 
-<div class="card-grid">
-  <a class="guide-card" href="sinyas-v2-8.html"><span class="status-chip ready">V2.8 · Sinyas</span><strong>Calibrate with Sinyas</strong><span>Check the sensors, choose a line profile, tune tracking, and balance the wheels.</span></a>
+    <details class="calibration-detail">
+      <summary>Check your version or request an update</summary>
+      <div class="calibration-detail__body">
+        <p>If you’re unsure which firmware you have, check the sketch name from the last upload.</p>
+        <p>To request the latest compatible firmware, email <a href="mailto:twentyninerobotics@gmail.com">twentyninerobotics@gmail.com</a> or message Twentynine Robotics on Facebook. Include your robot’s weight class and firmware version if you know them.</p>
+      </div>
+    </details>
+
+    <details class="calibration-detail" id="enter-cal-mode">
+      <summary>Enter CAL MODE on V2.7</summary>
+      <div class="calibration-detail__body">
+        <ol>
+          <li>Power on the robot while it is on the stand.</li>
+          <li>Set the <strong>MODE</strong> switch so the OLED shows <strong>RC/RMT</strong>.</li>
+          <li>Hold <strong>SW1 + SW2</strong> for two seconds. Release them when <strong>CAL MODE</strong> appears.</li>
+          <li>Tap <strong>SW1</strong> once for <strong>Line Sensor Adjust</strong> or twice for <strong>Enemy Detection Check</strong>.</li>
+        </ol>
+        <p>Hold <strong>SW1 + SW2</strong> again to exit calibration. Power off before taking the robot off the stand.</p>
+      </div>
+    </details>
+  </section>
 </div>
-
-## Old guides · V2.7
-{: #v27-guides}
-
-Use these guides if your sketch is **MiniHunterV2.7**. This firmware uses the OLED and the board controls for calibration.
-
-<div class="card-grid">
-  <a class="guide-card" href="line-sensors.html"><span class="status-chip ready">Adjustment</span><strong>Line-sensor calibration</strong><span>Set each line sensor to distinguish the dark arena from the light boundary.</span></a>
-  <a class="guide-card" href="enemy-detection.html"><span class="status-chip ready">Functional check</span><strong>Enemy-detection sensor check</strong><span>Confirm each distance sensor changes when a target moves closer.</span></a>
-</div>
-
-### Enter CAL MODE
-
-1. Support the robot so it cannot drive away.
-2. Power on the robot using the connector or power switch fitted to your revision.
-3. Use the latching **MODE** switch to show the **RC/RMT** screen. Do not select BT MODE or RC MODE first.
-4. Press **SW1** and **SW2** together and keep holding both buttons for **two seconds**.
-5. When the OLED shows **CAL MODE**, release both buttons. The robot remains in CAL MODE after you release them.
-
-Press **SW1 once** to cycle from CAL MODE to **LINE SENSOR ADJUST**. Press **SW1 again** to cycle to **ENEMY DETECTION CHECK**. Hold **SW1** and **SW2** together again to leave calibration, then power off before removing the robot from its stand.

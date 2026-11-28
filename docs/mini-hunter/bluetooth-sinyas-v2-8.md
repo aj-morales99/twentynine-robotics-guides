@@ -42,8 +42,8 @@ Use this guide for Mini Hunter running **MiniHunterV2.8_Advance**. If your robot
 2. Wait for **Connected** and the **Mini Hunter** profile. **Connected** confirms the phone reached the module. The profile name confirms the robot's firmware replied.
 
     <figure class="guide-figure step-figure">
-      <a href="../assets/images/sinyas/bluetooth.webp"><img src="../assets/images/sinyas/bluetooth.webp" width="800" height="400" alt="Sinyas Bluetooth screen with a connected Mini Hunter module" loading="lazy"></a>
-      <figcaption><strong>Bluetooth screen.</strong> This example uses the module name HC-05. Choose your own Mini Hunter’s Bluetooth name and check the profile before opening Drive.</figcaption>
+      <a href="../assets/images/sinyas/v111-bluetooth.png"><img src="../assets/images/sinyas/v111-bluetooth.png" width="1170" height="520" alt="Sinyas Bluetooth showing MiniHunterV2.8_0082, Connected, and Robot replies Receiving" loading="lazy"></a>
+      <figcaption><strong>In Sinyas.</strong> This example shows serial 0082. Choose your own robot’s Bluetooth name and check the Mini Hunter profile before opening Drive.</figcaption>
     </figure>
 
 3. If the profile stays on **Generic**, check that the OLED is in BT Mode and the robot has the compatible firmware, then reconnect.
@@ -51,6 +51,12 @@ Use this guide for Mini Hunter running **MiniHunterV2.8_Advance**. If your robot
 ## 4 Test Drive on the stand
 
 1. Open **Drive**, choose your lowest speed preset, and tap **Start**. Keep the sticks centered until the board confirms the drive session.
+
+    <figure class="guide-figure step-figure">
+      <a href="../assets/images/sinyas/v111-drive.png"><img src="../assets/images/sinyas/v111-drive.png" width="1170" height="520" alt="Sinyas Drive with Start, two centered sticks, and Link confirmed" loading="lazy"></a>
+      <figcaption><strong>In Sinyas.</strong> Wait for Link confirmed before pressing Start. The centered sticks read 1500.</figcaption>
+    </figure>
+
 2. Move the throttle a little, then release it and check that the wheels stop. Repeat with the steering stick.
 3. Hold **Stop** for two seconds to end the session. Confirm both wheels are stopped before picking up the robot.
 

@@ -92,6 +92,11 @@ Internal storage/
 6. Select `MiniHunterV2.6-BTController.kwl`.
 7. Confirm that the Mini Hunter controls appear.
 
+<figure class="guide-figure step-figure">
+  <a href="../assets/images/mini-hunter/legacy-bluetooth-panel-map.png"><img src="../assets/images/mini-hunter/legacy-bluetooth-panel-map.png" width="1040" height="440" alt="Map of the imported Mini Hunter V2.6 panel with forward and reverse on the left, steering on the right, and RC MODE below the left pad" loading="lazy"></a>
+  <figcaption><strong>Imported panel map.</strong> Use RC MODE to enable control. This diagram is based on the supplied panel file.</figcaption>
+</figure>
+
 Do not rename buttons or change the commands they send unless you are also updating the matching firmware. A button can look correct while sending a command the robot does not understand.
 
 ### 4 Connect and perform a safe test
@@ -99,8 +104,20 @@ Do not rename buttons or change the commands they send unless you are also updat
 1. Support the robot with its moving parts clear.
 2. Power on the robot.
 3. Select **BT MODE** on the robot.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/mini-hunter/oled/v27-bt-running.png"><img src="../assets/images/mini-hunter/oled/v27-bt-running.png" width="576" height="172" alt="V2.7 OLED showing BT Mode and RUNNING" loading="lazy"></a>
+      <figcaption><strong>On the robot.</strong> Tap SW2 to enter BT Mode. The OLED shows RUNNING while it waits for Bluetooth Electronics.</figcaption>
+    </figure>
+
 4. In the app, choose the robot's Bluetooth module and connect.
-5. Enter **Run** mode in the app.
+5. Enter **Run** mode in the app. Turn on **RC MODE** on the imported panel to enable control.
+
+    <figure class="guide-figure guide-figure--compact step-figure">
+      <a href="../assets/images/mini-hunter/oled/v27-bt-connected.png"><img src="../assets/images/mini-hunter/oled/v27-bt-connected.png" width="576" height="172" alt="V2.7 OLED showing BT Mode and CONNECTED" loading="lazy"></a>
+      <figcaption><strong>On the robot.</strong> CONNECTED appears after the panel’s RC MODE switch sends the enable command.</figcaption>
+    </figure>
+
 6. Press one control briefly, then release it.
 7. Verify the expected response before testing another control.
 8. Test **Stop** early so you know how to stop movement.

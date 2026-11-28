@@ -209,6 +209,101 @@ pre code { background: transparent; color: inherit; padding: 0; border: 0; }
 .directory-status.pending { color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, transparent); }
 .directory-status.in-progress { color: var(--brand-strong); background: var(--brand-soft); }
 
+.calibration-overview { line-height: 1.6; }
+.calibration-overview .calibration-lead { max-width: 56ch; margin: 0; color: var(--muted); font-size: 1.125rem; line-height: 1.55; }
+.calibration-overview h2 { margin: 0 0 0.35rem; padding: 0; border: 0; font-size: 1.5rem; }
+.calibration-overview h2 + p { margin: 0 0 1rem; color: var(--muted); }
+.calibration-safety {
+  margin: 1.25rem 0 1.75rem;
+  padding: 0.75rem 1rem;
+  background: color-mix(in srgb, var(--accent) 9%, var(--surface));
+  border-radius: 8px;
+}
+.calibration-safety strong { color: color-mix(in srgb, var(--accent), var(--ink) 18%); }
+.calibration-safety p { margin: 0.2rem 0 0; }
+.calibration-jump { display: none; }
+.calibration-paths { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: 1rem; }
+.calibration-path {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.calibration-path--sinyas { border-color: color-mix(in srgb, var(--brand) 50%, var(--line)); }
+.calibration-path h3 { margin: 0 0 0.75rem; font-size: 1.25rem; }
+.calibration-path h3 span { margin-left: 0.15em; color: var(--muted); font-size: 0.9em; font-weight: 500; }
+.calibration-path--sinyas h3 { color: var(--brand-strong); }
+.calibration-path figure { margin: 0; }
+.calibration-path img { display: block; width: 100%; height: auto; border-radius: 7px; }
+.calibration-path figcaption { margin-top: 0.4rem; color: var(--muted); font-size: 0.875rem; line-height: 1.45; }
+.calibration-path figcaption strong { color: var(--ink); }
+.calibration-path p { margin: 0.75rem 0 1rem; }
+.calibration-path .primary-action { align-self: flex-start; margin-top: auto; font-size: 0.94rem; line-height: 1.4; }
+.calibration-links { display: grid; margin-top: auto; }
+.calibration-links a { display: flex; align-items: center; min-height: 44px; border-top: 1px solid var(--line); font-weight: 700; }
+.calibration-reference { max-width: 68ch; margin-top: 1.75rem; }
+.calibration-detail { border-top: 1px solid var(--line); }
+.calibration-detail:last-child { border-bottom: 1px solid var(--line); }
+.calibration-detail summary { min-height: 44px; padding: 0.55rem 0.3rem; color: var(--brand-strong); cursor: pointer; font-weight: 700; }
+.calibration-detail summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.calibration-detail__body { padding: 0 0.55rem 0.85rem 1.15rem; overflow-wrap: anywhere; }
+.calibration-detail__body :first-child { margin-top: 0; }
+.calibration-detail__body :last-child { margin-bottom: 0; }
+.guide-content:has(.calibration-overview) + .page-sequence { display: none; }
+
+.calibration-route-nav, .calibration-kit, .calibration-setup {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 1rem;
+}
+.calibration-route-nav { margin: 1.25rem 0 1.75rem; }
+.calibration-route-nav a {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  line-height: 1.5;
+  text-decoration: none;
+}
+.calibration-route-nav a:last-child { background: var(--brand-soft); }
+.calibration-route-nav a:hover { border-color: var(--brand); }
+.calibration-route-nav strong, .calibration-task-list strong { color: var(--brand-strong); }
+.calibration-route-nav span, .calibration-task-list span { color: var(--muted); font-size: 0.9rem; }
+.calibration-kit { margin: 0; }
+.calibration-kit dt { font-weight: 700; }
+.calibration-kit dd { margin: 0.25rem 0 0; max-width: 48ch; line-height: 1.55; }
+.calibration-setup { align-items: start; }
+.calibration-setup ol { margin: 0; padding-inline-start: 1.5rem; }
+.calibration-setup li + li { margin-top: 0.55rem; }
+.calibration-task-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 0 1rem;
+  margin-top: 1.25rem;
+}
+.calibration-task-list a {
+  display: grid;
+  gap: 0.1rem;
+  padding: 0.65rem 0.4rem;
+  border-top: 1px solid var(--line);
+  line-height: 1.5;
+  text-decoration: none;
+}
+.calibration-task-list a:hover { background: var(--brand-soft); }
+.guide-content:has(.calibration-route-nav) h3 { margin-top: 2rem; padding-top: 0.65rem; border-top: 1px solid var(--line); }
+.guide-content:has(.calibration-route-nav) h4 { margin: 1.35rem 0 0.35rem; font-size: 1.05rem; }
+
+@media (max-width: 620px) {
+  .calibration-jump { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: -0.35rem 0 0.75rem; }
+  .calibration-jump a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 0.65rem; background: var(--surface-raised); border-radius: 6px; font-size: 0.875rem; font-weight: 700; }
+}
+
 .home-page .docs-layout { display: block; min-height: auto; }
 .home-page .page-shell { max-width: 1040px; padding-top: clamp(3rem, 8vw, 7rem); }
 .home-page .guide-content { padding: 0; }

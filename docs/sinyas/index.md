@@ -45,7 +45,7 @@ For a Mini Hunter, look for the name with your robot’s serial number, such as 
 1. Power the robot and open the robot-side Bluetooth Drive mode. Turn on Bluetooth on Android.
 2. In Sinyas, open **Menu → Bluetooth → Open Android settings**. Pair with the HC-05 there using the PIN configured on your module.
 3. Return to Sinyas. Refresh **Paired devices** if the module is missing, then choose **Connect** beside the correct device.
-4. Wait for the profile shown under the Sinyas logo. The Bluetooth socket and the board's own reply are shown separately. The module's name identifies the paired device. The firmware reply identifies the robot.
+4. Wait for the profile below **Connected**. The module's name identifies the paired device. The firmware reply identifies the robot profile.
 
 <ol>
   <li><strong>Pair in Android settings</strong> → the module appears under Paired devices.</li>
@@ -55,8 +55,8 @@ For a Mini Hunter, look for the name with your robot’s serial number, such as 
 </ol>
 
 <figure class="guide-figure">
-  <a href="../assets/images/sinyas/bluetooth.webp"><img src="../assets/images/sinyas/bluetooth.webp" width="800" height="400" alt="Sinyas Bluetooth page with a paired HC-05 and a confirmed Mini Hunter profile" loading="lazy"></a>
-  <figcaption><strong>Bluetooth connection.</strong> Use Open Android settings to pair. Find the paired module on the right. The profile appears under the Sinyas logo. App screenshots in this guide use simulated robot data.</figcaption>
+  <a href="../assets/images/sinyas/v111-bluetooth.png"><img src="../assets/images/sinyas/v111-bluetooth.png" width="1170" height="520" alt="Sinyas Bluetooth page with a paired HC-05 and Mini Hunter shown below Connected" loading="lazy"></a>
+  <figcaption><strong>Bluetooth connection.</strong> Use Open Android settings to pair. Find the paired module on the right. The profile appears below Connected. The screenshot uses a simulated robot connection.</figcaption>
 </figure>
 
 ## 3 Drive and stop

@@ -64,8 +64,8 @@ The blue OLED illustrations below are simulations of the **MiniHunterV2.8_Advanc
 4. Tap **Connect** beside your robot’s name.
 
     <figure class="guide-figure guide-figure--compact step-figure">
-      <a href="../assets/images/sinyas/bluetooth.webp"><img src="../assets/images/sinyas/bluetooth.webp" width="800" height="400" alt="The Bluetooth page showing a connected HC-05 and Mini Hunter identification" loading="lazy"></a>
-      <figcaption>The example module is named HC-05. On your phone, look for your Mini Hunter’s Bluetooth name in the paired-device list.</figcaption>
+      <a href="../assets/images/sinyas/v111-bluetooth.png"><img src="../assets/images/sinyas/v111-bluetooth.png" width="1170" height="520" alt="Sinyas Bluetooth showing a connected MiniHunterV2.8_0082 and Robot replies Receiving" loading="lazy"></a>
+      <figcaption><strong>In Sinyas.</strong> Find the name with your own serial number. This example shows robot 0082 after it has connected.</figcaption>
     </figure>
 
 5. Check the upper-right corner. **Connected** means the phone has reached the Bluetooth module. **Mini Hunter**, shown below it, means the robot’s program has also identified itself.
@@ -81,14 +81,14 @@ The blue OLED illustrations below are simulations of the **MiniHunterV2.8_Advanc
 ## 4 Learn the controls on the stand
 
 1. Tap **☰ → Drive**. Wait for **Start** to turn on.
-2. Choose speed button **1**. If its limit is higher than your teacher wants, change it under **Setup → Speed presets** while Drive is stopped.
-3. Tap **Start**. Wait until the app says the robot accepted the run.
 
     <figure class="guide-figure guide-figure--compact step-figure">
-      <a href="../assets/images/sinyas/drive.webp"><img src="../assets/images/sinyas/drive.webp" width="800" height="400" alt="Two joystick pads, speed presets and Stop in Sinyas" loading="lazy"></a>
-      <figcaption>When Drive is on, use the sticks, speed buttons, or Stop.</figcaption>
+      <a href="../assets/images/sinyas/v111-drive.png"><img src="../assets/images/sinyas/v111-drive.png" width="1170" height="520" alt="Sinyas Drive with two centered sticks and Start ready" loading="lazy"></a>
+      <figcaption><strong>In Sinyas.</strong> Link confirmed means the robot is ready for Start.</figcaption>
     </figure>
 
+2. Choose speed button **1**. If its limit is higher than your teacher wants, change it under **Setup → Speed presets** while Drive is stopped.
+3. Tap **Start**. Wait until the app says the robot accepted the run.
 4. Move the **throttle** stick a little forward, then release it. Check that the wheels turn in the correct direction and stop when the stick centers.
 5. Move the **steering** stick slightly left, then right. Release it after each check. Try both sticks together once you know what each one does.
 6. Press and hold **Stop** for **2 seconds**, until the bar fills. The app sends the stop when the hold starts. Finish the hold so the app unlocks its menu and the robot can return to its board menu.
@@ -97,7 +97,9 @@ The blue OLED illustrations below are simulations of the **MiniHunterV2.8_Advanc
 
 ## 5 Open a calibration tool
 
-*Calibration* means checking a sensor or adjusting how the robot reacts. Stop Drive first. At the board’s normal menu:
+<div class="note"><strong>Pick one job to start.</strong> <a href="#6-check-the-line-sensors-before-changing-movement">Check the white boundary</a>, <a href="#7-practice-turning-toward-a-target">tune steering</a>, or <a href="#wheel-alignment">make the robot drive straight</a>. For the version chooser, see the <a href="../mini-hunter/calibration/">Mini Hunter Calibration overview</a>.</div>
+
+*Calibration* means checking a sensor or adjusting how the robot reacts. Stop Drive and disconnect in Sinyas if it is already connected. **Open the calibration tool on the robot before connecting in Sinyas.**
 
 1. Press and hold **SW1 and SW2 together**. Watch the calibration progress bar fill.
 
@@ -106,30 +108,29 @@ The blue OLED illustrations below are simulations of the **MiniHunterV2.8_Advanc
       <figcaption>The bar fills while Calibration opens.</figcaption>
     </figure>
 
-2. Release both buttons when the board reaches **CAL MODE**.
+2. Release both buttons when the **CAL Mode** bar fills. The first entry is **Sensor Check**.
 
     <figure class="guide-figure guide-figure--compact step-figure">
-      <a href="../assets/images/sinyas/oled/cal-menu.png"><img src="../assets/images/sinyas/oled/cal-menu.png" width="576" height="172" alt="CAL. MODE." loading="lazy"></a>
-      <figcaption>CAL MODE is open.</figcaption>
+      <a href="../assets/images/mini-hunter/calibration/mh-cal-v28-sensor-menu.png"><img src="../assets/images/mini-hunter/calibration/mh-cal-v28-sensor-menu.png" width="576" height="172" alt="Simulated V2.8 OLED reading Sensor Check" loading="lazy"></a>
+      <figcaption>Sensor Check is the first calibration entry on V2.8.</figcaption>
     </figure>
 
 3. Tap **SW1** until the OLED shows the tool name in the table below.
-4. Tap **SW2** to enter the tool. Open the matching app screen and wait for its board-ready message or live readings.
-5. When you are finished, hold **SW2 for 2 seconds**. Releasing early cancels the exit hold.
+4. Tap **SW2** to open the tool on the robot. Leave it open.
+5. In Sinyas, open **Bluetooth** and tap **Connect** beside your paired robot. Wait for **Mini Hunter** under **Connected**.
+6. Open the matching app screen and wait for its board-ready message or live readings.
+7. When you are finished, stop the test in Sinyas, then hold **SW2 for 2 seconds** to return to the tool menu. Releasing early cancels the exit hold.
 
-    <figure class="guide-figure guide-figure--compact step-figure">
-      <a href="../assets/images/sinyas/oled/hold-stop.png"><img src="../assets/images/sinyas/oled/hold-stop.png" width="576" height="172" alt="Hold to Stop. A partly filled progress bar." loading="lazy"></a>
-      <figcaption>Release SW2 when the bar is full to return to the tool menu.</figcaption>
-    </figure>
+**If you see Generic:** Disconnect, open the desired calibration tool on the robot, then reconnect in Sinyas.
 
 
 | What you want to try | OLED label | Phone menu |
 | --- | --- | --- |
 | Detect the white boundary | **Line Tune** | **Line Detection Tuning** |
-| Make the robot drive straight | **Modes Tune** | **Wheel Alignment** |
-| Turn toward another robot | **Enemy Tune** or **PID Tune** | **Enemy Detection Tuning** |
-| Rehearse the first movements | **Auto Test** | **Auto modes → Opening** |
-| Check the flag by itself | **Auto Test** | **Auto modes → Flag servo** |
+| Make the robot drive straight | **Wheel Alignment** (after Motor Check) | **Wheel Alignment** |
+| Turn toward another robot | **PID Tune** | **Enemy Detection Tuning** |
+| Rehearse the first movements | **Modes Tune** | **Auto modes → Opening** |
+| Check the flag by itself | **Modes Tune** | **Auto modes → Flag servo** |
 
 ## 6 Check the line sensors before changing movement
 
@@ -152,18 +153,18 @@ A line sensor measures the surface underneath it. The **Pot** value comes from t
 3. Open **Line Detection Tuning** on the phone. Leave the test stopped. Put a piece of the normal arena surface under the left sensor and observe **ADC**, **Pot**, and the status. Then show it the white line.
 
     <figure class="guide-figure guide-figure--compact step-figure">
-      <a href="../assets/images/sinyas/line.webp"><img src="../assets/images/sinyas/line.webp" width="800" height="400" alt="Live readings and recovery fields in Sinyas Line Detection Tuning" loading="lazy"></a>
-      <figcaption>Read both sensors on the phone before starting a movement test.</figcaption>
+      <a href="../assets/images/sinyas/calibration-line.png"><img src="../assets/images/sinyas/calibration-line.png" width="1170" height="520" alt="Sinyas Line Detection with Live readings and Line profile in the footer" loading="lazy"></a>
+      <figcaption><strong>On your phone.</strong> Check Live readings before starting a test. The Line profile dropdown loads the 1 kg, 3 kg, or custom recovery settings. The readings shown are examples.</figcaption>
     </figure>
 
-4. With your teacher, adjust the left pot so the floor reads **Clear** and the white line shows a hit. On this firmware, a sensor number lower than the pot number counts as a hit. Repeat on the right.
+4. With your teacher, adjust the left pot so the floor reads **No line** and the white boundary reads **Line detected**. On this firmware, a sensor number lower than the pot number counts as a hit. Repeat on the right.
 5. Test one side at a time, then both, to check the app reacts to the correct sensor.
 
-**Optional OLED check.** From CAL MODE, tap SW1 once to see which side detects the line.
+**Optional OLED check.** Open **Sensor Check** in CAL to see which side detects the line. A pair of dots means no line. A pair of hash marks means a line.
 
 <figure class="guide-figure guide-figure--compact step-figure">
-  <a href="../assets/images/sinyas/oled/line-adjust.png"><img src="../assets/images/sinyas/oled/line-adjust.png" width="576" height="172" alt="LINE SENSOR ADJUST. Hash marks on the left, dots on the right." loading="lazy"></a>
-  <figcaption>In this example, the left side detects the line and the right side is clear.</figcaption>
+  <a href="../assets/images/mini-hunter/calibration/mh-cal-v28-check-line.png"><img src="../assets/images/mini-hunter/calibration/mh-cal-v28-check-line.png" width="576" height="172" alt="V2.8 Line Check OLED with two hash marks on the left and two dots on the right" loading="lazy"></a>
+  <figcaption><strong>On the robot.</strong> The left sensor sees the line and the right sensor sees the floor. Tap SW1 to see distance readings. The <a href="../mini-hunter/calibration/sinyas-v2-8.html#sensor-check">Sensor Check walkthrough</a> shows the three- and five-sensor displays.</figcaption>
 </figure>
 
 ### Adjust the robot’s response to the line
@@ -175,7 +176,7 @@ A line sensor measures the surface underneath it. The **Pot** value comes from t
 5. Start on the stand with **Forward speed** at **0%** and trigger each sensor with a sample of the line. When supervised on the test surface, increase forward speed gradually. Use **Stop test** before picking up the robot or saving.
 6. Choose **Save to robot** to write the displayed settings to the board. **Load from robot** reads the board's saved values.
 
-**Check:** A left hit and a right hit should produce different escape turns. Each sensor should still report floor and line correctly. This tool uses the line sensors without target tracking.
+**Check:** A left hit and a right hit should produce different escape turns. Each sensor should still report floor and line correctly. Keep **Enemy detection** off to check line recovery by itself.
 
 ### Look up the Shared settings
 
@@ -194,7 +195,13 @@ If the app reports the recovery limit, stop and check the placement and sensor r
 
 ## 7 Practice turning toward a target
 
-Open **CAL → Enemy Tune** or **PID Tune** on the board. Older firmware labels Classic **Enemy Detection**. Then open **Enemy Detection Tuning** in Sinyas. Choose **Classic** for fixed turn power and a turn delay you can set. Choose **PID** to try steering power that changes as the target moves. **PID is in beta.** Try both on your own robot and keep the one that behaves best for you.
+1. On the board, open **CAL → PID Tune**. After it opens, the display reads **Enemy Tune** in Classic or **PID Tune** in PID.
+2. Open **Enemy Detection Tuning** in Sinyas. Choose **Classic** for fixed turn power and an adjustable delay, or **PID** to try steering power that changes as the target moves. **PID is in beta.**
+
+    <figure class="guide-figure step-figure">
+      <a href="../assets/images/sinyas/calibration-enemy.png"><img src="../assets/images/sinyas/calibration-enemy.png" width="1170" height="520" alt="Sinyas Enemy Detection with the Classic and PID choices and sensor readings" loading="lazy"></a>
+      <figcaption><strong>On your phone.</strong> Pick the tracking method at the top and check the sensor readings before moving the robot.</figcaption>
+    </figure>
 
 The [full enemy tuning lesson](enemy-tuning.html) explains how to read the sensors, adjust each method, compare the results, and save the supported settings.
 
@@ -202,18 +209,13 @@ The [full enemy tuning lesson](enemy-tuning.html) explains how to read the senso
 
 An *opening* is a short list of moves that plays in order. The *base mode* is what the robot can do after the last move.
 
-1. From **CAL MODE**, tap **SW1** until you see **Auto Test**.
-
-    <figure class="guide-figure guide-figure--compact step-figure">
-      <a href="../assets/images/sinyas/oled/auto-menu.png"><img src="../assets/images/sinyas/oled/auto-menu.png" width="576" height="172" alt="Auto Test. SW2 to start." loading="lazy"></a>
-      <figcaption>Auto Test is selected.</figcaption>
-    </figure>
+1. From **CAL Mode**, tap **SW1** until you see **Modes Tune**. Earlier compatible firmware may show **Auto Test**.
 
 2. Tap **SW2** to open the tool. On the phone, open **Auto modes → Opening**.
 
     <figure class="guide-figure guide-figure--compact step-figure">
-      <a href="../assets/images/sinyas/oled/auto-running.png"><img src="../assets/images/sinyas/oled/auto-running.png" width="576" height="172" alt="Auto Test. Open Sinyas Auto. Hold SW2 to exit." loading="lazy"></a>
-      <figcaption>The board stays on Auto Test during both opening and flag tests.</figcaption>
+      <a href="../assets/images/mini-hunter/oled/v28-modes-tune.png"><img src="../assets/images/mini-hunter/oled/v28-modes-tune.png" width="576" height="172" alt="V2.8 Modes Tune OLED showing Sinyas Auto modes and Hold to Exit" loading="lazy"></a>
+      <figcaption><strong>On the robot.</strong> Keep Modes Tune open while you work in Auto modes on the phone.</figcaption>
     </figure>
 
 3. Pick slot **8** if it is empty, or select any slot marked **Needs setup**. Slots 5–7 contain example presets. Use **Mode details** to enter a short name such as **First turn**.
@@ -221,8 +223,8 @@ An *opening* is a short list of moves that plays in order. The *base mode* is wh
 5. Add **Wait** for **500 ms**. Open the three-dot menu on a step and choose **Move up** or **Move down** to change its order. If you try **Drive curve** later, give the left and right wheels different power values.
 
     <figure class="guide-figure guide-figure--compact step-figure">
-      <a href="../assets/images/sinyas/opening.webp"><img src="../assets/images/sinyas/opening.webp" width="800" height="400" alt="Opening editor showing steps, the base mode selector, the Include base mode in test switch, and Test draft" loading="lazy"></a>
-      <figcaption>The example shows a draft with two steps and the base-mode test switch.</figcaption>
+      <a href="../assets/images/sinyas/calibration-opening.png"><img src="../assets/images/sinyas/calibration-opening.png" width="1170" height="520" alt="Sinyas Opening editor showing the mode list, two numbered steps, Add step, and Test draft" loading="lazy"></a>
+      <figcaption><strong>On your phone.</strong> This is an example opening. Select a slot, then use Add step or tap a step to change it.</figcaption>
     </figure>
 
 6. Check **After last step**. Leave **Include base mode in test** switched **off**. Tap **Test draft** and watch the short spin and pause. The wheels should then stay stopped.
@@ -235,7 +237,7 @@ An *opening* is a short list of moves that plays in order. The *base mode* is wh
 
 Use the current Sinyas APK and matching **MiniHunterV2.8_Advance** firmware. Check [Sinyas releases](releases.html) for app versions. Ask Twentynine Robotics for the firmware if your kit still has an earlier build.
 
-1. Leave the board in **CAL → Auto Test**. In Sinyas, stay on **Auto modes → Opening** and select the slot you want to change.
+1. Leave the board in **CAL → Modes Tune**. In Sinyas, stay on **Auto modes → Opening** and select the slot you want to change.
 2. Stop the draft test. Tap **Save to robot** and wait for **Mode 5 saved to robot**, or the number you selected.
 3. Tap **Load from robot** to check what the board saved. The app fills the opening steps, base mode and power, and flag angles from that slot.
 4. Hold **SW2** to leave the tool, then leave CAL. Select the saved number in the robot’s **AUTO** menu. The opening runs first, then the selected base mode takes over. Verify the sequence after restarting the board.
@@ -258,26 +260,29 @@ If the app only offers **Save preset**, check [Sinyas releases](releases.html) f
 
 ## 9 Test the flag without driving
 
-1. Keep the robot in **CAL → Auto Test** and change to **Auto modes → Flag servo** in Sinyas.
+1. Keep the robot in **CAL → Modes Tune** and change to **Auto modes → Flag servo** in Sinyas. Tap **Load from robot** to check the saved angles.
 2. Enter the **Closed angle** and **Open angle** in degrees. Start from the kit’s known angles. Change one angle in small steps so the flag does not hit its mount.
 
     <figure class="guide-figure guide-figure--compact step-figure">
-      <a href="../assets/images/sinyas/servo.webp"><img src="../assets/images/sinyas/servo.webp" width="800" height="400" alt="Flag servo tab with closed angle, open angle, and a Test servo button" loading="lazy"></a>
-      <figcaption>The two angles are above the Test servo button.</figcaption>
+      <a href="../assets/images/sinyas/calibration-flag.png"><img src="../assets/images/sinyas/calibration-flag.png" width="1170" height="520" alt="Sinyas Flag servo showing closed and open angles with separate Close and Open buttons" loading="lazy"></a>
+      <figcaption><strong>On your phone.</strong> Change one angle at a time and test it with the button below it. The angles shown are examples.</figcaption>
     </figure>
 
-3. Tap **Test servo**. The flag opens and returns to the closed angle. The drive wheels stay stopped.
-4. Use **Save preset** to remember the angles on this phone.
+3. Tap **Open** to test the open position, then **Close** to check that the flag returns freely. The drive wheels stay stopped.
+4. Tap **Save to robot** to keep the angles on the board. Use **Phone presets** for a copy on the phone.
 
-**Check:** The flag moves freely in both directions. **Servo test complete.** means the board finished the test.
-
-The OLED stays on **Auto Test** during the servo test. Look for **Servo test complete** on the phone.
+**Check:** The flag moves freely in both directions. **Flag position set.** means the board finished moving it.
 
 ## Wheel alignment
 
 Use Wheel Alignment if the robot pulls to one side when you tell it to drive straight. The robot can remember a different correction for each test speed.
 
-1. Connect Sinyas to a Mini Hunter with the matching firmware. On the board, open **CAL → Modes Tune**. On the phone, open **Wheel Alignment** and tap **Load from robot**.
+1. On the board, open **CAL → Wheel Alignment**, just after **Motor Check**. Earlier compatible V2.8 builds may use **Modes Tune**. On the phone, open **Wheel Alignment** and tap **Load from robot**.
+
+    <figure class="guide-figure step-figure">
+      <a href="../assets/images/sinyas/calibration-wheel.png"><img src="../assets/images/sinyas/calibration-wheel.png" width="1170" height="520" alt="Sinyas Wheel Alignment with 25, 50 and 80 percent speed tabs, trim input, and Start" loading="lazy"></a>
+      <figcaption><strong>On your phone.</strong> Pick a speed at the top, then use Start and Stop to check the run. The trim changes by 0.5 points per tap.</figcaption>
+    </figure>
 2. Put the robot on a clear, flat test surface with room to stop. Pick **Low · 25%**, then tap **Start**. Watch which way the robot drifts and tap **Stop**.
 3. If the robot drifts left, use **+** to slow the right wheel. If it drifts right, use **−** to slow the left wheel. Each tap changes the trim by 0.5 percentage points. You can also type a value such as `+1.5` or `-1.5`. Use `0.0` for equal power.
 4. Repeat until it drives straight. Then test **Medium · 50%** and **High · 80%** if you have room to run at those speeds.
@@ -295,7 +300,7 @@ Use Wheel Alignment if the robot pulls to one side when you tell it to drive str
 | Symptom | What to check first |
 | --- | --- |
 | **Connected** but **Start** is gray | Make sure SW2 opened **BT MODE**, then check the Robot replies indicator on the Bluetooth screen. |
-| You cannot find Auto modes or the tuning pages | Wait for **MiniHunter** under the Sinyas logo and check that your board reports the matching features. |
+| Sinyas shows **Generic** or the tuning pages are missing | Disconnect in Sinyas. Open the desired calibration tool on the board with **SW2**, then reconnect and wait for **Mini Hunter** under **Connected**. |
 | A calibration button is gray | Open the matching tool on the OLED and wait for the app to confirm it. |
 | The test stops as soon as it starts | Check whether a line sensor is already seeing the boundary or the Bluetooth link dropped. |
 | The buttons still look right after changing a preset, but the robot acts differently | Check where it was saved. Phone presets live on the phone. Compatible Auto slots, line settings, and tracker settings use **Save to robot** in their respective tools. |

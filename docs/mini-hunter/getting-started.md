@@ -143,11 +143,16 @@ Continue only when the battery check is acceptable and the charger and balance i
 3. If the robot has a loop switch key, confirm that it is fully inserted.
 4. Align the two yellow XT30 halves. Their keyed shape should match without force.
 5. Push the XT30 connectors together firmly until fully seated.
-6. Watch the OLED. It should show either the **AUTO** or **RC/RMT** main screen, depending on the MODE switch position.
+6. Watch the OLED. **AUTO** appears on one side of the MODE switch. On the other side, V2.7 shows **RC/RMT** and V2.8 shows **REMOTE**.
 
 <figure class="guide-figure">
   <img src="../assets/images/mini-hunter/setup/mh-setup-11-oled-startup-menus.png" alt="OLED previews showing the AUTO and RC/RMT startup screens" loading="lazy">
-  <figcaption><strong>OLED startup preview.</strong> Either screen is normal. Move the latching MODE switch to change between AUTO and RC/RMT.</figcaption>
+  <figcaption><strong>V2.7 OLED startup.</strong> The two screens are AUTO and RC/RMT.</figcaption>
+</figure>
+
+<figure class="guide-figure guide-figure--compact step-figure">
+  <a href="../assets/images/sinyas/oled/remote.png"><img src="../assets/images/sinyas/oled/remote.png" width="576" height="172" alt="V2.8 OLED showing REMOTE and SW1 for BT, RC, or IR" loading="lazy"></a>
+  <figcaption><strong>V2.8 REMOTE.</strong> Use this side of the MODE switch for Bluetooth or RC.</figcaption>
 </figure>
 
 If the OLED stays blank, the connector sparks heavily, you smell something unusual, or the robot becomes hot, disconnect power immediately and use the [Troubleshooting guide](troubleshooting/).
@@ -160,7 +165,7 @@ Use the MODE switch to choose one of two menu groups.
 
 Use this side when a person will control the robot.
 
-1. Move MODE until the OLED shows **RC/RMT**.
+1. Move MODE until the OLED shows **RC/RMT** on V2.7 or **REMOTE** on V2.8.
 2. Press SW1 to move through the available controller choices.
 3. Stop when the OLED shows the controller you prepared:
 
@@ -187,14 +192,22 @@ Use this side when the robot should run an autonomous sumobot behavior.
 
 <figure class="guide-figure">
   <img src="../assets/images/mini-hunter/modes/mh-modes-02-auto-menu-flow.png" alt="Four OLED previews showing mode selection, delay selection, countdown, and running" loading="lazy">
-  <figcaption><strong>AUTO OLED sequence.</strong> Select the mode, set the delay, allow the countdown to finish, and then the selected mode runs. The shown three-second delay is only an example.</figcaption>
+  <figcaption><strong>V2.7 AUTO sequence.</strong> Select the mode, set the delay, and watch the countdown. The three-second delay is an example.</figcaption>
+</figure>
+
+<p><strong>V2.8 mode selection.</strong> Check the mode number before setting the delay.</p>
+<figure class="guide-figure guide-figure--compact step-figure">
+  <a href="../assets/images/mini-hunter/oled/v28-auto-select.png"><img src="../assets/images/mini-hunter/oled/v28-auto-select.png" width="576" height="172" alt="V2.8 OLED showing Mode 1 and the SW1 and SW2 menu instructions" loading="lazy"></a>
+  <figcaption>Tap SW2 to open the delay for the selected mode.</figcaption>
 </figure>
 
 Read [Modes introduction](modes/introduction.html) before choosing an autonomous behavior for a match.
 
 ## 8. Exit a running mode
 
-To leave BT Mode, RC Mode, AUTO, or Calibration Mode:
+**V2.8.** Hold **SW2** for two seconds to leave RC, BT, or an open calibration tool. To leave **AUTO** or the CAL menu, hold **SW1 + SW2** for two seconds. In Sinyas Drive, hold **Stop** for two seconds.
+
+**V2.7.** To leave BT Mode, RC Mode, AUTO, or Calibration Mode:
 
 1. Press SW1 and SW2 together.
 2. Hold both switches for about **one second**.

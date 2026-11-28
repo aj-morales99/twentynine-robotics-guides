@@ -37,6 +37,11 @@ Calibrate the sensors at the robot's normal driving height. A different height c
 
 Press **SW1 once**. The OLED should change from CAL MODE to `LINE SENSOR ADJUST`. If you press past it, continue pressing SW1 until the choices cycle back to the line-sensor screen.
 
+<figure class="guide-figure guide-figure--compact step-figure">
+  <a href="../../assets/images/sinyas/oled/line-adjust.png"><img src="../../assets/images/sinyas/oled/line-adjust.png" width="576" height="172" alt="V2.7 OLED showing LINE SENSOR ADJUST with hash marks for the left sensor and dots for the right sensor" loading="lazy"></a>
+  <figcaption><strong>V2.7 Line Sensor Adjust.</strong> Here the left sensor sees the white line. The right sensor sees the floor.</figcaption>
+</figure>
+
 ## 3 Find the two adjustments
 
 The blue potentiometers at the upper-left and upper-right of the FullVision board adjust the two line sensors. Adjust only one side at a time so you can see which OLED reading changes.

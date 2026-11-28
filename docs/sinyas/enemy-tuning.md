@@ -23,18 +23,9 @@ There is no single best choice for every robot. Try both with the same target, d
 
 ## 1 Open the tuning screen
 
-1. Put the Mini Hunter on a secure stand with the wheels clear. Stop any Drive session.
+1. Put the Mini Hunter on a secure stand with the wheels clear. Stop Drive and disconnect in Sinyas if it is already connected.
 2. On the board, hold **SW1 and SW2 together** until **CAL MODE** appears. Release both.
-3. Tap **SW1** until you see the tool name for your saved setting.
-
-    **If you saved Classic**, look for **Enemy Tune**. Older firmware shows **Enemy Detection**.
-
-    <figure class="guide-figure guide-figure--compact step-figure">
-      <a href="../assets/images/sinyas/oled/classic-menu.png"><img src="../assets/images/sinyas/oled/classic-menu.png" width="576" height="172" alt="Enemy Tune. SW2 to start." loading="lazy"></a>
-      <figcaption>Enemy Tune is selected.</figcaption>
-    </figure>
-
-    **If you saved PID**, look for **PID Tune**.
+3. Tap **SW1** until the CAL menu shows **PID Tune**. Some earlier compatible builds show **Enemy Tune** or **Enemy Detection** for Classic.
 
     <figure class="guide-figure guide-figure--compact step-figure">
       <a href="../assets/images/sinyas/oled/pid-menu.png"><img src="../assets/images/sinyas/oled/pid-menu.png" width="576" height="172" alt="PID Tune. SW2 to start." loading="lazy"></a>
@@ -57,12 +48,13 @@ There is no single best choice for every robot. Try both with the same target, d
       <figcaption>The PID tool is open.</figcaption>
     </figure>
 
-5. On the connected phone, tap **☰ → Enemy Detection Tuning**. Wait for **Board ready** and numbers under **Sensor readings**.
-6. Choose **Classic** or **PID** in the app while stopped. When the board supports both, changing the tab selects what the next test will use.
+5. With the tool open on the robot, open **Bluetooth** in Sinyas and tap **Connect** beside your paired robot. Wait for **Mini Hunter** under **Connected**.
+6. Tap **☰ → Enemy Detection Tuning**. Wait for **Board ready** and numbers under **Sensor readings**.
+7. Choose **Classic** or **PID** while stopped. When the board supports both, changing the tab selects what the next test will use.
 
 The OLED follows the saved setting. You can try the other method in Sinyas first. The OLED name changes after the robot confirms **Save to robot**.
 
-**Check.** If the app keeps showing a waiting message, confirm the board is inside the tool and the header says **MiniHunter**. If only PID controls appear, the board has not reported its Classic settings. Check the matching firmware before trying to save.
+**Check.** If the app shows **Generic**, disconnect, open the calibration tool on the robot, then reconnect. If only PID controls appear, the board has not reported its Classic settings. Check the matching firmware before trying to save.
 
 ## 2 Read the sensors before moving
 
@@ -73,10 +65,10 @@ The OLED follows the saved setting. You can try the other method in Sinyas first
 
 **Check.** The readings follow the target before you test any motor settings. If they do not, check the individual sensors from the board’s distance screen first.
 
-**Optional OLED check.** From CAL MODE, tap SW1 twice. Read the three front sensors left to right. A five-sensor build shows the two outer sensors on the next row.
+**Optional OLED check.** From CAL Mode, open **Sensor Check** and tap **SW1** once to show **Enemy Check (cm)**. Read the three front sensors left to right. A five-sensor build adds the outer sensors on the next row.
 
 <figure class="guide-figure guide-figure--compact step-figure">
-  <a href="../assets/images/sinyas/oled/distances.png"><img src="../assets/images/sinyas/oled/distances.png" width="576" height="172" alt="DISTANCES (cm). Front readings 36, 26, 33. Outer readings 51, 48." loading="lazy"></a>
+  <a href="../assets/images/mini-hunter/calibration/mh-cal-v28-check-enemy-5.png"><img src="../assets/images/mini-hunter/calibration/mh-cal-v28-check-enemy-5.png" width="576" height="172" alt="V2.8 Enemy Check OLED showing example front and outer sensor distances in centimeters" loading="lazy"></a>
   <figcaption>These distances are examples. The numbers change with the target.</figcaption>
 </figure>
 
@@ -116,7 +108,7 @@ The app exposes Kp and Kd. It does not have a Ki slider. The matching firmware�
 1. Switch to **PID** and note the numbers on screen. Sinyas starts at **Kp 0.600**, **Kd 0.010**, and **Turn limit 50%** in a fresh session.
 
     <figure class="guide-figure guide-figure--compact step-figure">
-      <a href="../assets/images/sinyas/enemy-pid.webp"><img src="../assets/images/sinyas/enemy-pid.webp" width="800" height="400" alt="PID selected with Kp, Kd, Turn limit, and sensor readings" loading="lazy"></a>
+      <a href="../assets/images/sinyas/calibration-enemy.png"><img src="../assets/images/sinyas/calibration-enemy.png" width="1170" height="520" alt="PID selected with Kp, Kd, Turn limit, and sensor readings" loading="lazy"></a>
       <figcaption>PID shows Kp, Kd, and Turn limit. Scroll down for Forward speed on shorter phones. The simulator supplies the example readings.</figcaption>
     </figure>
 

@@ -28,19 +28,30 @@ Drive, Bluetooth, Setup, Guide, Configuration, and About are available for gener
 
 ## Bluetooth and the robot name
 
+<figure class="guide-figure step-figure">
+  <a href="../assets/images/sinyas/v111-bluetooth.png"><img src="../assets/images/sinyas/v111-bluetooth.png" width="1170" height="520" alt="Sinyas Bluetooth showing the paired robot, Bluetooth link, and Robot replies indicators" loading="lazy"></a>
+  <figcaption><strong>In Sinyas.</strong> Check Robot replies as well as the Bluetooth link. The top-right profile tells you which robot replied.</figcaption>
+</figure>
+
 | What you see | What it tells you |
 | --- | --- |
 | **Paired device** | Android remembers this HC-05. Choose **Connect** in Sinyas to open the link. |
 | **Connected** | The phone reached the Bluetooth module. |
 | **Robot replies · Receiving** | The board answered. If this says **No recent reply**, check the robot’s mode, serial wiring, and data speed. |
 | **Identifying robot…** | Sinyas is waiting for the board to announce which robot it is. |
-| **MiniHunter**, **Hammerhead**, or **Generic** | On Bluetooth and Drive, the profile appears under the Sinyas logo. Generic can be correct for your own project, even when it sends the normal Drive replies. |
+| **Mini Hunter**, **Hammerhead**, or **Generic** | The profile appears below Connected in the top-right corner. Generic can be correct for your own project, even when it sends the normal Drive replies. |
 
 If the module is missing, use **Open Android settings** to turn Bluetooth on and pair it, then return to Sinyas and use the refresh icon. If Sinyas asks for **Nearby devices**, allow it so the app can open a Bluetooth connection. Sinyas can try the last connected device again on launch. Check the device before starting, especially if two HC-05 modules have the same name.
 
 ## Drive and the numbers on screen
 
 1. With the robot ready, wait for **Start** to become available.
+
+    <figure class="guide-figure step-figure">
+      <a href="../assets/images/sinyas/v111-drive.png"><img src="../assets/images/sinyas/v111-drive.png" width="1170" height="520" alt="Sinyas Drive with Start ready and throttle and steering both reading 1500" loading="lazy"></a>
+      <figcaption><strong>Ready to start.</strong> Both sticks are centered. Link confirmed means the board is replying.</figcaption>
+    </figure>
+
 2. Tap **Start** and wait for the robot to confirm. **Waiting for Start ACK** means the phone is waiting for that confirmation.
 3. Move the throttle stick forward or backward and the steering stick left or right. You can use both thumbs at once. Each stick returns to center when released.
 4. Pick **1**, **2**, or **3** to change the speed limit. The percentage below the button is the limit you set in Setup.
@@ -63,15 +74,14 @@ Leaving Sinyas during Drive or a test stops that session. Return to the app and 
 Open **Setup** while Drive is stopped. Changes save to the phone as you make them.
 
 <figure class="guide-figure">
-  <a href="../assets/images/sinyas/setup.webp"><img src="../assets/images/sinyas/setup.webp" width="800" height="400" alt="Sinyas Setup showing throttle side, stick size, and speed button position" loading="lazy"></a>
-  <figcaption>Scroll down the Setup page to find stick response, speed presets, button labels, and theme. Screenshot from the Sinyas simulator.</figcaption>
+  <a href="../assets/images/sinyas/v111-setup.png"><img src="../assets/images/sinyas/v111-setup.png" width="1170" height="520" alt="Sinyas Setup showing throttle side, stick size, and stick sensitivity controls" loading="lazy"></a>
+  <figcaption><strong>In Sinyas.</strong> Scroll down for speed presets, button labels, and theme.</figcaption>
 </figure>
 
 | Setting | How to use it |
 | --- | --- |
 | **Throttle side** | Put forward and reverse on the left or right. Steering uses the other side. |
 | **Stick size** | Choose Medium, Large, or XL. Try a larger pad if you need more room for thumb movement. |
-| **Speed button position** | Choose **Opposite throttle** to move the speed controls with your layout, or use **Fixed left** or **Fixed right**. |
 | **Throttle** and **Steering** curves | **Linear** spreads the response evenly. **Precision** gives finer movement near center. **Quick** gives more response with a small movement. |
 | **Throttle sensitivity** and **Steering sensitivity** | Set each from **50% to 150%**. Start at 100%. Move one slider a little and compare the same thumb movement on Drive. |
 | **Speed presets** | Edit buttons 1, 2, and 3 separately. The default limits are **40%, 70%, and 100%**. For a first test, lower the preset your class will use. |
@@ -84,23 +94,29 @@ Open **Setup** while Drive is stopped. Changes save to the phone as you make the
 
 | Screen | What you can test | How to keep it |
 | --- | --- | --- |
-| **Auto modes → Opening** | Arrange steps, run without a base mode, or include the base after the opening. | **Save to robot** writes slots 5–10 on compatible firmware with the corrected V1.0 APK. **Save preset** keeps a separate phone copy. |
-| **Auto modes → Base modes** | Change how quickly the draft’s selected base moves when there is no target. | **Save preset** keeps the draft base speeds on the phone. |
-| **Auto modes → Flag servo** | Check open and closed angles without moving the wheels. | **Save preset** keeps the test angles on the phone. |
+| **Auto modes → Opening** | Arrange steps, run without a base mode, or include the base after the opening. | **Save to robot** writes slots 5–10 on compatible firmware. **Phone presets** keeps a separate phone copy. |
+| **Auto modes → Base modes** | Test search, attack, and steering settings for a base mode. | **Save to robot** writes the selected mode’s settings on compatible firmware. |
+| **Auto modes → Flag servo** | Check open and closed angles without moving the wheels. | **Save to robot** stores the angles on compatible firmware. |
 | **Line Detection Tuning** | Read each sensor, check its threshold, and choose a recovery profile. | **Save to robot** writes recovery settings. The pencil next to a Custom profile saves a named copy on the phone. Adjust the physical pots on the robot. |
 | **Wheel Alignment** | Run a straight test and adjust the trim at 25%, 50%, or 80% power. | **Save to robot** applies the three trims to forward RC and Auto driving. See [Wheel alignment](mini-hunter.html#wheel-alignment). |
-| **Enemy Detection Tuning** | Compare Classic and PID Beta while pivoting or approaching a target. | **Save to robot** writes the tracker choice and Classic settings on compatible boards. PID gains and the live forward and search controls are for testing. |
+| **Enemy Detection Tuning** | Compare Classic and PID Beta while pivoting or approaching a target. | **Save to robot** writes supported tracker settings, including PID gains. Forward speed and the search switch are for the live test. |
 
-Use the [Mini Hunter lessons](mini-hunter.html) for Auto, line, and flag tests. Use the [enemy tuning lesson](enemy-tuning.html) for step-by-step Classic and PID Beta tests.
+Open the matching tool on the robot before connecting in Sinyas. The [illustrated Mini Hunter calibration walkthrough](../mini-hunter/calibration/sinyas-v2-8.html#tune-with-sinyas) shows the OLED and app screens beside the steps that use them.
 
 ## Back up your settings
 
 1. Open **Configuration**. Tap **Export configuration**.
+
+    <figure class="guide-figure step-figure">
+      <a href="../assets/images/sinyas/v111-configuration.png"><img src="../assets/images/sinyas/v111-configuration.png" width="1170" height="520" alt="Sinyas Configuration with Import configuration and Export configuration controls" loading="lazy"></a>
+      <figcaption><strong>In Sinyas.</strong> Export saves a copy of the phone’s settings before you import another file.</figcaption>
+    </figure>
+
 2. Choose a location in Android’s file picker. Keep the JSON file where you can find it later.
 3. To restore or copy settings to another phone, open **Configuration → Import configuration** and select the file.
 4. Read the confirmation. Import replaces the app settings and phone presets with those in the file. Export your current settings first if you may need them again.
 
-A JSON file is a text file with settings in a form the app can read. The backup includes the phone’s controller layout, sensitivity, speed presets, button names, theme, and saved line and Auto presets. To copy line settings from a robot, first **Load from robot**, then save them as a **Phone preset** before exporting. A phone import does not write settings to the robot.
+A JSON file is a text file with settings in a form the app can read. The backup includes the phone’s controller layout, sensitivity, speed presets, button names, theme, and saved line and Auto presets. To copy line settings from a robot, tap **Load from robot**, then save the values in a **Custom** line-profile slot before exporting. Use **Save to robot** in the matching calibration screen to apply restored values to a board.
 
 ## Read the in-app Guide or check a problem
 

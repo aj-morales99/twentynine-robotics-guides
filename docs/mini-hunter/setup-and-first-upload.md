@@ -239,7 +239,7 @@ Do not select an Arduino Uno, a different STM32 family, or the generic STM32F1 b
 | Debug symbols and core logs | None |
 | C runtime | Newlib Nano |
 
-Some options are fixed by the package and may not appear as separate menus. Do not change unrelated settings just to make your screen match an older screenshot. These defaults are described in the [FullVision package notes](https://github.com/aj-morales99/FullVision-STM32V1.5/blob/main/FULLVISION.md).
+Some options are fixed by the package and may not appear as separate menus. These defaults describe the V2.7 setup. For **MiniHunterV2.8_Advance**, choose **Tools → Optimize → Smallest (-Os) with LTO (advanced)** so calibration settings can be saved. See the [FullVision package notes](https://github.com/aj-morales99/FullVision-STM32V1.5/blob/main/FULLVISION.md) for the board options.
 
 ### Install the display libraries
 
@@ -421,7 +421,12 @@ The normal **Verify** button compiles on the computer. A programming tool's late
 
 <figure class="guide-figure">
   <img src="../assets/images/mini-hunter/setup/mh-setup-11-oled-startup-menus.png" alt="Illustrated narrow OLED showing the AUTO and RC/RMT startup menus with its soldered pins on the right" loading="lazy">
-  <figcaption><strong>MH-SETUP-11.</strong> Visual reconstruction from the supplied 128 × 32 OLED reference and firmware. After reset, either <strong>AUTO</strong> or <strong>RC/RMT</strong> is valid, depending on the latching MODE switch. The installed display has its soldered pins on the right; the firmware rotates the text upright.</figcaption>
+  <figcaption><strong>V2.7 startup screens.</strong> After reset, either AUTO or RC/RMT is valid, depending on the MODE switch.</figcaption>
+</figure>
+
+<figure class="guide-figure guide-figure--compact step-figure">
+  <a href="../assets/images/sinyas/oled/remote.png"><img src="../assets/images/sinyas/oled/remote.png" width="576" height="172" alt="V2.8 OLED showing REMOTE with SW1 and SW2 instructions" loading="lazy"></a>
+  <figcaption><strong>V2.8 startup.</strong> The controller side now reads REMOTE. The other MODE switch position still shows AUTO.</figcaption>
 </figure>
 
 **Checkpoint:** Arduino reports a successful upload and the controller starts the intended program. Motor testing, sensor calibration, and competition operation are separate procedures; do not start a match mode merely to check whether uploading worked.
