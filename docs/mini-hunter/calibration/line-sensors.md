@@ -6,6 +6,8 @@ description: Adjust both Mini Hunter line sensors using the board potentiometers
 
 # Line-sensor calibration
 
+This is the **V2.7** guide. For V2.8, see [Calibrate with Sinyas](sinyas-v2-8.html#line-detection).
+
 Calibration teaches the robot to tell the white arena boundary from the black arena floor. When calibration is correct, each sensor shows:
 
 - `##` while it is over the **white boundary**

@@ -6,6 +6,8 @@ description: Check each Mini Hunter distance sensor from CAL MODE.
 
 # Enemy-detection sensor check
 
+This is the **V2.7** guide. For V2.8, see [Calibrate with Sinyas](sinyas-v2-8.html#sensor-check).
+
 This is a **functional check**, not a potentiometer calibration. It confirms that each distance sensor reacts to a target. The current program limits displayed distance readings to approximately 10–80 cm.
 
 ## Enter the enemy-sensor screen

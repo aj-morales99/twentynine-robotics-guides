@@ -207,6 +207,8 @@ For example, if **BT MODE** is running, hold SW1 and SW2 together for about one 
 
 The robot relies on its sensors to find an opponent and avoid the arena boundary. Calibration is part of normal operation, especially after transport, repair, or a change of arena surface.
 
+For **V2.8**, follow [Calibrate with Sinyas](calibration/sinyas-v2-8.html). The steps below apply to **V2.7**.
+
 1. Return to the **RC/RMT** main screen.
 2. Hold SW1 and SW2 together for about two seconds.
 3. Release both switches when **CAL Mode** appears.
