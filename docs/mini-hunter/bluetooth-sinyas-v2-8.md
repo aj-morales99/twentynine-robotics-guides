@@ -19,9 +19,11 @@ Use this guide for Mini Hunter running **MiniHunterV2.8_Advance**. If your robot
 
 ## 1 Install Sinyas and pair the module
 
+{% include mini-hunter-bluetooth-name.html %}
+
 1. Download the current Sinyas APK from the [release page](../sinyas/releases.html). Install it and allow **Nearby devices** access when Android asks.
 2. Put the robot on its stand and power it on. In Sinyas, open **☰ → Bluetooth → Open Android settings**.
-3. Turn on Bluetooth. Select your robot's module, often named **HC-05**, and enter its configured PIN if Android prompts you.
+3. Turn on Bluetooth. Select the device with your robot's serial number and enter its configured PIN if Android prompts you.
 4. Return to Sinyas. If the module is missing under **Paired devices**, tap Refresh.
 
 ## 2 Put the Mini Hunter in Bluetooth Drive
@@ -41,7 +43,7 @@ Use this guide for Mini Hunter running **MiniHunterV2.8_Advance**. If your robot
 
     <figure class="guide-figure step-figure">
       <a href="../assets/images/sinyas/bluetooth.webp"><img src="../assets/images/sinyas/bluetooth.webp" width="800" height="400" alt="Sinyas Bluetooth screen with a connected Mini Hunter module" loading="lazy"></a>
-      <figcaption><strong>Bluetooth screen.</strong> Check the connection and robot profile before opening Drive.</figcaption>
+      <figcaption><strong>Bluetooth screen.</strong> This example uses the module name HC-05. Choose your own Mini Hunter’s Bluetooth name and check the profile before opening Drive.</figcaption>
     </figure>
 
 3. If the profile stays on **Generic**, check that the OLED is in BT Mode and the robot has the compatible firmware, then reconnect.

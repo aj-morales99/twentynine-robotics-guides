@@ -40,6 +40,8 @@ You need **Android 7.0 or later** and a compatible Bluetooth Classic serial modu
 
 ## 2 Pair the HC-05 and connect
 
+For a Mini Hunter, look for the name with your robot’s serial number, such as `MiniHunterV2.8_0082`. V2.7 and earlier need Sinyas-compatible V2.8 firmware. See [Mini Hunter Bluetooth setup](../mini-hunter/bluetooth-sinyas-v2-8.html).
+
 1. Power the robot and open the robot-side Bluetooth Drive mode. Turn on Bluetooth on Android.
 2. In Sinyas, open **Menu → Bluetooth → Open Android settings**. Pair with the HC-05 there using the PIN configured on your module.
 3. Return to Sinyas. Refresh **Paired devices** if the module is missing, then choose **Connect** beside the correct device.

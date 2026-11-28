@@ -56,17 +56,19 @@ The blue OLED illustrations below are simulations of the **MiniHunterV2.8_Advanc
 
 ## 3 Pair the phone, then connect in Sinyas
 
+{% include mini-hunter-bluetooth-name.html %}
+
 1. In Sinyas, tap **☰ → Bluetooth → Open Android settings**.
-2. Turn Bluetooth on. Pick the HC-05 from the list of nearby devices and enter the PIN configured for your robot if asked. This pairing step is normally needed once.
+2. Turn Bluetooth on. Pick your robot’s Bluetooth name from the list and enter its configured PIN if asked. This pairing step is normally needed once.
 3. Return to Sinyas. If the module does not appear under **Paired devices**, tap the refresh icon.
-4. Tap **Connect** beside your HC-05.
+4. Tap **Connect** beside your robot’s name.
 
     <figure class="guide-figure guide-figure--compact step-figure">
       <a href="../assets/images/sinyas/bluetooth.webp"><img src="../assets/images/sinyas/bluetooth.webp" width="800" height="400" alt="The Bluetooth page showing a connected HC-05 and Mini Hunter identification" loading="lazy"></a>
-      <figcaption>The HC-05 shows Connected in the paired-device list.</figcaption>
+      <figcaption>The example module is named HC-05. On your phone, look for your Mini Hunter’s Bluetooth name in the paired-device list.</figcaption>
     </figure>
 
-5. Check the upper-right corner. **Connected** means the phone has reached the Bluetooth module. **MiniHunter**, under the Sinyas logo, means the robot’s program has also identified itself.
+5. Check the upper-right corner. **Connected** means the phone has reached the Bluetooth module. **Mini Hunter**, shown below it, means the robot’s program has also identified itself.
 
     <figure class="guide-figure guide-figure--compact step-figure">
       <a href="../assets/images/sinyas/oled/bt-connected.png"><img src="../assets/images/sinyas/oled/bt-connected.png" width="576" height="172" alt="BT Mode. Sinyas connected." loading="lazy"></a>
