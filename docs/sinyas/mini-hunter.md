@@ -8,6 +8,8 @@ description: A beginner's walkthrough for driving a Mini Hunter and using the Si
 
 Start with the driving lesson. Once you can connect, drive, and stop, try the calibration lessons one at a time.
 
+{% include mini-hunter-firmware-note.html %}
+
 ## 1 Get your equipment ready
 
 - **Phone:** Android with [Sinyas installed](./#1-install-sinyas).

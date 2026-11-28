@@ -9,6 +9,8 @@ permalink: /mini-hunter/calibration/sinyas-v2-8.html
 
 This guide is for **MiniHunterV2.8_Advance** and **Sinyas V1.1.1**. For a robot running V2.7, use the [original OLED calibration guides](./#v27-guides).
 
+{% include mini-hunter-firmware-note.html %}
+
 ## What you need
 
 - A Mini Hunter with its OLED and Bluetooth module connected
@@ -20,7 +22,7 @@ This guide is for **MiniHunterV2.8_Advance** and **Sinyas V1.1.1**. For a robot 
 
 ## 1. Open the calibration menu
 
-1. Return to the robot's **RC/RMT** main screen. Hold **SW1 and SW2** together until the **CAL Mode** bar fills, then release them.
+1. Return to the robot's **REMOTE** main screen. Hold **SW1 and SW2** together until the **CAL Mode** bar fills, then release them.
 2. The first menu entry is **Sensor Check**.
 
     <figure class="guide-figure guide-figure--compact step-figure">

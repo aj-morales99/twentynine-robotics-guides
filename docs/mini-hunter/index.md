@@ -43,7 +43,7 @@ The robot normally arrives with working firmware already installed. Start by lea
   </section>
   <section>
     <h2>Controllers and calibration</h2>
-    <a class="directory-link" href="bluetooth-application-setup.html"><span><strong>Bluetooth application setup</strong><small>Install the Android app and import the Mini Hunter V2.6 panel.</small></span><span class="directory-status in-progress">In progress</span></a>
+    <a class="directory-link" href="bluetooth-application-setup.html"><span><strong>Bluetooth application setup</strong><small>Choose Bluetooth Electronics for V2.7 or Sinyas for V2.8.</small></span><span aria-hidden="true">→</span></a>
     <a class="directory-link" href="rc-controller-setup.html"><span><strong>RC controller setup</strong><small>Connect RC Cable V1, bind the receiver, and test every control.</small></span><span aria-hidden="true">→</span></a>
     <a class="directory-link" href="calibration/"><span><strong>Calibration</strong><small>Choose the V2.7 OLED guide or the V2.8 Sinyas guide.</small></span><span aria-hidden="true">→</span></a>
   </section>

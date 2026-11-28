@@ -11,6 +11,8 @@ Calibration makes the sensor readings match the robot's real surroundings. Work 
 
 Choose the guide for the **firmware uploaded to your robot**. If you are unsure, check the sketch name used for the last upload.
 
+{% include mini-hunter-firmware-note.html %}
+
 ## New guide · V2.8
 
 Use this guide if your sketch is **MiniHunterV2.8_Advance**. Its calibration menu starts at **Sensor Check**. Sinyas can read line sensors, test adjustments, and save supported settings to the board.

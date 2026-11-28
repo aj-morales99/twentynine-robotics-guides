@@ -8,6 +8,8 @@ description: Choose Classic or PID Beta, test each setting, read the sensors, an
 
 Enemy Detection Tuning lets you see where Mini Hunter sees a target and practice how it turns. Both choices use the same distance sensors. You choose how the robot reacts.
 
+{% include mini-hunter-firmware-note.html %}
+
 <div class="note"><strong>PID is in beta.</strong> The app tab is labeled <strong>PID</strong>. Check it on your robot before choosing it for a match. You can switch back to Classic at any time.</div>
 
 ## Choose Classic or PID Beta
