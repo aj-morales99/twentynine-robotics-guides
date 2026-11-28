@@ -18,7 +18,7 @@ permalink: /
     <span class="product-card__mark" aria-hidden="true">MH</span>
     <span class="product-card__content">
       <span class="availability progress">In progress</span>
-      <strong>Hunter Series: Mini Hunter V2.7</strong>
+      <strong>Hunter Series: Mini Hunter</strong>
       <span>FullVision STM32 setup, Bluetooth, RC control, sensors, modes, upgrades, and code.</span>
       <span class="product-action">Open Mini Hunter guides <span aria-hidden="true">→</span></span>
     </span>

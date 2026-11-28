@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "Hunter Series: Mini Hunter V2.7 guides"
-description: Operation, setup, programming, upgrades, and maintenance guides for the Twentynine Robotics Hunter Series Mini Hunter V2.7.
+title: "Hunter Series: Mini Hunter"
+description: Operation, setup, programming, upgrades, and maintenance guides for the Twentynine Robotics Hunter Series Mini Hunter.
 permalink: /mini-hunter/
 ---
 
-# Hunter Series: Mini Hunter V2.7
+# Hunter Series: Mini Hunter
 
-The **Mini Hunter V2.7** is part of the Twentynine Robotics **Hunter Series**—a growing family of sumobot platforms designed for dependable detection, adaptable competition configurations, and aggressive arena control.
+The **Mini Hunter** is part of the Twentynine Robotics **Hunter Series**—a growing family of sumobot platforms designed for dependable detection, adaptable competition configurations, and aggressive arena control.
 
 <figure class="brand-intro">
   <img src="../assets/images/mini-hunter/mini-hunter-v2.7-official-logo.png" alt="Official Mini Hunter Sumobot Kit Version 2.7 logo" width="750" height="300" fetchpriority="high">
